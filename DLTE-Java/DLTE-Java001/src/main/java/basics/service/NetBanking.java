@@ -25,5 +25,6 @@ public class NetBanking {
         System.out.println("Confirm transaction (Yes/No)");
         confirmation = scanner.next();
 
+        scanner.close();
     }
 }

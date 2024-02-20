@@ -14,5 +14,8 @@ public class FDCalculator {
         System.out.println("Enter the time");
         time = scanner.nextDouble();
         fd = principle*rate*time;
+        System.out.println(fd);
+
+        scanner.close();
     }
 }
