@@ -14,7 +14,7 @@ public class TransactionAnalysis {
         };
 
         String beneficiary, remark;
-        Date startDate, endDate;
+        int startDate, endDate;
         Scanner scanner = new Scanner(System.in);
 
         TransactionAnalysis analysis = new TransactionAnalysis();
@@ -24,14 +24,16 @@ public class TransactionAnalysis {
         switch(choice) {
             case 1:
                 System.out.println("Enter the start date");
-                startDate = new Date();
+                startDate = scanner.nextInt();
                 System.out.println("Enter the end date");
-                endDate = new Date();
-
+                endDate = scanner.nextInt();
+                analysis.dateBasedList(transaction, startDate, endDate);
                 break;
-            case 2: analysis.leastAmount(transaction);
+            case 2:
+                analysis.leastAmount(transaction);
                 break;
-            case 3: analysis.maximumAmount(transaction);
+            case 3:
+                analysis.maximumAmount(transaction);
                 break;
             case 4:
                 System.out.println("Enter a beneficiary to check the number of transactions made");
@@ -41,14 +43,20 @@ public class TransactionAnalysis {
             case 5:
                 System.out.println("Enter the remarks to check the details");
                 remark = scanner.next();
-
+                analysis.remarkBasedList(transaction, remark);
                 break;
         }
-        //number of transaction made to particular beneficiary
 
     }
 
     //Filter based on given ranges of date
+    public void dateBasedList(Transaction[] transaction, int startDate, int endDate) {
+        for (Transaction each : transaction) {
+            if (each.getDateOfTransaction().getDate()>=startDate && each.getDateOfTransaction().getDate()<=endDate) {
+                System.out.println(each.getTransactionTo()+" "+each.getDateOfTransaction()+" "+each.getAmountInTransaction());
+            }
+        }
+    }
 
     //least amount transferred
     public void leastAmount(Transaction[] transaction) {
@@ -78,7 +86,7 @@ public class TransactionAnalysis {
     public void numberOfTransactions(Transaction[] transaction, String beneficiary) {
         int numberOfTransactions=0;
         for (Transaction each : transaction) {
-            if (each.getTransactionTo() == beneficiary) {
+            if (each.getTransactionTo().equals(beneficiary)) {
                 numberOfTransactions += 1;
             }
         }
@@ -86,5 +94,11 @@ public class TransactionAnalysis {
     }
 
     //filter based on particular remarks
-    
+    public void remarkBasedList(Transaction[] transaction, String remark) {
+        for (Transaction each : transaction) {
+            if (each.getRemarks().equals(remark)) {
+                System.out.println(each.getTransactionTo()+"  "+each.getAmountInTransaction());
+            }
+        }
+    }
 }
