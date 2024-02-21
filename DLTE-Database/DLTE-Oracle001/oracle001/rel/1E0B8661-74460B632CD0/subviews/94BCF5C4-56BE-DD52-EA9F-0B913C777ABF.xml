@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelational" name="DLTE-Database" id="94BCF5C4-56BE-DD52-EA9F-0B913C777ABF">
+<createdBy>xxshettn</createdBy>
+<modifiedBy>xxshettn</modifiedBy>
+<createdTime>2024-02-20 09:55:52 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="9C7AEEC8-9F71-80FE-FDE0-144892B052A5" otype="Table" vid="7E715443-4883-3EF7-00ED-A080BC54ADD9">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="50" y="50" width="170" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="DC13FFC2-A260-0C52-9E7D-785E42009D0A" otype="Table" vid="50A2C355-0C85-FB0A-77A7-ABECCCA91D3B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="60" y="70" width="170" height="110"/>
+</OView>
+</objectViews>
+</Diagram>

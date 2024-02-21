@@ -13,7 +13,7 @@ public class TransactionAnalysis {
                 new Transaction(new Date(2023, 12, 22),7000.0,"Sara","Emergency"),
         };
 
-        String beneficiary;
+        String beneficiary, remark;
         Date startDate, endDate;
         Scanner scanner = new Scanner(System.in);
 
@@ -29,9 +29,9 @@ public class TransactionAnalysis {
                 endDate = new Date();
 
                 break;
-            case 2:
+            case 2: analysis.leastAmount(transaction);
                 break;
-            case 3:
+            case 3: analysis.maximumAmount(transaction);
                 break;
             case 4:
                 System.out.println("Enter a beneficiary to check the number of transactions made");
@@ -39,6 +39,9 @@ public class TransactionAnalysis {
                 analysis.numberOfTransactions(transaction, beneficiary);
                 break;
             case 5:
+                System.out.println("Enter the remarks to check the details");
+                remark = scanner.next();
+
                 break;
         }
         //number of transaction made to particular beneficiary
@@ -49,14 +52,27 @@ public class TransactionAnalysis {
 
     //least amount transferred
     public void leastAmount(Transaction[] transaction) {
-        Double leastAmount = 0.0;
+        Double leastAmount = Double.MAX_VALUE;
 
         for (Transaction each : transaction) {
-
+            if (each.getAmountInTransaction() < leastAmount) {
+                leastAmount = each.getAmountInTransaction();
+            }
         }
+        System.out.println("The least amount transferred is "+leastAmount);
     }
 
     //maximum amount transferred
+    public void maximumAmount (Transaction[] transaction) {
+        Double maxAmount = Double.MIN_VALUE;
+
+        for (Transaction each : transaction) {
+            if (each.getAmountInTransaction() > maxAmount) {
+                maxAmount = each.getAmountInTransaction();
+            }
+        }
+        System.out.println("The maximum amount transferred is "+maxAmount);
+    }
 
     //number of transaction made to particular beneficiary
     public void numberOfTransactions(Transaction[] transaction, String beneficiary) {
@@ -70,4 +86,5 @@ public class TransactionAnalysis {
     }
 
     //filter based on particular remarks
+    
 }

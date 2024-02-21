@@ -1,0 +1,105 @@
+Creating table transaction
+-------------------------------
+SQL> create table transaction (transaction_id number, transaction_date date, transaction_amount number, transaction_to varchar(25), remarks varchar(100));
+
+Table created.
+
+Alter table to add squence
+------------------------------
+SQL> alter table transaction add constraint transaction_sequence primary key(transaction_id);
+
+Table altered.
+
+
+1. Filter based on given ranges of date
+-----------------------------------------
+SQL> create view date_based_list as select transaction_amount, transaction_to, remarks from transaction where transaction_date between '18Feb2024' and '20Feb2024';
+
+View created.
+
+SQL> select * from date_based_list;
+
+TRANSACTION_AMOUNT TRANSACTION_TO
+------------------ -------------------------
+REMARKS
+--------------------------------------------------------------------------------
+             20000 John
+Bills
+
+              4000 Sam
+Rent
+
+             10500 Peter
+Emergency
+
+
+TRANSACTION_AMOUNT TRANSACTION_TO
+------------------ -------------------------
+REMARKS
+--------------------------------------------------------------------------------
+              1500 Nancy
+Family
+
+
+
+2. Least amount transferred
+-----------------------------------------
+SQL> create view least_amount as select min(transaction_amount) as min_amount from transaction;
+
+View created.
+
+SQL> select * from least_amount;
+
+MIN_AMOUNT
+----------
+      1500
+
+
+
+3. Maximum amount transferred
+--------------------------------------------
+SQL> create view maximum_amount as select max(transaction_amount) as max_amount from transaction;
+
+View created.
+
+SQL> select * from maximum_amount;
+
+MAX_AMOUNT
+----------
+     30000
+
+
+
+4. Number of transactions for a particular beneficiary
+-----------------------------------------------------
+SQL> create view number_of_transactions as select count(*) as count from transaction where transaction_to='Nancy';
+
+View created.
+
+SQL> select * from number_of_transactions;
+
+     COUNT
+----------
+         2
+
+
+
+5. Filter based on remarks
+---------------------------------------
+SQL> create view remarks_based_view as select transaction_date, transaction_to from transaction where remarks='Emergency';
+
+View created.
+
+SQL> select * from remarks_based_view;
+
+TRANSACTI TRANSACTION_TO
+--------- -------------------------
+19-FEB-24 Peter
+21-FEB-24 Mike
+21-FEB-24 Nancy
+
+
+
+
+
+

@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9C7AEEC8-9F71-80FE-FDE0-144892B052A5" schemaObject="308893D6-DFB1-8B18-2F64-094826C5FBE8" name="TRANSACTION_2024">
+<createdBy>xxshettn</createdBy>
+<createdTime>2024-02-20 09:55:52 UTC</createdTime>
+<ownerDesignName>oracle001</ownerDesignName>
+<importedID>43AE5226-2026-14B7-2515-B4C2C1FC19D4</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TRANSACTION_DATE" id="6FC44970-2250-B640-4BEC-014FC12D552A">
+<createdBy>xxshettn</createdBy>
+<createdTime>2024-02-20 09:55:52 UTC</createdTime>
+<ownerDesignName>oracle001</ownerDesignName>
+<importedID>D7EB5797-7EEC-CC50-5FA4-0FBB01406D82</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TRANSACTION_TO" id="15306A38-B7D2-1894-305B-FCF38E46FC70">
+<createdBy>xxshettn</createdBy>
+<createdTime>2024-02-20 09:55:52 UTC</createdTime>
+<ownerDesignName>oracle001</ownerDesignName>
+<importedID>ACFCF36E-B373-9442-FF81-FF7F59B15EBF</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TRANSACTION_AMOUNT" id="DF484B78-519D-DA0F-BD2B-EE5E29CA24D1">
+<createdBy>xxshettn</createdBy>
+<createdTime>2024-02-20 09:55:52 UTC</createdTime>
+<ownerDesignName>oracle001</ownerDesignName>
+<importedID>4D995E49-295B-D299-63DE-3ABE94D7BE22</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TRANSACTION_REMARKS" id="E857FA89-D99D-86F0-42DE-CA242888C7F6">
+<createdBy>xxshettn</createdBy>
+<createdTime>2024-02-20 09:55:52 UTC</createdTime>
+<ownerDesignName>oracle001</ownerDesignName>
+<importedID>C1BA7A43-99A6-1628-EC5B-1B07DE6E829E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TRANSACTION_ID" id="5E3C42CE-64BB-49C5-41B8-D1A72223826A">
+<createdBy>xxshettn</createdBy>
+<createdTime>2024-02-20 09:55:52 UTC</createdTime>
+<ownerDesignName>oracle001</ownerDesignName>
+<importedID>13815626-256F-BE52-0CF6-8B3CE8DAA3F7</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3642D972-9197-38CA-69C3-648F39A6CBC2" name="TRANSACTION_SEQ">
+<createdBy>xxshettn</createdBy>
+<createdTime>2024-02-20 09:55:52 UTC</createdTime>
+<ownerDesignName>oracle001</ownerDesignName>
+<importedID>F0EB4071-7501-982D-2B95-35B79F220296</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5E3C42CE-64BB-49C5-41B8-D1A72223826A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3B8D5712-4B6E-20DE-0EBD-3AA4C6F76CD3" schemaObject="308893D6-DFB1-8B18-2F64-094826C5FBE8" name="TRANSACTION_SEQ">
+<createdBy>xxshettn</createdBy>
+<createdTime>2024-02-20 09:55:52 UTC</createdTime>
+<ownerDesignName>oracle001</ownerDesignName>
+<importedID>21E9BD7C-3BFE-D1E0-5D0E-5D81747183E2</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5E3C42CE-64BB-49C5-41B8-D1A72223826A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

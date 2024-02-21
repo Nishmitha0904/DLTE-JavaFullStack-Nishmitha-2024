@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="TRANSACTION_2024" directorySegmentName="seg_0" id="9C7AEEC8-9F71-80FE-FDE0-144892B052A5">
+<createdBy>xxshettn</createdBy>
+<createdTime>2024-02-20 09:55:52 UTC</createdTime>
+<ownerDesignName>oracle001</ownerDesignName>
+<schemaObject>308893D6-DFB1-8B18-2F64-094826C5FBE8</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>47243CEA-58FD-716F-A87B-4E8414A6B03B</segment>
+<tableSpace>978AECD4-577C-2037-04BB-A38E47D58F11</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TRANSACTION_TO" id="15306A38-B7D2-1894-305B-FCF38E46FC70">
+<createdBy>xxshettn</createdBy>
+<createdTime>2024-02-20 09:55:52 UTC</createdTime>
+<ownerDesignName>oracle001</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TRANSACTION_ID" id="5E3C42CE-64BB-49C5-41B8-D1A72223826A">
+<createdBy>xxshettn</createdBy>
+<createdTime>2024-02-20 09:55:52 UTC</createdTime>
+<ownerDesignName>oracle001</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TRANSACTION_DATE" id="6FC44970-2250-B640-4BEC-014FC12D552A">
+<createdBy>xxshettn</createdBy>
+<createdTime>2024-02-20 09:55:52 UTC</createdTime>
+<ownerDesignName>oracle001</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TRANSACTION_AMOUNT" id="DF484B78-519D-DA0F-BD2B-EE5E29CA24D1">
+<createdBy>xxshettn</createdBy>
+<createdTime>2024-02-20 09:55:52 UTC</createdTime>
+<ownerDesignName>oracle001</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TRANSACTION_REMARKS" id="E857FA89-D99D-86F0-42DE-CA242888C7F6">
+<createdBy>xxshettn</createdBy>
+<createdTime>2024-02-20 09:55:52 UTC</createdTime>
+<ownerDesignName>oracle001</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="TRANSACTION_SEQ" id="3B8D5712-4B6E-20DE-0EBD-3AA4C6F76CD3">
+<createdBy>xxshettn</createdBy>
+<createdTime>2024-02-20 09:55:52 UTC</createdTime>
+<ownerDesignName>oracle001</ownerDesignName>
+<schemaObject>308893D6-DFB1-8B18-2F64-094826C5FBE8</schemaObject>
+<segment>7145BB8B-8DDD-C2DA-35DE-C2A577913298</segment>
+<tableSpace>978AECD4-577C-2037-04BB-A38E47D58F11</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TRANSACTION_SEQ" id="3642D972-9197-38CA-69C3-648F39A6CBC2">
+<createdBy>xxshettn</createdBy>
+<createdTime>2024-02-20 09:55:52 UTC</createdTime>
+<ownerDesignName>oracle001</ownerDesignName>
+<segment>7145BB8B-8DDD-C2DA-35DE-C2A577913298</segment>
+<tableSpace>978AECD4-577C-2037-04BB-A38E47D58F11</tableSpace>
+<existingIndex>3B8D5712-4B6E-20DE-0EBD-3AA4C6F76CD3</existingIndex>
+<indexSegment>7145BB8B-8DDD-C2DA-35DE-C2A577913298</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>
