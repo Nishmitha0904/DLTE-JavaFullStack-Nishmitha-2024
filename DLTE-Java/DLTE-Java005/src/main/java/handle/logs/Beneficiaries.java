@@ -1,4 +1,6 @@
 package handle.logs;
 
-public class Beneficiaries {
+public final class Beneficiaries {
+
+
 }
