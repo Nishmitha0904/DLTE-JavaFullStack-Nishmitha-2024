@@ -17,5 +17,7 @@ public class SIP {
 
         expectedReturns = expectedReturns / (12*100);
         total = (monthlyInvestment*((Math.pow(1+expectedReturns, period*12)-1)/expectedReturns)*(1+expectedReturns));
+
+        System.out.println("The returns is: "+total);
     }
 }
