@@ -15,24 +15,13 @@ public class MyBankLoans implements MyBank {
             choice = scanner.nextInt();
             switch (choice) {
                 case 1:
-                    System.out.println("Enter the loan number");
-                    Long loanNo = scanner.nextLong();
-                    System.out.println("Enter the loan amount");
-                    Double loanAmount = scanner.nextDouble();
-                    System.out.println("Enter the loan date");
-                    String loanDate = scanner.next();
-                    System.out.println("Enter the loan status (open/closed)");
-                    String loanStatus = scanner.next();
-                    System.out.println("Enter the borrower name");
-                    String borrowerName = scanner.nextLine();
-                    System.out.println("Enter the borrower contact");
-                    Long borrowerContact = scanner.nextLong();
-                    Loan loan = new Loan(loanNo, loanAmount, loanDate, loanStatus, borrowerName, borrowerContact);
-                    myBank.addNewLoan(loan);
+                    myBank.addNewLoan();
                     break;
                 case 2:
+                    myBank.checkLoans();
                     break;
                 case 3:
+                    myBank.checkClosedLoans();
                     break;
             }
         }
@@ -40,8 +29,21 @@ public class MyBankLoans implements MyBank {
     }
 
     @Override
-    public void addNewLoan(Loan loan) {
-
+    public void addNewLoan() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the loan number");
+        Long loanNo = scanner.nextLong();
+        System.out.println("Enter the loan amount");
+        Double loanAmount = scanner.nextDouble();
+        System.out.println("Enter the loan date");
+        String loanDate = scanner.next();
+        System.out.println("Enter the loan status (open/closed)");
+        String loanStatus = scanner.next();
+        System.out.println("Enter the borrower name");
+        String borrowerName = scanner.nextLine();
+        System.out.println("Enter the borrower contact");
+        Long borrowerContact = scanner.nextLong();
+        Loan loan = new Loan(loanNo, loanAmount, loanDate, loanStatus, borrowerName, borrowerContact);
     }
 
     @Override

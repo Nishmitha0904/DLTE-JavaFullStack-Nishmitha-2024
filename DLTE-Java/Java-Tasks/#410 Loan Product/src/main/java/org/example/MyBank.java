@@ -12,7 +12,7 @@ public interface MyBank {
             new Loan(674563872634L, 150000.0, "2023, 7, 2", "Closed", "Alice", 9874563785L),
     };
 
-    public void addNewLoan(Loan loan);
+    public void addNewLoan();
     public void checkLoans(Loan loan);
     public void checkClosedLoans(Loan loan);
 }
