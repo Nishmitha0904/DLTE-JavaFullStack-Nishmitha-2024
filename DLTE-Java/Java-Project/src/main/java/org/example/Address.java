@@ -7,6 +7,27 @@ public class Address {
     private String state;
     private Long pincode;
 
+    @Override
+//    public String toString() {
+//        return "Address{" +
+//                "homeAddress='" + homeAddress + '\'' +
+//                ", area='" + area + '\'' +
+//                ", city='" + city + '\'' +
+//                ", state='" + state + '\'' +
+//                ", pincode=" + pincode +
+//                '}';
+//    }
+    public String toString() {
+        return homeAddress +
+                ", " + area +
+                ", " + city +
+                ", " + state +
+                "-" + pincode ;
+    }
+
+    public Address() {
+    }
+
     public Address(String homeAddress, String area, String city, String state, Long pincode) {
         this.homeAddress = homeAddress;
         this.area = area;
