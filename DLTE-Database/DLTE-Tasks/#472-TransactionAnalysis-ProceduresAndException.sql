@@ -68,7 +68,6 @@ Transaction deleted
 
 
 
-
 --filter transaction those done for Education
 
 SQL> create or replace procedure filter_transaction(
