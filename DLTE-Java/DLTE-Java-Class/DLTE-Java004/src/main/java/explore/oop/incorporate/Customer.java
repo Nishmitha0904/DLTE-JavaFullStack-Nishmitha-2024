@@ -5,6 +5,9 @@ public class Customer {
     private Integer customerId;
     private Integer customerPin;
 
+    public Customer() {
+    }
+
     public Customer(String customerName, Integer customerId, Integer customerPin) {
         this.customerName = customerName;
         this.customerId = customerId;

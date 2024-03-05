@@ -20,3 +20,19 @@ Mar 03, 2024 12:25:24 AM org.example.UserFileRepository findById
 WARNING: 1no such user available
 Mar 03, 2024 5:55:27 PM org.example.UserFileRepository save
 INFO: testNew User saved successfully
+Mar 04, 2024 1:10:07 PM org.example.UserFileRepository save
+INFO: test@123New User saved successfully
+Mar 04, 2024 10:46:30 PM org.example.UserFileRepository save
+INFO: nishmithaNew User saved successfully
+Mar 04, 2024 10:46:47 PM org.example.UserFileRepository findById
+WARNING: nishmithano such user available
+Mar 05, 2024 9:38:40 AM org.example.UserFileRepository save
+INFO: nishmithaNew User saved successfully
+Mar 05, 2024 9:54:01 AM org.example.UserFileRepository save
+WARNING: nishmithaUser already exists
+Mar 05, 2024 9:56:59 AM org.example.UserFileRepository save
+WARNING: nishmithaUser already exists
+Mar 05, 2024 9:57:07 AM org.example.UserFileRepository findById
+WARNING: nishno such user available
+Mar 05, 2024 10:23:35 AM org.example.UserFileRepository save
+WARNING: test User already exists

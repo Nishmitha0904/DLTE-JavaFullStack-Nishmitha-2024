@@ -29,4 +29,12 @@ public class UserServices {
             throw userException;
         }
     }
+
+//    public User callFindByName(String username) {
+//        try {
+//            return userFileRepository.findByName(username);
+//        } catch (UserException userException) {
+//            throw userException;
+//        }
+//    }
 }

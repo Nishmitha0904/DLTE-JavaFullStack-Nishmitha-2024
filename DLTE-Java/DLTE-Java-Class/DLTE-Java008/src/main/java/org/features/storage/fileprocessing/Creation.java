@@ -13,7 +13,6 @@ public class Creation {
         try {
             file.createNewFile();
         } catch (IOException e) {
-            System.out.println();
             e.printStackTrace();
         }
     }

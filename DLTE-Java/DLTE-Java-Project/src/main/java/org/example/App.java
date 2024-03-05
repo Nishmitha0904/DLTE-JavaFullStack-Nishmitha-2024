@@ -22,38 +22,48 @@ public class App
         services=new UserServices(storageTarget);
         int option=0;
         do{
-            System.out.println(resourceBundle.getString("app.greet"));
-            System.out.println(resourceBundle.getString("app.menu"));
+            System.out.println(resourceBundle.getString("app.greet")); // welocme
+            System.out.println(resourceBundle.getString("app.menu")); // login/create account
             option=scanner.nextInt();
             switch (option){
                 case 1:loggingIn();
+                if (user!=null) {
+                    System.out.println(resourceBundle.getString("app.greet"));
+                    System.out.println("Hello "+user.getUserName());
+                    System.out.println(resourceBundle.getString("app.menu2"));
+                    return;
+                }
                 break;
                 case 2:
                     System.out.println("Enter the account details");
                     User user =new User();
                     System.out.println("Enter the username");
                     user.setUserName(scanner.next());
+
                     System.out.println("Enter the password");
                     user.setUserPassword(scanner.next());
-                    while (!isValidPassword(user.getUserPassword())) {
+                    while (!isValidPassword(user.getUserPassword())) { //validating password
 //                        System.out.println(resourceBundle.getString("app.password.invalid"));
+                        //invalid
                         System.out.println(resourceBundle.getString("app.password.format"));
                         user.setUserPassword(scanner.next());
                     }
                     System.out.println("Enter the mail id");
                     user.setUserMailId(scanner.next());
-                    while (!isValidEmail(user.getUserMailId())) {
+                    while (!isValidEmail(user.getUserMailId())) { //main-validation
                         System.out.println(resourceBundle.getString("app.mail.invalid"));
+                        //invalid
                         user.setUserMailId(scanner.next());
                     }
                     System.out.println("Enter the contact number");
                     user.setContactInfo(scanner.nextLong());
-                    while (!isValidContactNumber(user.getContactInfo())) {
+                    while (!isValidContactNumber(user.getContactInfo())) { //validating contact
+                        // if invalid
                         System.out.println(resourceBundle.getString("app.contact.invalid"));
                         user.setContactInfo(scanner.nextLong());
                     }
                     scanner.nextLine();
-                    System.out.println("Entrer the Address");
+                    System.out.println("Enter the Address");
                     user.setUserAddress(scanner.nextLine());
                     System.out.println("Enter the initial Balance");
                     user.setInitialBalance(scanner.nextDouble());
@@ -62,6 +72,8 @@ public class App
                     }
                     catch(UserException userException){
                         System.out.println(userException);
+                        System.out.println("Re-enter username");
+                        user.setUserName(scanner.next());
                     }
                     break;
                 default:return;

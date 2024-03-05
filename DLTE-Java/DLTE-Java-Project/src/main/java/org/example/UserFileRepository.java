@@ -28,7 +28,7 @@ public class UserFileRepository implements UserRepository {
     }
     private void writeIntoFile(){
         try{
-            FileOutputStream fileOutputStream=new FileOutputStream(filePath);
+            FileOutputStream fileOutputStream=new FileOutputStream(filePath, true);
             ObjectOutputStream objectOutputStream=new ObjectOutputStream(fileOutputStream);
             objectOutputStream.writeObject(userList);
 
@@ -60,14 +60,13 @@ public class UserFileRepository implements UserRepository {
         readFromFile();
         User object= userList.stream().filter(each->each.getUserName().equals(user.getUserName())).findFirst().orElse(null);
         if(object!=null){
-            logger.log(Level.WARNING,user.getUserName()+resourceBundle.getString("user exists"));
+            logger.log(Level.WARNING,user.getUserName()+" "+resourceBundle.getString("user.exists"));
             throw new UserException();
         }
         userList.add(user);
         writeIntoFile();
-        logger.log(Level.INFO,user.getUserName()+resourceBundle.getString("user.saved"));
-        System.out.println(user.getUserName()+resourceBundle.getString("user.saved"));
-
+        logger.log(Level.INFO,user.getUserName()+" "+resourceBundle.getString("user.saved"));
+        System.out.println(user.getUserName()+" "+resourceBundle.getString("user.saved"));
 
     }
 
@@ -82,4 +81,14 @@ public class UserFileRepository implements UserRepository {
         }
         return object;
     }
+
+//    @Override
+//    public User findByName(String username) {
+//        readFromFile();
+//        User object=userList.stream().filter(each->each.getUserName().equals(username)).findFirst().orElse(null);
+//        if (object != null) {
+//            throw new UserException();
+//        }
+//        return object;
+//    }
 }
