@@ -7,32 +7,27 @@ public class GPay {
     private int upiPin;
     private String username;
 
+    public GPay() {
+    }
+
     public GPay(int upiPin, String username) {
         this.upiPin = upiPin;
         this.username = username;
     }
 
-    public boolean isValidPin(int pin) {
-        return pin == upiPin;
+    public int getUpiPin() {
+        return upiPin;
     }
 
-    public void payBill(String billerName, Double billedAmount, String billerType) {
-        Scanner scanner = new Scanner(System.in);
-        ResourceBundle resourceBundle = ResourceBundle.getBundle("application");
-        System.out.println("Enter your UPI pin");
-        int pin = scanner.nextInt();
-        try {
-            if (!isValidPin(pin)) {
-                throw new MyBankException();
-            }
+    public void setUpiPin(int upiPin) {
+        this.upiPin = upiPin;
+    }
 
-        } catch (MyBankException exception) {
+    public String getUsername() {
+        return username;
+    }
 
-        }
-//        if (pin == upiPin) {
-//            System.out.println("Bill of "+billedAmount+" to "+billerName+" and "+billerType+" successful");
-//        } else {
-//            System.out.println("Bill payment not successful");
-//        }
+    public void setUsername(String username) {
+        this.username = username;
     }
 }
