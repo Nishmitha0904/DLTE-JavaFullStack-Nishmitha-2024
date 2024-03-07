@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="#504-ConcurrentTransactionAnalysis" />
+        <module name="504-concurrent-transaction-analysis" />
       </profile>
     </annotationProcessing>
   </component>
