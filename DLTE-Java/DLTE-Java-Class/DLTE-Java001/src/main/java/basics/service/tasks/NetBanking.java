@@ -1,4 +1,4 @@
-package basics.service;
+package basics.service.tasks;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ public class NetBanking {
         String transactionType, confirmation;
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Welcome");
+        System.out.println("Welcome to MyBank");
         System.out.println("Enter account number");
         accountNumber = scanner.nextLong();
         System.out.println("Enter pin");
@@ -24,6 +24,11 @@ public class NetBanking {
         }
         System.out.println("Confirm transaction (Yes/No)");
         confirmation = scanner.next();
+        if (confirmation.equals("Yes")) {
+            System.out.println("Transaction confirmed!!");
+            System.out.println("Transaction Successful");
+        }
+
 
         scanner.close();
     }

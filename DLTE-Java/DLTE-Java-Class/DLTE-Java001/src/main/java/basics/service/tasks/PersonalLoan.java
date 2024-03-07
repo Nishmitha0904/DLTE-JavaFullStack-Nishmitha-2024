@@ -1,4 +1,4 @@
-package basics.service;
+package basics.service.tasks;
 
 import java.util.Scanner;
 
@@ -9,6 +9,7 @@ public class PersonalLoan {
         int numberOfDependents;
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Welcome to MyBank Loans");
         System.out.println("Enter full name");
         name =  scanner.nextLine();
         System.out.println("Enter the date of birth");
@@ -33,6 +34,8 @@ public class PersonalLoan {
         maritalStatus = scanner.next();
         System.out.println("Enter number of dependents");
         numberOfDependents = scanner.nextInt();
+
+        System.out.println("Thank you for applying for the loan in MyBank!\n We will get back to you soon");
 
         scanner.close();
     }
