@@ -1,0 +1,8 @@
+Mar 08, 2024 2:42:48 PM org.example.CreditCardAnalysis main
+WARNING: No credit card holders found!
+Mar 08, 2024 2:45:46 PM org.example.CreditCardAnalysis main
+WARNING: No credit card holders found!
+Mar 08, 2024 2:46:12 PM org.example.CreditCardAnalysis findByBillDate
+INFO: Customers having date of bill payment 30
+Mar 08, 2024 2:50:02 PM org.example.CreditCardAnalysis findByLimit
+INFO: Successfully found the credit card holders having limit between them

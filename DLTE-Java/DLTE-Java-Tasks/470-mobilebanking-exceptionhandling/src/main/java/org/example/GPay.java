@@ -51,8 +51,10 @@ public class GPay {
                 }
                 else {
                     logger.log(Level.WARNING, resourceBundle.getString("pin.invalid"));
-                    System.out.println(resourceBundle.getString("pin.enter"));
-                    pin = scanner.nextInt();
+                    throw new MyBankException(resourceBundle.getString("account.blocked"));
+//                    System.out.println(resourceBundle.getString("pin.enter"));
+//                    pin = scanner.nextInt();
+
                 }
             }
         }
