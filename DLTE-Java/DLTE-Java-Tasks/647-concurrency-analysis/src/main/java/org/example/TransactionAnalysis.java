@@ -2,9 +2,12 @@ package org.example;
 
 import java.util.Date;
 import java.util.Scanner;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class TransactionAnalysis implements Runnable, TransactionFunctionality {
 
+    Lock lock = new ReentrantLock();
     private static Transaction[] transaction = {
             new Transaction(new Date(2024, 02, 20), 1000.0, "John", "Bills"),
             new Transaction(new Date(2024, 03, 15), 5500.0, "Hazel", "Friend"),
@@ -13,10 +16,39 @@ public class TransactionAnalysis implements Runnable, TransactionFunctionality {
             new Transaction(new Date(2023, 12, 22), 7000.0, "Sara", "Emergency"),
     };
 
-    public static void main(String[] args) {
+    @Override
+    public void run() {
 
+        Scanner scanner = new Scanner(System.in);
+        TransactionAnalysis analysis = new TransactionAnalysis();
+        int choice;
+        while (true) {
+            System.out.println("MENU\n1. Filter the transactions based on a date range \n2. Find the least amount transferred \n3. Find the maximum amount transferred \n4. Find the number of transaction made to particular beneficiary \n5. Filter the transactions based on remarks\n6. Exit");
+            System.out.println("What do you want to do? Choose");
+            choice = scanner.nextInt();
+            lock.lock();
+            switch (choice) {
+                case 1:
+                    analysis.filterByDate();
+                    break;
+                case 2:
+                    analysis.leastAmount();
+                    break;
+                case 3:
+                    analysis.maximumAmount();
+                    break;
+                case 4:
+                    analysis.numberOfTransaction();
+                    break;
+                case 5:
+                    analysis.remarksBasedList();
+                    break;
+                default:
+                    System.exit(0);
+            }
+            lock.unlock();
+        }
     }
-
 
     @Override
     public void filterByDate() {
@@ -84,32 +116,6 @@ public class TransactionAnalysis implements Runnable, TransactionFunctionality {
     }
 
 
-    @Override
-    synchronized public void run() {
 
-        Scanner scanner = new Scanner(System.in);
-        TransactionAnalysis analysis = new TransactionAnalysis();
-        System.out.println("MENU\n1. Filter the transactions based on a date range \n2. Find the least amount transferred \n3. Find the maximum amount transferred \n4. Find the number of transaction made to particular beneficiary \n5. Filter the transactions based on remarks\n6. Exit");
-        System.out.println("What do you want to do? Choose");
-        int choice = scanner.nextInt();
-        switch (choice) {
-            case 1:
-                analysis.filterByDate();
-                break;
-            case 2:
-                analysis.leastAmount();
-                break;
-            case 3:
-                analysis.maximumAmount();
-                break;
-            case 4:
-                analysis.numberOfTransaction();
-                break;
-            case 5:
-                analysis.remarksBasedList();
-                break;
-            default:
-                System.exit(0);
-        }
-    }
+
 }

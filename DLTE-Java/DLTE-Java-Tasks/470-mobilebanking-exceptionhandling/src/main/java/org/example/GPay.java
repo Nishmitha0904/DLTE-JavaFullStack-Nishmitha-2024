@@ -37,27 +37,23 @@ public class GPay {
         ResourceBundle resourceBundle = ResourceBundle.getBundle("application");
         System.out.println(resourceBundle.getString("pin.enter"));
         int pin = scanner.nextInt();
-        while (attempts <= 5) {
+//        while (attempts <= 5) {
             if (pin == upiPin) {
                 System.out.println("Bill of "+billedAmount+" to "+billerName+" and "+billerType+" successful");
                 logger.log(Level.INFO, resourceBundle.getString("bill.success"));
                 return;
             } else {
+                //throw new MyBankException(resourceBundle.getString("account.blocked"));
                 attempts++;
                 if (attempts>=5) {
                     logger.log(Level.WARNING, resourceBundle.getString("account.blocked"));
-                    throw new MyBankException(resourceBundle.getString("account.blocked"));
-
+                    return;
                 }
                 else {
-                    logger.log(Level.WARNING, resourceBundle.getString("pin.invalid"));
                     throw new MyBankException(resourceBundle.getString("account.blocked"));
-//                    System.out.println(resourceBundle.getString("pin.enter"));
-//                    pin = scanner.nextInt();
-
                 }
             }
-        }
+//        }
 
     }
 }
