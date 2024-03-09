@@ -1,59 +1,46 @@
 package org.example;
 
-import java.io.IOException;
 import java.util.ResourceBundle;
 import java.util.Scanner;
-import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.util.logging.SimpleFormatter;
 
-public class GPay {
-    private int upiPin;
-    private String username;
+import java.util.Scanner;
 
-    public GPay(int upiPin, String username) {
+public class GPay extends Account {
+
+    Logger logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+    ResourceBundle resourceBundle = ResourceBundle.getBundle("application");
+    private Integer upiPin;
+
+    public GPay(Long accountNumber, Double accountBalance, String accountHolder, Integer upiPin, String username) {
+        super(accountNumber, accountBalance, accountHolder);
         this.upiPin = upiPin;
         this.username = username;
     }
 
-    static Logger logger=Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+    private String username;
 
-    public GPay() {
-        FileHandler fileHandler = null;
-        try {
-            fileHandler = new FileHandler("account-logs.txt", false);
-            SimpleFormatter simpleFormatter = new SimpleFormatter();
-            fileHandler.setFormatter(simpleFormatter);
-            logger.addHandler(fileHandler);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
-    public void payBill(String billerName, Double billedAmount, String billerType) {
-        int attempts=0;
+    public void payBills(String billerName, Double billAmount, String billType) {
         Scanner scanner = new Scanner(System.in);
-        ResourceBundle resourceBundle = ResourceBundle.getBundle("application");
-        System.out.println(resourceBundle.getString("pin.enter"));
-        int pin = scanner.nextInt();
-//        while (attempts <= 5) {
-            if (pin == upiPin) {
-                System.out.println("Bill of "+billedAmount+" to "+billerName+" and "+billerType+" successful");
+        Integer pin;
+        int attempts = 0;
+        while (attempts < 5) {
+            System.out.println("Enter the UPI Pin");
+            pin = scanner.nextInt();
+            if (pin.equals(upiPin)) {
+                Double accountBalance = billAmount;
+                System.out.println(resourceBundle.getString("bill.success"));
                 logger.log(Level.INFO, resourceBundle.getString("bill.success"));
-                return;
+                break;
             } else {
-                //throw new MyBankException(resourceBundle.getString("account.blocked"));
                 attempts++;
-                if (attempts>=5) {
-                    logger.log(Level.WARNING, resourceBundle.getString("account.blocked"));
-                    return;
-                }
-                else {
-                    throw new MyBankException(resourceBundle.getString("account.blocked"));
-                }
+                logger.log(Level.WARNING, resourceBundle.getString("pin.invalid"));
             }
-//        }
-
+        }
+        if (attempts >= 5) {
+            throw new MyBankException();
+        }
     }
 }

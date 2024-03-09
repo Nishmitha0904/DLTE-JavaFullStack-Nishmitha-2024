@@ -14,6 +14,15 @@ public class Account {
         this.accountHolder = accountHolder;
     }
 
+    @Override
+    public String toString() {
+        return "Account{" +
+                "accountNumber=" + accountNumber +
+                ", accountBalance=" + accountBalance +
+                ", accountHolder='" + accountHolder + '\'' +
+                '}';
+    }
+
     public Long getAccountNumber() {
         return accountNumber;
     }
