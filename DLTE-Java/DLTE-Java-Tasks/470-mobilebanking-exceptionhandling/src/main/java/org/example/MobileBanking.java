@@ -1,30 +1,19 @@
 package org.example;
 
-import java.util.ResourceBundle;
 import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class MobileBanking {
     public static void main(String[] args) {
-        ResourceBundle resourceBundle= ResourceBundle.getBundle("application");
-        Logger logger=Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
-        GPay gPay=new GPay(65767856456L, 40000.0, "Nishmitha", 456, "nishmitha");
+        GPay gPay = new GPay(567645374647L, 50000.0, "Nishmitha", "nish",123);
 
-        Scanner scanner=new Scanner(System.in);
-
-        try {
-            System.out.println("Enter the biller name");
-            String billerName = scanner.nextLine();
-            System.out.println("Enter the  biller type");
-            String billType = scanner.nextLine();
-            System.out.println("Enter the bill amount ");
-            Double billAmount = scanner.nextDouble();
-            gPay.payBills(billerName, billAmount, billType);
-        }catch (MyBankException e){
-            logger.log(Level.WARNING,e.toString());
-        }
-
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the biller name");
+        String billerName=scanner.nextLine();
+        System.out.println("Enter the biller amount");
+        Double billerAmount=scanner.nextDouble();
+        scanner.nextLine();
+        System.out.println("Enter the biller type");
+        String billerType=scanner.nextLine();
+        gPay.payBill(billerName, billerAmount, billerType);
     }
-
 }
