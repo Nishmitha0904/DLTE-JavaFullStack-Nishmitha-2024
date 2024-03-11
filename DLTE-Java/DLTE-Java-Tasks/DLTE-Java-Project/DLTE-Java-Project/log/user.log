@@ -8,3 +8,6 @@
 16:41:55.183 [34m[main][0;39m INFO  org.example.UserFileRepository - [34mnishmithaNew User saved successfully[0;39m 
 16:42:10.618 [31m[main][0;39m WARN  org.example.UserFileRepository - [31mNish@123no such user available[0;39m 
 16:43:28.132 [34m[main][0;39m INFO  org.example.UserFileRepository - [34msanathNew User saved successfully[0;39m 
+17:12:56.411 [34m[main][0;39m INFO  org.example.UserFileRepository - [34mNISHMITHANew User saved successfully[0;39m 
+17:59:39.280 [34m[main][0;39m INFO  org.example.App - [34mIncorrect password[0;39m 
+17:59:43.460 [34m[main][0;39m INFO  org.example.App - [34mPassword correct[0;39m 
