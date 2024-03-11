@@ -30,7 +30,7 @@ public class AppTest
         assertEquals(loan.getLoanAmount(), myBankLoans.loanList.get(0).getLoanAmount());
     }
 
-    
+
 
     @Test (timeout = 500)
     public void testAddLoan() {

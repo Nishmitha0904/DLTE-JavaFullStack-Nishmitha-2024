@@ -1,0 +1,10 @@
+16:15:18.393 [31m[main][0;39m WARN  org.example.UserFileRepository - [31mnishmithano such user available[0;39m 
+16:15:59.641 [34m[main][0;39m INFO  org.example.UserFileRepository - [34mnishNew User saved successfully[0;39m 
+16:16:13.129 [31m[main][0;39m WARN  org.example.UserFileRepository - [31mnishno such user available[0;39m 
+16:27:34.796 [31m[main][0;39m WARN  org.example.UserFileRepository - [31mnishno such user available[0;39m 
+16:29:29.211 [34m[main][0;39m INFO  org.example.UserFileRepository - [34mrakeshNew User saved successfully[0;39m 
+16:29:33.387 [31m[main][0;39m WARN  org.example.UserFileRepository - [31mRakeshno such user available[0;39m 
+16:29:49.189 [31m[main][0;39m WARN  org.example.UserFileRepository - [31mrakeshno such user available[0;39m 
+16:41:55.183 [34m[main][0;39m INFO  org.example.UserFileRepository - [34mnishmithaNew User saved successfully[0;39m 
+16:42:10.618 [31m[main][0;39m WARN  org.example.UserFileRepository - [31mNish@123no such user available[0;39m 
+16:43:28.132 [34m[main][0;39m INFO  org.example.UserFileRepository - [34msanathNew User saved successfully[0;39m 

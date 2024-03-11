@@ -1,5 +1,8 @@
 package org.example;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
@@ -7,25 +10,28 @@ import java.util.ResourceBundle;
 import java.util.Scanner;
 import java.util.logging.FileHandler;
 import java.util.logging.Level;
-import java.util.logging.Logger;
+//import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
 public class CreditCardAnalysis {
 
-    public CreditCardAnalysis() {
-        FileHandler fileHandler = null;
-        try {
-            fileHandler = new FileHandler("credit-card-logs.txt", true);
-            SimpleFormatter simpleFormatter = new SimpleFormatter();
-            fileHandler.setFormatter(simpleFormatter);
-            logger.addHandler(fileHandler);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+    private String filePath;
+//    public CreditCardAnalysis() {
+////        FileHandler fileHandler = null;
+////        try {
+////            fileHandler = new FileHandler("credit-card-logs.txt", true);
+////            SimpleFormatter simpleFormatter = new SimpleFormatter();
+////            fileHandler.setFormatter(simpleFormatter);
+////            logger.addHandler(fileHandler);
+////        } catch (IOException e) {
+////            e.printStackTrace();
+////        }
+//    }
+
 
     private static ResourceBundle resourceBundle = ResourceBundle.getBundle("creditcard");
-    static Logger logger=Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+    //static Logger logger=Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+    private static Logger logger = LoggerFactory.getLogger(CreditCardAnalysis.class);
     public static void main(String[] args) {
         CreditCard[] myBank = {
                 new CreditCard(6785649876564L,"Nishmitha Shetty",new Date(2036,9,23),787,50000,new Date(2024,4,15),new Date(2024,5,28),3223),
@@ -49,7 +55,8 @@ public class CreditCardAnalysis {
                     analysis.findByLimit(myBank, startLimit, endLimit);
                 } catch (MyBankCreditCardException creditCardException) {
                     //System.out.println("Exception occurred");
-                    logger.log(Level.WARNING, resourceBundle.getString("holder.not.found"));
+                    //logger.log(Level.WARNING, resourceBundle.getString("holder.not.found"));
+                    logger.warn(resourceBundle.getString("holder.not.found"));
                 }
                 break;
             case 2:
@@ -58,7 +65,8 @@ public class CreditCardAnalysis {
                 try {
                     analysis.findByBillDate(myBank, date);
                 } catch (MyBankCreditCardException creditCardException) {
-                    logger.log(Level.WARNING, resourceBundle.getString("holder.not.found"));
+                    //logger.log(Level.WARNING, resourceBundle.getString("holder.not.found"));
+                    logger.warn(resourceBundle.getString("holder.not.found"));
                 }
 
                 break;
@@ -81,7 +89,8 @@ public class CreditCardAnalysis {
         else {
             System.out.println("The customers having limit between "+startLimit+" and "+endLimit+":");
             System.out.println(limitList);
-            logger.log(Level.INFO, resourceBundle.getString("card.limit.success"));
+            //logger.log(Level.INFO, resourceBundle.getString("card.limit.success"));
+            logger.info(resourceBundle.getString("card.limit.success"));
         }
 
     }
@@ -98,7 +107,8 @@ public class CreditCardAnalysis {
         else {
             System.out.println("Customers having date of bill payment on "+ date + ":");
             System.out.println(dateList);
-            logger.log(Level.INFO, resourceBundle.getString("card.date.success"));
+            //logger.log(Level.INFO, resourceBundle.getString("card.date.success"));
+            logger.info(resourceBundle.getString("card.date.success"));
         }
     }
 
