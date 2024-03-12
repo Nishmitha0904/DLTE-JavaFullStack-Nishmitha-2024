@@ -1,0 +1,26 @@
+Reading into file as a String and writing it
+
+
+SLF4J
+---------
+does the file have a fixed size 
+- archive and keep it on a daily basis
+- check about size specifications
+Can we enable only certain level in specific environment
+
+
+Use interface
+Add loggings
+Add exceptions --- error handling
+
+Start database part
+
+What is <version>1.0-Snapshot</version> --- 
+
+
+2.0.7 -> 7>small bug fixes done, 0>minor changes, 2>when major changes are made
+
+
+
+Make version for Database project as 1.0-Snapshot
+Make console app also 2.0 (create new project)
