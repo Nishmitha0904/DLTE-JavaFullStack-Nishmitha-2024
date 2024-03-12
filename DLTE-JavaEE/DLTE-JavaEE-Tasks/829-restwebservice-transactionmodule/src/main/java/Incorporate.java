@@ -34,10 +34,11 @@ public class Incorporate extends HttpServlet {
             resp.setContentType("application/json");
             for (Transaction transaction: transactions) {
                 if (transaction.getAmountInTransaction()>min && transaction.getAmountInTransaction()<max) {
+                    resp.setStatus(HttpServletResponse.SC_OK);
                     resp.getWriter().println(gson.toJson(transaction));
                 }
             }
-            resp.setStatus(HttpServletResponse.SC_OK);
+
         }
         else {
             Gson gson = new Gson();
