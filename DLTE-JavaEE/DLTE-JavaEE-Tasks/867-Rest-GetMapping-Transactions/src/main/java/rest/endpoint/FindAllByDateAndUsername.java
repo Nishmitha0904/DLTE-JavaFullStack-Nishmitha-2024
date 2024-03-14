@@ -11,11 +11,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.Date;
+import java.sql.Date;
+import java.util.List;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
-@WebServlet("/rest/date/*")
+    @WebServlet("/rest/date/*")
 public class FindAllByDateAndUsername extends HttpServlet {
     private UserServices userServices;
     private ResourceBundle resourceBundle;
@@ -31,6 +32,21 @@ public class FindAllByDateAndUsername extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        String username = req.getParameter("username");
+        String date = req.getParameter("date");
+        resp.setContentType("application/json");
+        try {
+            List<Transaction> transactions = userServices.callFindByDateAndUsername(username, Date.valueOf(date));
+            Gson gson = new Gson();
+            String responseData = gson.toJson(transactions);
+            resp.getWriter().println(responseData);
+        } catch (IllegalArgumentException illegalException) {
+            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            System.out.println(illegalException);
+        }
+        catch (UserException | MissingResourceException userException) {
+            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            resp.getWriter().println(resourceBundle.getString("user.not.found"));
+        }
     }
 }
