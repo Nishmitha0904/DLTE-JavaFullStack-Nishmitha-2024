@@ -1,0 +1,2 @@
+14:15:28.002 [34m[ActiveMQ Task-1][0;39m INFO  o.a.a.t.failover.FailoverTransport - [34mSuccessfully connected to tcp://localhost:61616[0;39m 
+14:15:34.175 [34m[ActiveMQ Task-1][0;39m INFO  o.a.a.t.failover.FailoverTransport - [34mSuccessfully connected to tcp://localhost:61616[0;39m 
