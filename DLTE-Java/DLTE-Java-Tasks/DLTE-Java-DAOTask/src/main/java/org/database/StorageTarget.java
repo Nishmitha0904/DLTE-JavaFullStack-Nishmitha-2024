@@ -1,4 +1,5 @@
 package org.database;
 
-public class StorageTarget {
+public interface StorageTarget {
+    UserRepository getUserRepository();
 }

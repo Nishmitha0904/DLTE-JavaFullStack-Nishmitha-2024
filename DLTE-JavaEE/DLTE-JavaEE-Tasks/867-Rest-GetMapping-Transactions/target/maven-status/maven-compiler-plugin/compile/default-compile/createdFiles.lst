@@ -1,0 +1,3 @@
+rest\endpoint\findAllUsers.class
+rest\endpoint\FindAllByDateAndUsername.class
+rest\endpoint\FindAllByUsername.class
