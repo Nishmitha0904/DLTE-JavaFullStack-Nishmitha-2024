@@ -1,0 +1,2 @@
+Mar 17, 2024 12:00:03 PM org.database.UserDatabaseRepository save
+INFO: User Account created in MyBank
