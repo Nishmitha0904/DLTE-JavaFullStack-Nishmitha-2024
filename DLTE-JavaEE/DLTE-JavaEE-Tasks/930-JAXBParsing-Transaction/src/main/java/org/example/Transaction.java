@@ -1,12 +1,14 @@
-package parse.xml;
+package org.example;
 
 import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Date;
 
 @XmlRootElement
 public class Transaction {
 
+    private String transactionDoneBy;
     private Date dateOfTransaction;
     private Double amountInTransaction;
     private String transactionTo;
@@ -15,7 +17,8 @@ public class Transaction {
     @Override
     public String toString() {
         return "Transaction{" +
-                "dateOfTransaction=" + dateOfTransaction +
+                "transactionDoneBy='" + transactionDoneBy + '\'' +
+                ", dateOfTransaction=" + dateOfTransaction +
                 ", amountInTransaction=" + amountInTransaction +
                 ", transactionTo='" + transactionTo + '\'' +
                 ", remarks='" + remarks + '\'' +
@@ -25,14 +28,24 @@ public class Transaction {
     public Transaction() {
     }
 
-    public Transaction(Date dateOfTransaction, Double amountInTransaction, String transactionTo, String remarks) {
+    public Transaction(String transactionDoneBy, Date dateOfTransaction, Double amountInTransaction, String transactionTo, String remarks) {
+        this.transactionDoneBy = transactionDoneBy;
         this.dateOfTransaction = dateOfTransaction;
         this.amountInTransaction = amountInTransaction;
         this.transactionTo = transactionTo;
         this.remarks = remarks;
     }
 
-    @XmlAttribute(name="date")
+    @XmlAttribute(name = "by")
+    public String getTransactionDoneBy() {
+        return transactionDoneBy;
+    }
+
+    public void setTransactionDoneBy(String transactionDoneBy) {
+        this.transactionDoneBy = transactionDoneBy;
+    }
+
+    @XmlElement(name="date")
     public Date getDateOfTransaction() {
         return dateOfTransaction;
     }
@@ -41,7 +54,7 @@ public class Transaction {
         this.dateOfTransaction = dateOfTransaction;
     }
 
-    @XmlAttribute(name = "amount")
+    @XmlElement(name = "amount")
     public Double getAmountInTransaction() {
         return amountInTransaction;
     }
@@ -50,7 +63,7 @@ public class Transaction {
         this.amountInTransaction = amountInTransaction;
     }
 
-    @XmlAttribute(name = "receiver")
+    @XmlElement(name = "receiver")
     public String getTransactionTo() {
         return transactionTo;
     }
@@ -59,7 +72,7 @@ public class Transaction {
         this.transactionTo = transactionTo;
     }
 
-    @XmlAttribute
+    @XmlElement
     public String getRemarks() {
         return remarks;
     }
@@ -67,4 +80,6 @@ public class Transaction {
     public void setRemarks(String remarks) {
         this.remarks = remarks;
     }
+
+
 }

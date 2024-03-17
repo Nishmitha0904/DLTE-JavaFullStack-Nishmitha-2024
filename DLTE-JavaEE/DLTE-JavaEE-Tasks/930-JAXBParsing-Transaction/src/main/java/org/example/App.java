@@ -1,4 +1,4 @@
-package parse.xml;
+package org.example;
 
 /**
  * Hello world!

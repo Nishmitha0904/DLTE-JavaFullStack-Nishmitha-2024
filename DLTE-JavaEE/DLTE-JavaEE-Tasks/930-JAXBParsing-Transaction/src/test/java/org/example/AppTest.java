@@ -1,4 +1,4 @@
-package parse.xml;
+package org.example;
 
 import static org.junit.Assert.assertTrue;
 

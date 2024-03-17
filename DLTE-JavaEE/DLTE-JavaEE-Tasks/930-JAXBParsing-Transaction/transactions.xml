@@ -1,2 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<transaction amount="8000.0" date="3924-03-15T00:00:00+05:30" remarks="Bills" receiver="Nishmitha"/>
+<myBankTransactions>
+    <transaction by="Hazel">
+        <amount>1000.0</amount>
+        <date>3924-03-20T00:00:00+05:30</date>
+        <remarks>Bills</remarks>
+        <receiver>John</receiver>
+    </transaction>
+    <transaction by="Sara">
+        <amount>5500.0</amount>
+        <date>3924-04-15T00:00:00+05:30</date>
+        <remarks>Friend</remarks>
+        <receiver>Hazel</receiver>
+    </transaction>
+    <transaction by="Sara">
+        <amount>35000.0</amount>
+        <date>3924-02-25T00:00:00+05:30</date>
+        <remarks>Emergency</remarks>
+        <receiver>Karan</receiver>
+    </transaction>
+    <transaction by="Nishmitha">
+        <amount>15000.0</amount>
+        <date>3924-03-04T00:00:00+05:30</date>
+        <remarks>Family</remarks>
+        <receiver>Sara</receiver>
+    </transaction>
+    <transaction by="Nishmitha">
+        <amount>7000.0</amount>
+        <date>3924-01-22T00:00:00+05:30</date>
+        <remarks>Emergency</remarks>
+        <receiver>Sara</receiver>
+    </transaction>
+</myBankTransactions>
