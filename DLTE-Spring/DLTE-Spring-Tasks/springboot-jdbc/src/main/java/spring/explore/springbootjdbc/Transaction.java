@@ -11,6 +11,18 @@ public class Transaction {
     private String remarks;
     private String transactionBy;
 
+    public Transaction() {
+    }
+
+    public Transaction(Long transactionId, Date transactionDate, Double transactionAmount, String transactionTo, String remarks, String transactionBy) {
+        this.transactionId = transactionId;
+        this.transactionDate = transactionDate;
+        this.transactionAmount = transactionAmount;
+        this.transactionTo = transactionTo;
+        this.remarks = remarks;
+        this.transactionBy = transactionBy;
+    }
+
     public Long getTransactionId() {
         return transactionId;
     }

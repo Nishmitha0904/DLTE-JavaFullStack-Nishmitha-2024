@@ -25,10 +25,11 @@ public class MyBankService {
                         transaction.getRemarks(),
                         transaction.getTransactionBy()
                 });
-        if (ack!=0)
-            return transaction;
-        else
-            throw new TransactionException(" Insertion failed");
+        return transaction;
+//        if (ack!=0)
+//            return transaction;
+//        else
+//            throw new TransactionException(" Insertion failed");
     }
 
     public List<Transaction> apiFindBySender(String sender) {
@@ -49,7 +50,7 @@ public class MyBankService {
                 new TransactionMapper());
     }
 
-    private class TransactionMapper implements RowMapper<Transaction> {
+    public class TransactionMapper implements RowMapper<Transaction> {
 
         @Override
         public Transaction mapRow(ResultSet rs, int rowNum) throws SQLException {
