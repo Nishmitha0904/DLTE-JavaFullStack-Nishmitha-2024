@@ -42,7 +42,7 @@ public class FindAllByUsername extends HttpServlet {
             resp.getWriter().println(responseData);
         } catch (UserException | MissingResourceException userException) {
             resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
-            resp.getWriter().println(resourceBundle.getString("user.not.found"));
+            //resp.getWriter().println(resourceBundle.getString("user.not.found"));
         }
     }
 }
