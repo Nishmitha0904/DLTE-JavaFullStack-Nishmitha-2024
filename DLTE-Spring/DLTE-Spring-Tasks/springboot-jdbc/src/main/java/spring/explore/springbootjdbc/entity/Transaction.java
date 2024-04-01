@@ -1,4 +1,4 @@
-package spring.explore.springbootjdbc;
+package spring.explore.springbootjdbc.entity;
 
 import java.util.Date;
 import java.util.stream.Stream;

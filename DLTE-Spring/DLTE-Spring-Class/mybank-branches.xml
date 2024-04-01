@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="" xsi:schemaLocation="http://www.springframework.org/schema/beans/spring-beans.xd" >
-    <bean id="branch1" class="di.ioc.Branch"/>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans/spring-beans.xd" >
     <bean id="branch2" class="di.ioc.Branch">
         <property name="branchId" value="11610"/>
     </bean>
@@ -13,13 +12,6 @@
         <property name="ifscCode" value="ABCD898493"/>
     </bean>
 
-    <bean id="branch4" class="di.ioc.Branch">
-        <constructor-arg name="bankName" value="MyBank"/>
-        <constructor-arg name="branchName" value="BTM Layout"/>
-        <constructor-arg name="branchContact" value="8756453457"/>
-        <constructor-arg name="ifscCode" value="ABCD564764"/>
-        <constructor-arg name="branchId" value="78464"/>
-    </bean>
 
     <bean id="branch4" class="di.ioc.Branch">
         <constructor-arg index="3" value="MyBank"/>
