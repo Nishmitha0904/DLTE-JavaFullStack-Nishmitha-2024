@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -48,6 +49,22 @@ public class MyBankService {
         return jdbcTemplate.query("select * from transaction where transaction_amount=?",
                 new Object[]{amount},
                 new TransactionMapper());
+    }
+
+    public Transaction apiUpdateTransaction(Transaction transaction){
+        int acknowledge=jdbcTemplate.update("update transactions_table set transaction_remarks=? where transaction_id=?",
+                new Object[]{transaction.getRemarks(),transaction.getTransactionId()}
+        );
+        if(acknowledge!=0) return transaction;
+        else  return null;
+    }
+
+    public String deleteTransaction(Date startDate, Date endDate){
+        int acknowledge= jdbcTemplate.update("delete from transactions_table where transaction_date between ? and ?",
+                new Object[]{startDate,endDate}
+        );
+        if(acknowledge!=0) return "Transaction deleted";
+        else return "Failed to delete transaction";
     }
 
     public class TransactionMapper implements RowMapper<Transaction> {

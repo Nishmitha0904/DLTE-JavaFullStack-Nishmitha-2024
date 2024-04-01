@@ -14,6 +14,15 @@ public class UsersMyBank implements UserDetails {
     private String email;
     private Long contact;
     private Long aadhaar;
+    private String role;
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
 
     public String getName() {
         return name;

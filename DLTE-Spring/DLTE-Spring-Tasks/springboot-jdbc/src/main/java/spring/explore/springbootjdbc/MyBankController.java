@@ -6,6 +6,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -41,5 +44,20 @@ public class MyBankController {
     @GetMapping("/view/{amount}")
     public List<Transaction> gettingAmount(@PathVariable("amount") Double amount) {
         return myBankService.apiFindByAmount(amount);
+    }
+
+    @PutMapping("/updateRemarks")
+    public Transaction updateTransaction(@RequestBody Transaction transaction){
+        Transaction transaction1=myBankService.apiUpdateTransaction(transaction);
+        return transaction1;
+    }
+
+    @DeleteMapping("/delete/{startDate}/{endDate}")
+    public String deleteTransaction(@PathVariable("startDate") String startDateString,@PathVariable("endDate") String endDateString) throws ParseException {
+        SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-mm-dd");
+        Date startDate=simpleDateFormat.parse(startDateString);
+        Date endDate=simpleDateFormat.parse(endDateString);
+        return myBankService.deleteTransaction(startDate,endDate);
+
     }
 }

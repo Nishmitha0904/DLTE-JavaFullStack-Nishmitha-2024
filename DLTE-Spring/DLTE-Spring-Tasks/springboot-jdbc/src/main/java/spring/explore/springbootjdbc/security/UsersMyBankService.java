@@ -17,10 +17,11 @@ public class    UsersMyBankService implements UserDetailsService {
 
 
     public UsersMyBank signingUp(UsersMyBank usersMyBank) {
-        int ack = jdbcTemplate.update("insert into users_mybank values(?,?,?,?,?,?)",new Object[]{
+        int ack = jdbcTemplate.update("insert into users_mybank values(?,?,?,?,?,?,?)",new Object[]{
                 usersMyBank.getName(), usersMyBank.getUsername(),
                 usersMyBank.getPassword(), usersMyBank.getEmail(),
                 usersMyBank.getContact(), usersMyBank.getAadhaar(),
+                usersMyBank.getRole()
         });
         return usersMyBank;
     }
