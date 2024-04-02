@@ -1,0 +1,3 @@
+soap\service\EmployeeSoap.class
+soap\service\SoapEndpoints.class
+soap\service\GroupOfEmployees.class
