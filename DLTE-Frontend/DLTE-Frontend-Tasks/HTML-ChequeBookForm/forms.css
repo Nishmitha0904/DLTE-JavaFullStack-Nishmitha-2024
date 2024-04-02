@@ -1,0 +1,66 @@
+.header {
+    display: flex;
+    background: linear-gradient(60deg, rgb(185, 52, 185), aliceblue);
+    color: whitesmoke;
+    letter-spacing: 1px;
+    text-shadow: 2px 3px 5px;
+}
+
+h2 {
+    text-align: center;
+    font-family: Georgia;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    color: purple;
+    text-shadow: 2px 3px 2px violet;
+    padding-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    align-items: center;
+    color: rgb(164, 101, 222);
+    font-family: Georgia;
+}
+
+.column {
+    border-color: antiquewhite;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.input {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+label {
+    padding: 5px;
+}
+
+input {
+    border-radius: 15px;
+    border-color: blueviolet;
+    padding: 5px;
+}
+
+.file {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn input {
+    width: 150px;
+}
+
+select {
+    background-color: rgb(215, 189, 239);
+    font-size: 15px;
+}

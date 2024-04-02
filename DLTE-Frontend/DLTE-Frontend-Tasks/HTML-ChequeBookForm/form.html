@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application for Cheque Book</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <div class="header">
+        <h1>MyBank</h1>
+    </div>
+    <hr />
+    <h2>CHEQUE BOOK APPLICATION</h2>
+    <div class="row">
+        <form name="application" action="#" class="column">
+            <div class="input">
+                <label>Account Holder: </label>
+                <input type="text" name="accountName" placeholder="Account Holder Name" />
+            </div>
+            <div class="input">
+                <label>Account Number: </label>
+                <input type="number" name="accountNumber" placeholder="Account Number" />
+            </div>
+            <div class="input">
+                <label>Account Type:</label>
+                <div>
+                    <input type="radio" name="accountType" value="savings" />Savings Account
+                    <input type="radio" name="accountType" value="current" />Current Account
+                </div>
+            </div>
+            <div class="input">
+                <label>Cheque Book Type</label>
+                <select name="chequeType">
+                    <option>Cheque Book Type</option>
+                    <option>Order Cheque</option>
+                    <option>Crossed Cheque</option>
+                    <option>Open Cheque</option>
+                </select>
+            </div>
+            <div class="input">
+                <label>Date of Application:</label>
+                <input type="date" name="applicationDate" placeholder="Date of Application" />
+            </div>
+            <div class="input">
+                <label>Address:</label>
+                <textarea name="address" placeholder="Address"></textarea>
+            </div>
+            <div class="input">
+                <label>Contact Number: </label>
+                <input type="tel" name="contact" placeholder="Account Holder's contact" />
+            </div>
+            <div class="input">
+                <label>Email: </label>
+                <input type="email" name="email" placeholder="Account Holder's email" />
+            </div>
+            <div class="input">
+                <label>Signature:</label>
+                <input type="file" name="applicantSignature" placeholder="Applicant's Signature" />
+            </div>
+            <div class="input">
+                <input type="checkbox" name="termsAndConditions" value="terms" \>I accept all the terms and conditions of MyBank
+            </div>
+            <div class="btn">
+                <input type="submit" value="Apply">
+                <input type="reset" value="Cancel">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
