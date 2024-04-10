@@ -12,7 +12,8 @@ import java.util.Optional;
 public interface DepositInterface {
 
     List<DepositsAvailable> listAllDeposits() throws SQLSyntaxErrorException;
-    List<DepositsAvailable> searchDepositsByRoi(double roi);
+    List<DepositsAvailable> searchDepositsByRoi(double roi) throws SQLSyntaxErrorException;
+//    String proceduralSearch(double roi);
     Optional<DepositsAvailable> searchDepositById(long id);
     DepositsAvailed availDeposit(DepositsAvailed depositsAvailed);
 }

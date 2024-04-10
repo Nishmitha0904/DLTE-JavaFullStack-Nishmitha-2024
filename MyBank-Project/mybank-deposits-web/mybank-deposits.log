@@ -1,411 +1,472 @@
-[31m2024-04-05 00:01:21,931[0;39m [32m[WARN][0;39m com.zaxxer.hikari.pool.HikariPool HikariPool-1 housekeeper [32mHikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h14m56s650ms560µs700ns).
-[0;39m[31m2024-04-05 00:07:13,234[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mStarting MybankDepositsWebApplication using Java 1.8.0_292 on WPF45CNXG with PID 30828 (C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web\target\classes started by xxshettn in C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web)
-[0;39m[31m2024-04-05 00:07:13,249[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mNo active profile set, falling back to 1 default profile: "default"
-[0;39m[31m2024-04-05 00:07:13,314[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.restart.ChangeableUrls restartedMain [32mThe Class-Path manifest attribute in C:\Users\xxshettn\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
-[0;39m[31m2024-04-05 00:07:13,314[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor restartedMain [32mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[0;39m[31m2024-04-05 00:07:13,314[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor restartedMain [32mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[0;39m[31m2024-04-05 00:07:14,072[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
-[0;39m[31m2024-04-05 00:07:14,094[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mFinished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
-[0;39m[31m2024-04-05 00:07:14,310[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'soapServiceConfiguration' of type [org.web.service.mybankdepositsweb.configs.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$9000b6d2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[0;39m[31m2024-04-05 00:07:14,310[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$72548c0f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[0;39m[31m2024-04-05 00:07:14,373[0;39m [32m[INFO][0;39m org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping restartedMain [32mSupporting [WS-Addressing August 2004, WS-Addressing 1.0]
-[0;39m[31m2024-04-05 00:07:14,753[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [32mTomcat initialized with port(s): 8082 (http)
-[0;39m[31m2024-04-05 00:07:14,753[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardService restartedMain [32mStarting service [Tomcat]
-[0;39m[31m2024-04-05 00:07:14,753[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardEngine restartedMain [32mStarting Servlet engine: [Apache Tomcat/9.0.73]
-[0;39m[31m2024-04-05 00:07:14,879[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] restartedMain [32mInitializing Spring embedded WebApplicationContext
-[0;39m[31m2024-04-05 00:07:14,879[0;39m [32m[INFO][0;39m org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext restartedMain [32mRoot WebApplicationContext: initialization completed in 1565 ms
-[0;39m[31m2024-04-05 00:07:15,609[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [32mHikariPool-1 - Starting...
-[0;39m[31m2024-04-05 00:07:15,609[0;39m [32m[WARN][0;39m com.zaxxer.hikari.util.DriverDataSource restartedMain [32mRegistered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-[0;39m[31m2024-04-05 00:07:15,732[0;39m [32m[INFO][0;39m com.zaxxer.hikari.pool.PoolBase restartedMain [32mHikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-[0;39m[31m2024-04-05 00:07:15,732[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [32mHikariPool-1 - Start completed.
-[0;39m[31m2024-04-05 00:07:15,858[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer restartedMain [32mLiveReload server is running on port 35729
-[0;39m[31m2024-04-05 00:07:15,936[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [32mTomcat started on port(s): 8082 (http) with context path ''
-[0;39m[31m2024-04-05 00:07:15,952[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mStarted MybankDepositsWebApplication in 3.223 seconds (JVM running for 4.276)
-[0;39m[31m2024-04-05 00:07:27,229[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] http-nio-8082-exec-2 [32mInitializing Spring MessageDispatcherServlet 'messageDispatcherServlet'
-[0;39m[31m2024-04-05 00:07:27,230[0;39m [32m[INFO][0;39m org.springframework.ws.transport.http.MessageDispatcherServlet http-nio-8082-exec-2 [32mInitializing Servlet 'messageDispatcherServlet'
-[0;39m[31m2024-04-05 00:07:27,233[0;39m [32m[INFO][0;39m org.springframework.ws.soap.saaj.SaajSoapMessageFactory http-nio-8082-exec-2 [32mCreating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
-[0;39m[31m2024-04-05 00:07:27,246[0;39m [32m[INFO][0;39m org.springframework.ws.transport.http.MessageDispatcherServlet http-nio-8082-exec-2 [32mCompleted initialization in 16 ms
-[0;39m[31m2024-04-05 00:08:07,686[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mStarting MybankDepositsWebApplication using Java 1.8.0_292 on WPF45CNXG with PID 31956 (C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web\target\classes started by xxshettn in C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web)
-[0;39m[31m2024-04-05 00:08:07,686[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mNo active profile set, falling back to 1 default profile: "default"
-[0;39m[31m2024-04-05 00:08:07,749[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.restart.ChangeableUrls restartedMain [32mThe Class-Path manifest attribute in C:\Users\xxshettn\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
-[0;39m[31m2024-04-05 00:08:07,749[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor restartedMain [32mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[0;39m[31m2024-04-05 00:08:07,749[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor restartedMain [32mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[0;39m[31m2024-04-05 00:08:08,427[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
-[0;39m[31m2024-04-05 00:08:08,442[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mFinished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
-[0;39m[31m2024-04-05 00:08:08,632[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'soapServiceConfiguration' of type [org.web.service.mybankdepositsweb.configs.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$e2eef0f3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[0;39m[31m2024-04-05 00:08:08,632[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$c542c630] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[0;39m[31m2024-04-05 00:08:08,680[0;39m [32m[INFO][0;39m org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping restartedMain [32mSupporting [WS-Addressing August 2004, WS-Addressing 1.0]
-[0;39m[31m2024-04-05 00:08:09,015[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [32mTomcat initialized with port(s): 8082 (http)
-[0;39m[31m2024-04-05 00:08:09,015[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardService restartedMain [32mStarting service [Tomcat]
-[0;39m[31m2024-04-05 00:08:09,015[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardEngine restartedMain [32mStarting Servlet engine: [Apache Tomcat/9.0.73]
-[0;39m[31m2024-04-05 00:08:09,170[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] restartedMain [32mInitializing Spring embedded WebApplicationContext
-[0;39m[31m2024-04-05 00:08:09,170[0;39m [32m[INFO][0;39m org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext restartedMain [32mRoot WebApplicationContext: initialization completed in 1421 ms
-[0;39m[31m2024-04-05 00:08:09,834[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [32mHikariPool-1 - Starting...
-[0;39m[31m2024-04-05 00:08:09,834[0;39m [32m[WARN][0;39m com.zaxxer.hikari.util.DriverDataSource restartedMain [32mRegistered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-[0;39m[31m2024-04-05 00:08:09,944[0;39m [32m[INFO][0;39m com.zaxxer.hikari.pool.PoolBase restartedMain [32mHikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-[0;39m[31m2024-04-05 00:08:09,944[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [32mHikariPool-1 - Start completed.
-[0;39m[31m2024-04-05 00:08:10,070[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer restartedMain [32mLiveReload server is running on port 35729
-[0;39m[31m2024-04-05 00:08:10,107[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [32mTomcat started on port(s): 8082 (http) with context path ''
-[0;39m[31m2024-04-05 00:08:10,119[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mStarted MybankDepositsWebApplication in 2.934 seconds (JVM running for 3.956)
-[0;39m[31m2024-04-05 00:08:17,357[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] http-nio-8082-exec-1 [32mInitializing Spring MessageDispatcherServlet 'messageDispatcherServlet'
-[0;39m[31m2024-04-05 00:08:17,357[0;39m [32m[INFO][0;39m org.springframework.ws.transport.http.MessageDispatcherServlet http-nio-8082-exec-1 [32mInitializing Servlet 'messageDispatcherServlet'
-[0;39m[31m2024-04-05 00:08:17,373[0;39m [32m[INFO][0;39m org.springframework.ws.soap.saaj.SaajSoapMessageFactory http-nio-8082-exec-1 [32mCreating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
-[0;39m[31m2024-04-05 00:08:17,373[0;39m [32m[INFO][0;39m org.springframework.ws.transport.http.MessageDispatcherServlet http-nio-8082-exec-1 [32mCompleted initialization in 0 ms
-[0;39m2024-04-05 08:41:22,493 [INFO] org.web.service.mybankdepositsweb.EndpointTesting main Starting EndpointTesting using Java 1.8.0_292 on WPF45CNXG with PID 316 (started by xxshettn in C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web)
-2024-04-05 08:41:22,493 [INFO] org.web.service.mybankdepositsweb.EndpointTesting main No active profile set, falling back to 1 default profile: "default"
-2024-04-05 08:41:23,534 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate main Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-04-05 08:41:23,564 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate main Finished Spring Data repository scanning in 14 ms. Found 0 JDBC repository interfaces.
-2024-04-05 08:41:24,715 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker main Bean 'soapServiceConfiguration' of type [org.web.service.mybankdepositsweb.configs.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$eae3b00f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-05 08:41:24,715 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker main Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$cd37854c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-05 08:41:24,841 [INFO] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping main Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-04-05 08:41:26,622 [INFO] com.zaxxer.hikari.HikariDataSource main HikariPool-1 - Starting...
-2024-04-05 08:41:26,638 [WARN] com.zaxxer.hikari.util.DriverDataSource main Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2024-04-05 08:41:27,221 [INFO] com.zaxxer.hikari.pool.PoolBase main HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-2024-04-05 08:41:27,221 [INFO] com.zaxxer.hikari.HikariDataSource main HikariPool-1 - Start completed.
-2024-04-05 08:41:27,665 [INFO] org.springframework.boot.test.mock.web.SpringBootMockServletContext main Initializing Spring TestDispatcherServlet ''
-2024-04-05 08:41:27,665 [INFO] org.springframework.test.web.servlet.TestDispatcherServlet main Initializing Servlet ''
-2024-04-05 08:41:27,680 [INFO] org.springframework.test.web.servlet.TestDispatcherServlet main Completed initialization in 15 ms
-2024-04-05 08:41:27,714 [INFO] org.web.service.mybankdepositsweb.EndpointTesting main Started EndpointTesting in 5.776 seconds (JVM running for 7.157)
-2024-04-05 08:41:28,410 [INFO] com.zaxxer.hikari.HikariDataSource SpringApplicationShutdownHook HikariPool-1 - Shutdown initiated...
-2024-04-05 08:41:28,430 [INFO] com.zaxxer.hikari.HikariDataSource SpringApplicationShutdownHook HikariPool-1 - Shutdown completed.
-2024-04-05 08:41:48,894 [INFO] org.web.service.mybankdepositsweb.EndpointTesting main Starting EndpointTesting using Java 1.8.0_292 on WPF45CNXG with PID 33316 (started by xxshettn in C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web)
-2024-04-05 08:41:48,894 [INFO] org.web.service.mybankdepositsweb.EndpointTesting main No active profile set, falling back to 1 default profile: "default"
-2024-04-05 08:41:49,698 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate main Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-04-05 08:41:49,728 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate main Finished Spring Data repository scanning in 13 ms. Found 0 JDBC repository interfaces.
-2024-04-05 08:41:50,582 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker main Bean 'soapServiceConfiguration' of type [org.web.service.mybankdepositsweb.configs.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$6b5685a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-05 08:41:50,582 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker main Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$e9093d97] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-05 08:41:50,656 [INFO] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping main Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-04-05 08:41:53,400 [INFO] com.zaxxer.hikari.HikariDataSource main HikariPool-1 - Starting...
-2024-04-05 08:41:53,400 [WARN] com.zaxxer.hikari.util.DriverDataSource main Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2024-04-05 08:41:54,016 [INFO] com.zaxxer.hikari.pool.PoolBase main HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-2024-04-05 08:41:54,016 [INFO] com.zaxxer.hikari.HikariDataSource main HikariPool-1 - Start completed.
-2024-04-05 08:41:54,396 [INFO] org.springframework.boot.test.mock.web.SpringBootMockServletContext main Initializing Spring TestDispatcherServlet ''
-2024-04-05 08:41:54,396 [INFO] org.springframework.test.web.servlet.TestDispatcherServlet main Initializing Servlet ''
-2024-04-05 08:41:54,396 [INFO] org.springframework.test.web.servlet.TestDispatcherServlet main Completed initialization in 0 ms
-2024-04-05 08:41:54,442 [INFO] org.web.service.mybankdepositsweb.EndpointTesting main Started EndpointTesting in 6.057 seconds (JVM running for 7.331)
-2024-04-05 08:41:55,340 [INFO] com.zaxxer.hikari.HikariDataSource SpringApplicationShutdownHook HikariPool-1 - Shutdown initiated...
-2024-04-05 08:41:55,369 [INFO] com.zaxxer.hikari.HikariDataSource SpringApplicationShutdownHook HikariPool-1 - Shutdown completed.
-[31m2024-04-05 08:49:43,223[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mStarting MybankDepositsWebApplication using Java 1.8.0_292 on WPF45CNXG with PID 31772 (C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web\target\classes started by xxshettn in C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web)
-[0;39m[31m2024-04-05 08:49:43,225[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mNo active profile set, falling back to 1 default profile: "default"
-[0;39m[31m2024-04-05 08:49:43,271[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.restart.ChangeableUrls restartedMain [32mThe Class-Path manifest attribute in C:\Users\xxshettn\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
-[0;39m[31m2024-04-05 08:49:43,286[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor restartedMain [32mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[0;39m[31m2024-04-05 08:49:43,286[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor restartedMain [32mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[0;39m[31m2024-04-05 08:49:43,902[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
-[0;39m[31m2024-04-05 08:49:43,918[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mFinished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
-[0;39m[31m2024-04-05 08:49:44,028[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'soapServiceConfiguration' of type [org.web.service.mybankdepositsweb.configs.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$a284f1a6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[0;39m[31m2024-04-05 08:49:44,028[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$84d8c6e3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[0;39m[31m2024-04-05 08:49:44,076[0;39m [32m[INFO][0;39m org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping restartedMain [32mSupporting [WS-Addressing August 2004, WS-Addressing 1.0]
-[0;39m[31m2024-04-05 08:49:44,312[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [32mTomcat initialized with port(s): 8082 (http)
-[0;39m[31m2024-04-05 08:49:44,312[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardService restartedMain [32mStarting service [Tomcat]
-[0;39m[31m2024-04-05 08:49:44,312[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardEngine restartedMain [32mStarting Servlet engine: [Apache Tomcat/9.0.73]
-[0;39m[31m2024-04-05 08:49:44,390[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] restartedMain [32mInitializing Spring embedded WebApplicationContext
-[0;39m[31m2024-04-05 08:49:44,390[0;39m [32m[INFO][0;39m org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext restartedMain [32mRoot WebApplicationContext: initialization completed in 1103 ms
-[0;39m[31m2024-04-05 08:49:44,737[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [32mHikariPool-1 - Starting...
-[0;39m[31m2024-04-05 08:49:44,737[0;39m [32m[WARN][0;39m com.zaxxer.hikari.util.DriverDataSource restartedMain [32mRegistered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-[0;39m[31m2024-04-05 08:49:44,801[0;39m [32m[INFO][0;39m com.zaxxer.hikari.pool.PoolBase restartedMain [32mHikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-[0;39m[31m2024-04-05 08:49:44,801[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [32mHikariPool-1 - Start completed.
-[0;39m[31m2024-04-05 08:49:44,863[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer restartedMain [32mLiveReload server is running on port 35729
-[0;39m[31m2024-04-05 08:49:44,895[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [32mTomcat started on port(s): 8082 (http) with context path ''
-[0;39m[31m2024-04-05 08:49:44,895[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mStarted MybankDepositsWebApplication in 2.031 seconds (JVM running for 2.731)
-[0;39m[31m2024-04-05 08:55:28,362[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] http-nio-8082-exec-1 [32mInitializing Spring MessageDispatcherServlet 'messageDispatcherServlet'
-[0;39m[31m2024-04-05 08:55:28,362[0;39m [32m[INFO][0;39m org.springframework.ws.transport.http.MessageDispatcherServlet http-nio-8082-exec-1 [32mInitializing Servlet 'messageDispatcherServlet'
-[0;39m[31m2024-04-05 08:55:28,368[0;39m [32m[INFO][0;39m org.springframework.ws.soap.saaj.SaajSoapMessageFactory http-nio-8082-exec-1 [32mCreating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
-[0;39m[31m2024-04-05 08:55:28,394[0;39m [32m[INFO][0;39m org.springframework.ws.transport.http.MessageDispatcherServlet http-nio-8082-exec-1 [32mCompleted initialization in 31 ms
-[0;39m[31m2024-04-05 08:56:10,458[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mStarting MybankDepositsWebApplication using Java 1.8.0_292 on WPF45CNXG with PID 11568 (C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web\target\classes started by xxshettn in C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web)
-[0;39m[31m2024-04-05 08:56:10,458[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mNo active profile set, falling back to 1 default profile: "default"
-[0;39m[31m2024-04-05 08:56:10,515[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.restart.ChangeableUrls restartedMain [32mThe Class-Path manifest attribute in C:\Users\xxshettn\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
-[0;39m[31m2024-04-05 08:56:10,515[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor restartedMain [32mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[0;39m[31m2024-04-05 08:56:10,517[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor restartedMain [32mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[0;39m[31m2024-04-05 08:56:11,106[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
-[0;39m[31m2024-04-05 08:56:11,122[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mFinished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
-[0;39m[31m2024-04-05 08:56:11,247[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'soapServiceConfiguration' of type [org.web.service.mybankdepositsweb.configs.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$cca5369d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[0;39m[31m2024-04-05 08:56:11,247[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$aef90bda] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[0;39m[31m2024-04-05 08:56:11,278[0;39m [32m[INFO][0;39m org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping restartedMain [32mSupporting [WS-Addressing August 2004, WS-Addressing 1.0]
-[0;39m[31m2024-04-05 08:56:11,469[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [32mTomcat initialized with port(s): 8082 (http)
-[0;39m[31m2024-04-05 08:56:11,469[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardService restartedMain [32mStarting service [Tomcat]
-[0;39m[31m2024-04-05 08:56:11,469[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardEngine restartedMain [32mStarting Servlet engine: [Apache Tomcat/9.0.73]
-[0;39m[31m2024-04-05 08:56:11,547[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] restartedMain [32mInitializing Spring embedded WebApplicationContext
-[0;39m[31m2024-04-05 08:56:11,547[0;39m [32m[INFO][0;39m org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext restartedMain [32mRoot WebApplicationContext: initialization completed in 1030 ms
-[0;39m[31m2024-04-05 08:56:11,893[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [32mHikariPool-1 - Starting...
-[0;39m[31m2024-04-05 08:56:11,893[0;39m [32m[WARN][0;39m com.zaxxer.hikari.util.DriverDataSource restartedMain [32mRegistered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-[0;39m[31m2024-04-05 08:56:11,956[0;39m [32m[INFO][0;39m com.zaxxer.hikari.pool.PoolBase restartedMain [32mHikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-[0;39m[31m2024-04-05 08:56:11,956[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [32mHikariPool-1 - Start completed.
-[0;39m[31m2024-04-05 08:56:12,046[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer restartedMain [32mLiveReload server is running on port 35729
-[0;39m[31m2024-04-05 08:56:12,067[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [32mTomcat started on port(s): 8082 (http) with context path ''
-[0;39m[31m2024-04-05 08:56:12,082[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mStarted MybankDepositsWebApplication in 1.969 seconds (JVM running for 2.645)
-[0;39m[31m2024-04-05 08:56:27,839[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] http-nio-8082-exec-2 [32mInitializing Spring MessageDispatcherServlet 'messageDispatcherServlet'
-[0;39m[31m2024-04-05 08:56:27,840[0;39m [32m[INFO][0;39m org.springframework.ws.transport.http.MessageDispatcherServlet http-nio-8082-exec-2 [32mInitializing Servlet 'messageDispatcherServlet'
-[0;39m[31m2024-04-05 08:56:27,842[0;39m [32m[INFO][0;39m org.springframework.ws.soap.saaj.SaajSoapMessageFactory http-nio-8082-exec-2 [32mCreating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
-[0;39m[31m2024-04-05 08:56:27,851[0;39m [32m[INFO][0;39m org.springframework.ws.transport.http.MessageDispatcherServlet http-nio-8082-exec-2 [32mCompleted initialization in 11 ms
-[0;39m[31m2024-04-05 10:47:58,783[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mStarting MybankDepositsWebApplication using Java 1.8.0_292 on WPF45CNXG with PID 34912 (C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web\target\classes started by xxshettn in C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web)
-[0;39m[31m2024-04-05 10:47:58,786[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mNo active profile set, falling back to 1 default profile: "default"
-[0;39m[31m2024-04-05 10:47:58,897[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.restart.ChangeableUrls restartedMain [32mThe Class-Path manifest attribute in C:\Users\xxshettn\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
-[0;39m[31m2024-04-05 10:47:58,899[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor restartedMain [32mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[0;39m[31m2024-04-05 10:47:58,900[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor restartedMain [32mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[0;39m[31m2024-04-05 10:48:00,703[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
-[0;39m[31m2024-04-05 10:48:00,734[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mFinished Spring Data repository scanning in 13 ms. Found 0 JDBC repository interfaces.
-[0;39m[31m2024-04-05 10:48:01,127[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'soapServiceConfiguration' of type [org.web.service.mybankdepositsweb.configs.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$698a4d24] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[0;39m[31m2024-04-05 10:48:01,129[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$4bde2261] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[0;39m[31m2024-04-05 10:48:01,231[0;39m [32m[INFO][0;39m org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping restartedMain [32mSupporting [WS-Addressing August 2004, WS-Addressing 1.0]
-[0;39m[31m2024-04-05 10:48:01,777[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [32mTomcat initialized with port(s): 8082 (http)
-[0;39m[31m2024-04-05 10:48:01,789[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardService restartedMain [32mStarting service [Tomcat]
-[0;39m[31m2024-04-05 10:48:01,789[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardEngine restartedMain [32mStarting Servlet engine: [Apache Tomcat/9.0.73]
-[0;39m[31m2024-04-05 10:48:01,926[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] restartedMain [32mInitializing Spring embedded WebApplicationContext
-[0;39m[31m2024-04-05 10:48:01,926[0;39m [32m[INFO][0;39m org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext restartedMain [32mRoot WebApplicationContext: initialization completed in 3025 ms
-[0;39m[31m2024-04-05 10:48:01,996[0;39m [32m[WARN][0;39m org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext restartedMain [32mException encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'depositSoap': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'mybank.dao.mybankdeposits.service.DepositService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-[0;39m[31m2024-04-05 10:48:02,001[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardService restartedMain [32mStopping service [Tomcat]
-[0;39m[31m2024-04-05 10:48:02,055[0;39m [32m[INFO][0;39m org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener restartedMain [32m
+[31m2024-04-10 17:59:45,947[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mStarting MybankDepositsWebApplication using Java 1.8.0_292 on WPF45CNXG with PID 37472 (C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web\target\classes started by xxshettn in C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web)
+[0;39m[31m2024-04-10 17:59:45,963[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mNo active profile set, falling back to 1 default profile: "default"
+[0;39m[31m2024-04-10 17:59:46,010[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.restart.ChangeableUrls restartedMain [32mThe Class-Path manifest attribute in C:\Users\xxshettn\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
+[0;39m[31m2024-04-10 17:59:46,010[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor restartedMain [32mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[0;39m[31m2024-04-10 17:59:46,010[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor restartedMain [32mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[0;39m[31m2024-04-10 17:59:46,833[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[0;39m[31m2024-04-10 17:59:46,852[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mFinished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
+[0;39m[31m2024-04-10 17:59:47,040[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'soapServiceConfiguration' of type [org.web.service.mybankdepositsweb.configs.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$5184c519] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[0;39m[31m2024-04-10 17:59:47,040[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$33d89a56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[0;39m[31m2024-04-10 17:59:47,168[0;39m [32m[INFO][0;39m org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping restartedMain [32mSupporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[0;39m[31m2024-04-10 17:59:47,534[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [32mTomcat initialized with port(s): 8082 (http)
+[0;39m[31m2024-04-10 17:59:47,547[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardService restartedMain [32mStarting service [Tomcat]
+[0;39m[31m2024-04-10 17:59:47,547[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardEngine restartedMain [32mStarting Servlet engine: [Apache Tomcat/9.0.73]
+[0;39m[31m2024-04-10 17:59:47,659[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] restartedMain [32mInitializing Spring embedded WebApplicationContext
+[0;39m[31m2024-04-10 17:59:47,659[0;39m [32m[INFO][0;39m org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext restartedMain [32mRoot WebApplicationContext: initialization completed in 1649 ms
+[0;39m[31m2024-04-10 17:59:48,386[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [32mHikariPool-1 - Starting...
+[0;39m[31m2024-04-10 17:59:48,386[0;39m [32m[WARN][0;39m com.zaxxer.hikari.util.DriverDataSource restartedMain [32mRegistered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[0;39m[31m2024-04-10 17:59:48,481[0;39m [32m[INFO][0;39m com.zaxxer.hikari.pool.PoolBase restartedMain [32mHikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+[0;39m[31m2024-04-10 17:59:48,497[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [32mHikariPool-1 - Start completed.
+[0;39m[31m2024-04-10 17:59:48,624[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer restartedMain [32mLiveReload server is running on port 35729
+[0;39m[31m2024-04-10 17:59:48,702[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [32mTomcat started on port(s): 8082 (http) with context path ''
+[0;39m[31m2024-04-10 17:59:48,727[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mStarted MybankDepositsWebApplication in 3.391 seconds (JVM running for 4.555)
+[0;39m[31m2024-04-10 17:59:59,972[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] http-nio-8082-exec-1 [32mInitializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m[31m2024-04-10 17:59:59,972[0;39m [32m[INFO][0;39m org.springframework.web.servlet.DispatcherServlet http-nio-8082-exec-1 [32mInitializing Servlet 'dispatcherServlet'
+[0;39m[31m2024-04-10 17:59:59,976[0;39m [32m[INFO][0;39m org.springframework.web.servlet.DispatcherServlet http-nio-8082-exec-1 [32mCompleted initialization in 4 ms
+[0;39m[31m2024-04-10 18:00:00,684[0;39m [32m[ERROR][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] http-nio-8082-exec-1 [32mServlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: CallableStatementCallback; bad SQL grammar []; nested exception is java.sql.SQLException: ORA-06550: line 1, column 7:
+PLS-00201: identifier 'READ_DEPOSIT_BY_ROI' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+] with root cause
+[0;39mjava.sql.SQLException: ORA-06550: line 1, column 7:
+PLS-00201: identifier 'READ_DEPOSIT_BY_ROI' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
 
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-[0;39m[31m2024-04-05 10:48:02,109[0;39m [32m[ERROR][0;39m org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter restartedMain [32m
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field service in org.web.service.mybankdepositsweb.configs.DepositSoap required a bean of type 'mybank.dao.mybankdeposits.service.DepositService' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'mybank.dao.mybankdeposits.service.DepositService' in your configuration.
-
-[0;39m[31m2024-04-05 10:52:36,363[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mStarting MybankDepositsWebApplication using Java 1.8.0_292 on WPF45CNXG with PID 2808 (C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web\target\classes started by xxshettn in C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web)
-[0;39m[31m2024-04-05 10:52:36,366[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mNo active profile set, falling back to 1 default profile: "default"
-[0;39m[31m2024-04-05 10:52:36,447[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.restart.ChangeableUrls restartedMain [32mThe Class-Path manifest attribute in C:\Users\xxshettn\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
-[0;39m[31m2024-04-05 10:52:36,447[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor restartedMain [32mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[0;39m[31m2024-04-05 10:52:36,449[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor restartedMain [32mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[0;39m[31m2024-04-05 10:52:37,676[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
-[0;39m[31m2024-04-05 10:52:37,698[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mFinished Spring Data repository scanning in 15 ms. Found 0 JDBC repository interfaces.
-[0;39m[31m2024-04-05 10:52:37,981[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'soapServiceConfiguration' of type [org.web.service.mybankdepositsweb.configs.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$eb05445b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[0;39m[31m2024-04-05 10:52:37,982[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$cd591998] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[0;39m[31m2024-04-05 10:52:38,070[0;39m [32m[INFO][0;39m org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping restartedMain [32mSupporting [WS-Addressing August 2004, WS-Addressing 1.0]
-[0;39m[31m2024-04-05 10:52:38,780[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [32mTomcat initialized with port(s): 8082 (http)
-[0;39m[31m2024-04-05 10:52:38,805[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardService restartedMain [32mStarting service [Tomcat]
-[0;39m[31m2024-04-05 10:52:38,807[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardEngine restartedMain [32mStarting Servlet engine: [Apache Tomcat/9.0.73]
-[0;39m[31m2024-04-05 10:52:39,037[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] restartedMain [32mInitializing Spring embedded WebApplicationContext
-[0;39m[31m2024-04-05 10:52:39,038[0;39m [32m[INFO][0;39m org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext restartedMain [32mRoot WebApplicationContext: initialization completed in 2588 ms
-[0;39m[31m2024-04-05 10:52:40,406[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [32mHikariPool-1 - Starting...
-[0;39m[31m2024-04-05 10:52:40,411[0;39m [32m[WARN][0;39m com.zaxxer.hikari.util.DriverDataSource restartedMain [32mRegistered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-[0;39m[31m2024-04-05 10:52:40,633[0;39m [32m[INFO][0;39m com.zaxxer.hikari.pool.PoolBase restartedMain [32mHikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-[0;39m[31m2024-04-05 10:52:40,642[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [32mHikariPool-1 - Start completed.
-[0;39m[31m2024-04-05 10:52:40,945[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer restartedMain [32mLiveReload server is running on port 35729
-[0;39m[31m2024-04-05 10:52:41,057[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [32mTomcat started on port(s): 8082 (http) with context path ''
-[0;39m[31m2024-04-05 10:52:41,098[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mStarted MybankDepositsWebApplication in 5.749 seconds (JVM running for 9.009)
-[0;39m[31m2024-04-05 10:53:03,643[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] http-nio-8082-exec-1 [32mInitializing Spring MessageDispatcherServlet 'messageDispatcherServlet'
-[0;39m[31m2024-04-05 10:53:03,645[0;39m [32m[INFO][0;39m org.springframework.ws.transport.http.MessageDispatcherServlet http-nio-8082-exec-1 [32mInitializing Servlet 'messageDispatcherServlet'
-[0;39m[31m2024-04-05 10:53:03,653[0;39m [32m[INFO][0;39m org.springframework.ws.soap.saaj.SaajSoapMessageFactory http-nio-8082-exec-1 [32mCreating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
-[0;39m[31m2024-04-05 10:53:03,669[0;39m [32m[INFO][0;39m org.springframework.ws.transport.http.MessageDispatcherServlet http-nio-8082-exec-1 [32mCompleted initialization in 24 ms
-[0;39m[31m2024-04-05 10:53:47,402[0;39m [32m[WARN][0;39m com.zaxxer.hikari.pool.HikariPool HikariPool-1 housekeeper [32mHikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m6s653ms699µs600ns).
-[0;39m[31m2024-04-05 11:26:25,316[0;39m [32m[WARN][0;39m com.zaxxer.hikari.pool.HikariPool HikariPool-1 housekeeper [32mHikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=32m37s925ms177µs400ns).
-[0;39m[31m2024-04-05 11:26:25,351[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.configs.DepositSoap http-nio-8082-exec-1 [32mFetched all deposits available in MyBank
-[0;39m[31m2024-04-05 11:26:25,351[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.configs.DepositSoap http-nio-8082-exec-1 [32m200
-[0;39m[31m2024-04-05 11:26:25,602[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource SpringApplicationShutdownHook [32mHikariPool-1 - Shutdown initiated...
-[0;39m[31m2024-04-05 11:26:25,615[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource SpringApplicationShutdownHook [32mHikariPool-1 - Shutdown completed.
-[0;39m[31m2024-04-05 13:00:27,764[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mStarting MybankDepositsWebApplication using Java 1.8.0_292 on WPF45CNXG with PID 34528 (C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web\target\classes started by xxshettn in C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web)
-[0;39m[31m2024-04-05 13:00:27,780[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mNo active profile set, falling back to 1 default profile: "default"
-[0;39m[31m2024-04-05 13:00:27,811[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.restart.ChangeableUrls restartedMain [32mThe Class-Path manifest attribute in C:\Users\xxshettn\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
-[0;39m[31m2024-04-05 13:00:27,811[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor restartedMain [32mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[0;39m[31m2024-04-05 13:00:27,811[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor restartedMain [32mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[0;39m[31m2024-04-05 13:00:28,362[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
-[0;39m[31m2024-04-05 13:00:28,378[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mFinished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
-[0;39m[31m2024-04-05 13:00:28,520[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'soapServiceConfiguration' of type [org.web.service.mybankdepositsweb.configs.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$b424bee1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[0;39m[31m2024-04-05 13:00:28,520[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$9678941e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[0;39m[31m2024-04-05 13:00:28,583[0;39m [32m[INFO][0;39m org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping restartedMain [32mSupporting [WS-Addressing August 2004, WS-Addressing 1.0]
-[0;39m[31m2024-04-05 13:00:28,851[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [32mTomcat initialized with port(s): 8082 (http)
-[0;39m[31m2024-04-05 13:00:28,866[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardService restartedMain [32mStarting service [Tomcat]
-[0;39m[31m2024-04-05 13:00:28,866[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardEngine restartedMain [32mStarting Servlet engine: [Apache Tomcat/9.0.73]
-[0;39m[31m2024-04-05 13:00:28,976[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] restartedMain [32mInitializing Spring embedded WebApplicationContext
-[0;39m[31m2024-04-05 13:00:28,976[0;39m [32m[INFO][0;39m org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext restartedMain [32mRoot WebApplicationContext: initialization completed in 1165 ms
-[0;39m[31m2024-04-05 13:00:29,386[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [32mHikariPool-1 - Starting...
-[0;39m[31m2024-04-05 13:00:29,401[0;39m [32m[WARN][0;39m com.zaxxer.hikari.util.DriverDataSource restartedMain [32mRegistered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-[0;39m[31m2024-04-05 13:00:29,480[0;39m [32m[INFO][0;39m com.zaxxer.hikari.pool.PoolBase restartedMain [32mHikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-[0;39m[31m2024-04-05 13:00:29,480[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [32mHikariPool-1 - Start completed.
-[0;39m[31m2024-04-05 13:00:29,559[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer restartedMain [32mLiveReload server is running on port 35729
-[0;39m[31m2024-04-05 13:00:29,574[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [32mTomcat started on port(s): 8082 (http) with context path ''
-[0;39m[31m2024-04-05 13:00:29,590[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mStarted MybankDepositsWebApplication in 2.341 seconds (JVM running for 3.166)
-[0;39m[31m2024-04-05 13:00:38,974[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] http-nio-8082-exec-1 [32mInitializing Spring MessageDispatcherServlet 'messageDispatcherServlet'
-[0;39m[31m2024-04-05 13:00:38,974[0;39m [32m[INFO][0;39m org.springframework.ws.transport.http.MessageDispatcherServlet http-nio-8082-exec-1 [32mInitializing Servlet 'messageDispatcherServlet'
-[0;39m[31m2024-04-05 13:00:38,979[0;39m [32m[INFO][0;39m org.springframework.ws.soap.saaj.SaajSoapMessageFactory http-nio-8082-exec-1 [32mCreating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
-[0;39m[31m2024-04-05 13:00:38,991[0;39m [32m[INFO][0;39m org.springframework.ws.transport.http.MessageDispatcherServlet http-nio-8082-exec-1 [32mCompleted initialization in 17 ms
-[0;39m[31m2024-04-05 13:00:39,152[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.configs.DepositSoap http-nio-8082-exec-1 [32mFetched all deposits available in MyBank
-[0;39m[31m2024-04-05 13:00:39,152[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.configs.DepositSoap http-nio-8082-exec-1 [32m200
-[0;39m[31m2024-04-05 13:00:53,435[0;39m [32m[WARN][0;39m org.springframework.ws.server.EndpointNotFound http-nio-8082-exec-2 [32mNo endpoint mapping found for [SaajSoapMessage {http://deposits.services}listAllDepositsReque]
-[0;39m[31m2024-04-05 13:00:58,605[0;39m [32m[WARN][0;39m org.springframework.ws.server.EndpointNotFound http-nio-8082-exec-10 [32mNo endpoint mapping found for [SaajSoapMessage {http://deposits.services}listAllDepositsReque]
-[0;39m[31m2024-04-05 13:01:05,264[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.configs.DepositSoap http-nio-8082-exec-4 [32mFetched all deposits available in MyBank
-[0;39m[31m2024-04-05 13:01:05,265[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.configs.DepositSoap http-nio-8082-exec-4 [32m200
-[0;39m[31m2024-04-05 13:01:17,321[0;39m [32m[WARN][0;39m org.springframework.ws.server.EndpointNotFound http-nio-8082-exec-6 [32mNo endpoint mapping found for [SaajSoapMessage {http://deposits.servic}listAllDepositsRequest]
-[0;39m[31m2024-04-05 13:01:29,876[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.configs.DepositSoap http-nio-8082-exec-5 [32mFetched all deposits available in MyBank
-[0;39m[31m2024-04-05 13:01:29,876[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.configs.DepositSoap http-nio-8082-exec-5 [32m200
-[0;39m[31m2024-04-05 14:01:02,066[0;39m [32m[WARN][0;39m com.zaxxer.hikari.pool.HikariPool HikariPool-1 housekeeper [32mHikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59m2s443ms804µs).
-[0;39m[31m2024-04-05 14:40:05,747[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mStarting MybankDepositsWebApplication using Java 1.8.0_292 on WPF45CNXG with PID 12084 (C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web\target\classes started by xxshettn in C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web)
-[0;39m[31m2024-04-05 14:40:05,756[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mNo active profile set, falling back to 1 default profile: "default"
-[0;39m[31m2024-04-05 14:40:05,847[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.restart.ChangeableUrls restartedMain [32mThe Class-Path manifest attribute in C:\Users\xxshettn\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
-[0;39m[31m2024-04-05 14:40:05,847[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor restartedMain [32mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[0;39m[31m2024-04-05 14:40:05,847[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor restartedMain [32mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[0;39m[31m2024-04-05 14:40:06,963[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
-[0;39m[31m2024-04-05 14:40:06,979[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mFinished Spring Data repository scanning in 11 ms. Found 0 JDBC repository interfaces.
-[0;39m[31m2024-04-05 14:40:07,249[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'soapServiceConfiguration' of type [org.web.service.mybankdepositsweb.configs.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$869f407f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[0;39m[31m2024-04-05 14:40:07,249[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$68f315bc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[0;39m[31m2024-04-05 14:40:07,348[0;39m [32m[INFO][0;39m org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping restartedMain [32mSupporting [WS-Addressing August 2004, WS-Addressing 1.0]
-[0;39m[31m2024-04-05 14:40:07,706[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [32mTomcat initialized with port(s): 8082 (http)
-[0;39m[31m2024-04-05 14:40:07,722[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardService restartedMain [32mStarting service [Tomcat]
-[0;39m[31m2024-04-05 14:40:07,722[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardEngine restartedMain [32mStarting Servlet engine: [Apache Tomcat/9.0.73]
-[0;39m[31m2024-04-05 14:40:07,864[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] restartedMain [32mInitializing Spring embedded WebApplicationContext
-[0;39m[31m2024-04-05 14:40:07,864[0;39m [32m[INFO][0;39m org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext restartedMain [32mRoot WebApplicationContext: initialization completed in 2017 ms
-[0;39m[31m2024-04-05 14:40:08,322[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [32mHikariPool-1 - Starting...
-[0;39m[31m2024-04-05 14:40:08,322[0;39m [32m[WARN][0;39m com.zaxxer.hikari.util.DriverDataSource restartedMain [32mRegistered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-[0;39m[31m2024-04-05 14:40:08,417[0;39m [32m[INFO][0;39m com.zaxxer.hikari.pool.PoolBase restartedMain [32mHikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-[0;39m[31m2024-04-05 14:40:08,417[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [32mHikariPool-1 - Start completed.
-[0;39m[31m2024-04-05 14:40:08,513[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer restartedMain [32mLiveReload server is running on port 35729
-[0;39m[31m2024-04-05 14:40:08,532[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [32mTomcat started on port(s): 8082 (http) with context path ''
-[0;39m[31m2024-04-05 14:40:08,550[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mStarted MybankDepositsWebApplication in 3.462 seconds (JVM running for 5.053)
-[0;39m[31m2024-04-05 14:40:30,059[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] http-nio-8082-exec-1 [32mInitializing Spring MessageDispatcherServlet 'messageDispatcherServlet'
-[0;39m[31m2024-04-05 14:40:30,059[0;39m [32m[INFO][0;39m org.springframework.ws.transport.http.MessageDispatcherServlet http-nio-8082-exec-1 [32mInitializing Servlet 'messageDispatcherServlet'
-[0;39m[31m2024-04-05 14:40:30,063[0;39m [32m[INFO][0;39m org.springframework.ws.soap.saaj.SaajSoapMessageFactory http-nio-8082-exec-1 [32mCreating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
-[0;39m[31m2024-04-05 14:40:30,077[0;39m [32m[INFO][0;39m org.springframework.ws.transport.http.MessageDispatcherServlet http-nio-8082-exec-1 [32mCompleted initialization in 17 ms
-[0;39m[31m2024-04-05 14:40:36,512[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.configs.DepositSoap http-nio-8082-exec-3 [32mFetched all deposits available in MyBank
-[0;39m[31m2024-04-05 14:40:36,513[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.configs.DepositSoap http-nio-8082-exec-3 [32m200
-[0;39m[31m2024-04-05 14:40:39,892[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.configs.DepositSoap http-nio-8082-exec-2 [32mFetched all deposits available in MyBank
-[0;39m[31m2024-04-05 14:40:39,893[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.configs.DepositSoap http-nio-8082-exec-2 [32m200
-[0;39m[31m2024-04-05 14:41:00,068[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.configs.DepositSoap http-nio-8082-exec-5 [32mFetched all deposits available in MyBank
-[0;39m[31m2024-04-05 14:41:00,069[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.configs.DepositSoap http-nio-8082-exec-5 [32m200
-[0;39m[31m2024-04-05 14:41:02,443[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.configs.DepositSoap http-nio-8082-exec-4 [32mFetched all deposits available in MyBank
-[0;39m[31m2024-04-05 14:41:02,443[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.configs.DepositSoap http-nio-8082-exec-4 [32m200
-[0;39m[31m2024-04-05 14:41:07,738[0;39m [32m[WARN][0;39m org.springframework.ws.server.EndpointNotFound http-nio-8082-exec-6 [32mNo endpoint mapping found for [SaajSoapMessage {http://deposits.services}listAllDepositsReque]
-[0;39m[31m2024-04-05 14:41:13,035[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.configs.DepositSoap http-nio-8082-exec-9 [32mFetched all deposits available in MyBank
-[0;39m[31m2024-04-05 14:41:13,036[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.configs.DepositSoap http-nio-8082-exec-9 [32m200
-[0;39m[31m2024-04-05 14:56:20,363[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener File Watcher [32mRestarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-[0;39m[31m2024-04-05 14:56:20,458[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardService Thread-15 [32mStopping service [Tomcat]
-[0;39m[31m2024-04-05 14:56:20,458[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Thread-15 [32mDestroying Spring FrameworkServlet 'messageDispatcherServlet'
-[0;39m[31m2024-04-05 14:56:20,475[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource Thread-15 [32mHikariPool-1 - Shutdown initiated...
-[0;39m[31m2024-04-05 14:56:20,479[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource Thread-15 [32mHikariPool-1 - Shutdown completed.
-[0;39m[31m2024-04-05 14:56:20,648[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mStarting MybankDepositsWebApplication using Java 1.8.0_292 on WPF45CNXG with PID 12084 (C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web\target\classes started by xxshettn in C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web)
-[0;39m[31m2024-04-05 14:56:20,648[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mNo active profile set, falling back to 1 default profile: "default"
-[0;39m[31m2024-04-05 14:56:20,979[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
-[0;39m[31m2024-04-05 14:56:20,979[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mFinished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
-[0;39m[31m2024-04-05 14:56:21,032[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'soapServiceConfiguration' of type [org.web.service.mybankdepositsweb.configs.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$869f407f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[0;39m[31m2024-04-05 14:56:21,032[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$68f315bc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[0;39m[31m2024-04-05 14:56:21,033[0;39m [32m[INFO][0;39m org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping restartedMain [32mSupporting [WS-Addressing August 2004, WS-Addressing 1.0]
-[0;39m[31m2024-04-05 14:56:21,110[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [32mTomcat initialized with port(s): 8082 (http)
-[0;39m[31m2024-04-05 14:56:21,110[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardService restartedMain [32mStarting service [Tomcat]
-[0;39m[31m2024-04-05 14:56:21,110[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardEngine restartedMain [32mStarting Servlet engine: [Apache Tomcat/9.0.73]
-[0;39m[31m2024-04-05 14:56:21,153[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] restartedMain [32mInitializing Spring embedded WebApplicationContext
-[0;39m[31m2024-04-05 14:56:21,153[0;39m [32m[INFO][0;39m org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext restartedMain [32mRoot WebApplicationContext: initialization completed in 505 ms
-[0;39m[31m2024-04-05 14:56:21,359[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [32mHikariPool-2 - Starting...
-[0;39m[31m2024-04-05 14:56:21,359[0;39m [32m[WARN][0;39m com.zaxxer.hikari.util.DriverDataSource restartedMain [32mRegistered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-[0;39m[31m2024-04-05 14:56:21,379[0;39m [32m[INFO][0;39m com.zaxxer.hikari.pool.PoolBase restartedMain [32mHikariPool-2 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-[0;39m[31m2024-04-05 14:56:21,379[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [32mHikariPool-2 - Start completed.
-[0;39m[31m2024-04-05 14:56:21,390[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer restartedMain [32mLiveReload server is running on port 35729
-[0;39m[31m2024-04-05 14:56:21,411[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [32mTomcat started on port(s): 8082 (http) with context path ''
-[0;39m[31m2024-04-05 14:56:21,421[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mStarted MybankDepositsWebApplication in 0.805 seconds (JVM running for 977.929)
-[0;39m[31m2024-04-05 14:56:21,421[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener restartedMain [32mCondition evaluation unchanged
-[0;39m2024-04-05 14:56:22,227 [INFO] org.web.service.mybankdepositsweb.EndpointTesting main Starting EndpointTesting using Java 1.8.0_292 on WPF45CNXG with PID 19376 (started by xxshettn in C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web)
-2024-04-05 14:56:22,227 [INFO] org.web.service.mybankdepositsweb.EndpointTesting main No active profile set, falling back to 1 default profile: "default"
-2024-04-05 14:56:23,063 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate main Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-04-05 14:56:23,079 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate main Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
-2024-04-05 14:56:23,786 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker main Bean 'soapServiceConfiguration' of type [org.web.service.mybankdepositsweb.configs.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$8779f025] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-05 14:56:23,792 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker main Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$69cdc562] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-05 14:56:23,871 [INFO] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping main Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-04-05 14:56:25,006 [INFO] com.zaxxer.hikari.HikariDataSource main HikariPool-1 - Starting...
-2024-04-05 14:56:25,006 [WARN] com.zaxxer.hikari.util.DriverDataSource main Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2024-04-05 14:56:25,315 [INFO] com.zaxxer.hikari.pool.PoolBase main HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-2024-04-05 14:56:25,315 [INFO] com.zaxxer.hikari.HikariDataSource main HikariPool-1 - Start completed.
-2024-04-05 14:56:25,526 [INFO] org.springframework.boot.test.mock.web.SpringBootMockServletContext main Initializing Spring TestDispatcherServlet ''
-2024-04-05 14:56:25,526 [INFO] org.springframework.test.web.servlet.TestDispatcherServlet main Initializing Servlet ''
-2024-04-05 14:56:25,526 [INFO] org.springframework.test.web.servlet.TestDispatcherServlet main Completed initialization in 0 ms
-2024-04-05 14:56:25,557 [INFO] org.web.service.mybankdepositsweb.EndpointTesting main Started EndpointTesting in 3.863 seconds (JVM running for 5.706)
-2024-04-05 14:56:25,880 [INFO] org.web.service.mybankdepositsweb.configs.DepositSoap main Fetched all deposits available in MyBank
-2024-04-05 14:56:25,880 [INFO] org.web.service.mybankdepositsweb.configs.DepositSoap main 200
-2024-04-05 14:56:25,920 [INFO] com.zaxxer.hikari.HikariDataSource SpringApplicationShutdownHook HikariPool-1 - Shutdown initiated...
-2024-04-05 14:56:25,941 [INFO] com.zaxxer.hikari.HikariDataSource SpringApplicationShutdownHook HikariPool-1 - Shutdown completed.
-2024-04-05 14:59:51,294 [INFO] org.web.service.mybankdepositsweb.EndpointTesting main Starting EndpointTesting using Java 1.8.0_292 on WPF45CNXG with PID 29456 (started by xxshettn in C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web)
-2024-04-05 14:59:51,294 [INFO] org.web.service.mybankdepositsweb.EndpointTesting main No active profile set, falling back to 1 default profile: "default"
-2024-04-05 14:59:51,821 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate main Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-04-05 14:59:51,832 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate main Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
-2024-04-05 14:59:52,305 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker main Bean 'soapServiceConfiguration' of type [org.web.service.mybankdepositsweb.configs.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$3bf199ef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-05 14:59:52,305 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker main Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$1e456f2c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-05 14:59:52,378 [INFO] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping main Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-04-05 14:59:53,332 [INFO] com.zaxxer.hikari.HikariDataSource main HikariPool-1 - Starting...
-2024-04-05 14:59:53,332 [WARN] com.zaxxer.hikari.util.DriverDataSource main Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2024-04-05 14:59:53,663 [INFO] com.zaxxer.hikari.pool.PoolBase main HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-2024-04-05 14:59:53,663 [INFO] com.zaxxer.hikari.HikariDataSource main HikariPool-1 - Start completed.
-2024-04-05 14:59:53,883 [INFO] org.springframework.boot.test.mock.web.SpringBootMockServletContext main Initializing Spring TestDispatcherServlet ''
-2024-04-05 14:59:53,883 [INFO] org.springframework.test.web.servlet.TestDispatcherServlet main Initializing Servlet ''
-2024-04-05 14:59:53,883 [INFO] org.springframework.test.web.servlet.TestDispatcherServlet main Completed initialization in 0 ms
-2024-04-05 14:59:53,899 [INFO] org.web.service.mybankdepositsweb.EndpointTesting main Started EndpointTesting in 2.923 seconds (JVM running for 4.243)
-2024-04-05 14:59:54,184 [INFO] org.web.service.mybankdepositsweb.configs.DepositSoap main Fetched all deposits available in MyBank
-2024-04-05 14:59:54,184 [INFO] org.web.service.mybankdepositsweb.configs.DepositSoap main 200
-2024-04-05 14:59:54,200 [INFO] com.zaxxer.hikari.HikariDataSource SpringApplicationShutdownHook HikariPool-1 - Shutdown initiated...
-2024-04-05 14:59:54,215 [INFO] com.zaxxer.hikari.HikariDataSource SpringApplicationShutdownHook HikariPool-1 - Shutdown completed.
-[31m2024-04-05 15:12:57,338[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] http-nio-8082-exec-2 [32mInitializing Spring MessageDispatcherServlet 'messageDispatcherServlet'
-[0;39m[31m2024-04-05 15:12:57,339[0;39m [32m[INFO][0;39m org.springframework.ws.transport.http.MessageDispatcherServlet http-nio-8082-exec-2 [32mInitializing Servlet 'messageDispatcherServlet'
-[0;39m[31m2024-04-05 15:12:57,339[0;39m [32m[INFO][0;39m org.springframework.ws.soap.saaj.SaajSoapMessageFactory http-nio-8082-exec-2 [32mCreating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
-[0;39m[31m2024-04-05 15:12:57,345[0;39m [32m[INFO][0;39m org.springframework.ws.transport.http.MessageDispatcherServlet http-nio-8082-exec-2 [32mCompleted initialization in 6 ms
-[0;39m[31m2024-04-05 15:12:57,349[0;39m [32m[WARN][0;39m org.springframework.ws.server.EndpointNotFound http-nio-8082-exec-2 [32mNo endpoint mapping found for [SaajSoapMessage {http://deposits.services}listAllDepositsRequt]
-[0;39m[31m2024-04-05 15:13:16,153[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.configs.DepositSoap http-nio-8082-exec-3 [32mFetched all deposits available in MyBank
-[0;39m[31m2024-04-05 15:13:16,153[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.configs.DepositSoap http-nio-8082-exec-3 [32m200
-[0;39m[31m2024-04-05 15:33:21,530[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener File Watcher [32mRestarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-[0;39m[31m2024-04-05 15:33:21,762[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardService Thread-26 [32mStopping service [Tomcat]
-[0;39m[31m2024-04-05 15:33:21,765[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Thread-26 [32mDestroying Spring FrameworkServlet 'messageDispatcherServlet'
-[0;39m[31m2024-04-05 15:33:21,801[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource Thread-26 [32mHikariPool-2 - Shutdown initiated...
-[0;39m[31m2024-04-05 15:33:21,835[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource Thread-26 [32mHikariPool-2 - Shutdown completed.
-[0;39m[31m2024-04-05 15:33:22,339[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mStarting MybankDepositsWebApplication using Java 1.8.0_292 on WPF45CNXG with PID 12084 (C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web\target\classes started by xxshettn in C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web)
-[0;39m[31m2024-04-05 15:33:22,340[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mNo active profile set, falling back to 1 default profile: "default"
-[0;39m[31m2024-04-05 15:33:22,864[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
-[0;39m[31m2024-04-05 15:33:22,864[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mFinished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
-[0;39m[31m2024-04-05 15:33:22,975[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'soapServiceConfiguration' of type [org.web.service.mybankdepositsweb.configs.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$869f407f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[0;39m[31m2024-04-05 15:33:22,975[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$68f315bc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-[0;39m[31m2024-04-05 15:33:22,990[0;39m [32m[INFO][0;39m org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping restartedMain [32mSupporting [WS-Addressing August 2004, WS-Addressing 1.0]
-[0;39m[31m2024-04-05 15:33:23,149[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [32mTomcat initialized with port(s): 8082 (http)
-[0;39m[31m2024-04-05 15:33:23,164[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardService restartedMain [32mStarting service [Tomcat]
-[0;39m[31m2024-04-05 15:33:23,164[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardEngine restartedMain [32mStarting Servlet engine: [Apache Tomcat/9.0.73]
-[0;39m[31m2024-04-05 15:33:23,212[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] restartedMain [32mInitializing Spring embedded WebApplicationContext
-[0;39m[31m2024-04-05 15:33:23,212[0;39m [32m[INFO][0;39m org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext restartedMain [32mRoot WebApplicationContext: initialization completed in 868 ms
-[0;39m[31m2024-04-05 15:33:23,244[0;39m [32m[WARN][0;39m org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext restartedMain [32mException encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'depositSoap': Unsatisfied dependency expressed through field 'depositInterface'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'mybank.dao.mybankdeposits.interfaces.DepositInterface' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-[0;39m[31m2024-04-05 15:33:23,244[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardService restartedMain [32mStopping service [Tomcat]
-[0;39m[31m2024-04-05 15:33:23,265[0;39m [32m[INFO][0;39m org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener restartedMain [32m
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-[0;39m[31m2024-04-05 15:33:23,343[0;39m [32m[ERROR][0;39m org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter restartedMain [32m
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field depositInterface in org.web.service.mybankdepositsweb.configs.DepositSoap required a bean of type 'mybank.dao.mybankdeposits.interfaces.DepositInterface' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'mybank.dao.mybankdeposits.interfaces.DepositInterface' in your configuration.
-
-[0;39m2024-04-05 15:33:27,026 [INFO] org.web.service.mybankdepositsweb.EndpointTesting main Starting EndpointTesting using Java 1.8.0_292 on WPF45CNXG with PID 12960 (started by xxshettn in C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web)
-2024-04-05 15:33:27,028 [INFO] org.web.service.mybankdepositsweb.EndpointTesting main No active profile set, falling back to 1 default profile: "default"
-2024-04-05 15:33:28,084 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate main Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2024-04-05 15:33:28,112 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate main Finished Spring Data repository scanning in 18 ms. Found 0 JDBC repository interfaces.
-2024-04-05 15:33:28,944 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker main Bean 'soapServiceConfiguration' of type [org.web.service.mybankdepositsweb.configs.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$e4c620d6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-05 15:33:28,945 [INFO] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker main Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$c719f613] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2024-04-05 15:33:29,053 [INFO] org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping main Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2024-04-05 15:33:32,312 [INFO] com.zaxxer.hikari.HikariDataSource main HikariPool-1 - Starting...
-2024-04-05 15:33:32,334 [WARN] com.zaxxer.hikari.util.DriverDataSource main Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2024-04-05 15:33:32,919 [INFO] com.zaxxer.hikari.pool.PoolBase main HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-2024-04-05 15:33:32,929 [INFO] com.zaxxer.hikari.HikariDataSource main HikariPool-1 - Start completed.
-2024-04-05 15:33:33,292 [INFO] org.springframework.boot.test.mock.web.SpringBootMockServletContext main Initializing Spring TestDispatcherServlet ''
-2024-04-05 15:33:33,292 [INFO] org.springframework.test.web.servlet.TestDispatcherServlet main Initializing Servlet ''
-2024-04-05 15:33:33,307 [INFO] org.springframework.test.web.servlet.TestDispatcherServlet main Completed initialization in 15 ms
-2024-04-05 15:33:33,339 [INFO] org.web.service.mybankdepositsweb.EndpointTesting main Started EndpointTesting in 7.319 seconds (JVM running for 11.711)
-2024-04-05 15:33:33,906 [INFO] org.web.service.mybankdepositsweb.configs.DepositSoap main Fetched all deposits available in MyBank
-2024-04-05 15:33:33,906 [INFO] org.web.service.mybankdepositsweb.configs.DepositSoap main 200
-2024-04-05 15:33:33,969 [INFO] com.zaxxer.hikari.HikariDataSource SpringApplicationShutdownHook HikariPool-1 - Shutdown initiated...
-2024-04-05 15:33:33,982 [INFO] com.zaxxer.hikari.HikariDataSource SpringApplicationShutdownHook HikariPool-1 - Shutdown completed.
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:205)
+	at oracle.jdbc.driver.T4CCallableStatement.executeForRows(T4CCallableStatement.java:1043)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1336)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3613)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3714)
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:4755)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1378)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyCallableStatement.execute(HikariProxyCallableStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$call$6(JdbcTemplate.java:1246)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:1190)
+	at org.springframework.jdbc.core.JdbcTemplate.call(JdbcTemplate.java:1245)
+	at mybank.dao.mybankdeposits.service.DepositService.searchDepositsByRoi(DepositService.java:72)
+	at mybank.dao.mybankdeposits.service.DepositService$$FastClassBySpringCGLIB$$b77b225f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at mybank.dao.mybankdeposits.service.DepositService$$EnhancerBySpringCGLIB$$27d4e085.searchDepositsByRoi(<generated>)
+	at org.web.service.mybankdepositsweb.rest.DepositController.listDepositsByRoi(DepositController.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:502)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[31m2024-04-10 18:01:13,526[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mStarting MybankDepositsWebApplication using Java 1.8.0_292 on WPF45CNXG with PID 35156 (C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web\target\classes started by xxshettn in C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web)
+[0;39m[31m2024-04-10 18:01:13,526[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mNo active profile set, falling back to 1 default profile: "default"
+[0;39m[31m2024-04-10 18:01:13,667[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.restart.ChangeableUrls restartedMain [32mThe Class-Path manifest attribute in C:\Users\xxshettn\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
+[0;39m[31m2024-04-10 18:01:13,667[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor restartedMain [32mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[0;39m[31m2024-04-10 18:01:13,667[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor restartedMain [32mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[0;39m[31m2024-04-10 18:01:15,425[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[0;39m[31m2024-04-10 18:01:15,457[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mFinished Spring Data repository scanning in 13 ms. Found 0 JDBC repository interfaces.
+[0;39m[31m2024-04-10 18:01:15,775[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'soapServiceConfiguration' of type [org.web.service.mybankdepositsweb.configs.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$d6a4ea3c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[0;39m[31m2024-04-10 18:01:15,775[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$b8f8bf79] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[0;39m[31m2024-04-10 18:01:15,838[0;39m [32m[INFO][0;39m org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping restartedMain [32mSupporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[0;39m[31m2024-04-10 18:01:16,281[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [32mTomcat initialized with port(s): 8082 (http)
+[0;39m[31m2024-04-10 18:01:16,304[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardService restartedMain [32mStarting service [Tomcat]
+[0;39m[31m2024-04-10 18:01:16,304[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardEngine restartedMain [32mStarting Servlet engine: [Apache Tomcat/9.0.73]
+[0;39m[31m2024-04-10 18:01:16,440[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] restartedMain [32mInitializing Spring embedded WebApplicationContext
+[0;39m[31m2024-04-10 18:01:16,440[0;39m [32m[INFO][0;39m org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext restartedMain [32mRoot WebApplicationContext: initialization completed in 2773 ms
+[0;39m[31m2024-04-10 18:01:17,185[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [32mHikariPool-1 - Starting...
+[0;39m[31m2024-04-10 18:01:17,185[0;39m [32m[WARN][0;39m com.zaxxer.hikari.util.DriverDataSource restartedMain [32mRegistered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[0;39m[31m2024-04-10 18:01:17,296[0;39m [32m[INFO][0;39m com.zaxxer.hikari.pool.PoolBase restartedMain [32mHikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+[0;39m[31m2024-04-10 18:01:17,296[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [32mHikariPool-1 - Start completed.
+[0;39m[31m2024-04-10 18:01:17,440[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer restartedMain [32mLiveReload server is running on port 35729
+[0;39m[31m2024-04-10 18:01:17,473[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [32mTomcat started on port(s): 8082 (http) with context path ''
+[0;39m[31m2024-04-10 18:01:17,495[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mStarted MybankDepositsWebApplication in 5.014 seconds (JVM running for 6.39)
+[0;39m[31m2024-04-10 18:01:21,439[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] http-nio-8082-exec-1 [32mInitializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m[31m2024-04-10 18:01:21,439[0;39m [32m[INFO][0;39m org.springframework.web.servlet.DispatcherServlet http-nio-8082-exec-1 [32mInitializing Servlet 'dispatcherServlet'
+[0;39m[31m2024-04-10 18:01:21,439[0;39m [32m[INFO][0;39m org.springframework.web.servlet.DispatcherServlet http-nio-8082-exec-1 [32mCompleted initialization in 0 ms
+[0;39m[31m2024-04-10 18:01:21,606[0;39m [32m[ERROR][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] http-nio-8082-exec-1 [32mServlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.math.BigDecimal cannot be cast to java.lang.Long] with root cause
+[0;39mjava.lang.ClassCastException: java.math.BigDecimal cannot be cast to java.lang.Long
+	at mybank.dao.mybankdeposits.service.DepositService.searchDepositsByRoi(DepositService.java:75)
+	at mybank.dao.mybankdeposits.service.DepositService$$FastClassBySpringCGLIB$$b77b225f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at mybank.dao.mybankdeposits.service.DepositService$$EnhancerBySpringCGLIB$$c49e2f08.searchDepositsByRoi(<generated>)
+	at org.web.service.mybankdepositsweb.rest.DepositController.listDepositsByRoi(DepositController.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:502)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[31m2024-04-10 18:02:30,090[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mStarting MybankDepositsWebApplication using Java 1.8.0_292 on WPF45CNXG with PID 28872 (C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web\target\classes started by xxshettn in C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web)
+[0;39m[31m2024-04-10 18:02:30,096[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mNo active profile set, falling back to 1 default profile: "default"
+[0;39m[31m2024-04-10 18:02:30,180[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.restart.ChangeableUrls restartedMain [32mThe Class-Path manifest attribute in C:\Users\xxshettn\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
+[0;39m[31m2024-04-10 18:02:30,181[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor restartedMain [32mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[0;39m[31m2024-04-10 18:02:30,181[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor restartedMain [32mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[0;39m[31m2024-04-10 18:02:31,857[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[0;39m[31m2024-04-10 18:02:31,899[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mFinished Spring Data repository scanning in 20 ms. Found 0 JDBC repository interfaces.
+[0;39m[31m2024-04-10 18:02:32,958[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'soapServiceConfiguration' of type [org.web.service.mybankdepositsweb.configs.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$dd4fc29f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[0;39m[31m2024-04-10 18:02:32,959[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$bfa397dc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[0;39m[31m2024-04-10 18:02:33,136[0;39m [32m[INFO][0;39m org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping restartedMain [32mSupporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[0;39m[31m2024-04-10 18:02:34,906[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [32mTomcat initialized with port(s): 8082 (http)
+[0;39m[31m2024-04-10 18:02:34,939[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardService restartedMain [32mStarting service [Tomcat]
+[0;39m[31m2024-04-10 18:02:34,939[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardEngine restartedMain [32mStarting Servlet engine: [Apache Tomcat/9.0.73]
+[0;39m[31m2024-04-10 18:02:35,625[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] restartedMain [32mInitializing Spring embedded WebApplicationContext
+[0;39m[31m2024-04-10 18:02:35,625[0;39m [32m[INFO][0;39m org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext restartedMain [32mRoot WebApplicationContext: initialization completed in 5444 ms
+[0;39m[31m2024-04-10 18:02:37,831[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [32mHikariPool-1 - Starting...
+[0;39m[31m2024-04-10 18:02:37,848[0;39m [32m[WARN][0;39m com.zaxxer.hikari.util.DriverDataSource restartedMain [32mRegistered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[0;39m[31m2024-04-10 18:02:38,276[0;39m [32m[INFO][0;39m com.zaxxer.hikari.pool.PoolBase restartedMain [32mHikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+[0;39m[31m2024-04-10 18:02:38,292[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [32mHikariPool-1 - Start completed.
+[0;39m[31m2024-04-10 18:02:38,626[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer restartedMain [32mLiveReload server is running on port 35729
+[0;39m[31m2024-04-10 18:02:38,767[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [32mTomcat started on port(s): 8082 (http) with context path ''
+[0;39m[31m2024-04-10 18:02:38,815[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mStarted MybankDepositsWebApplication in 9.588 seconds (JVM running for 11.418)
+[0;39m[31m2024-04-10 18:03:21,956[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] http-nio-8082-exec-4 [32mInitializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m[31m2024-04-10 18:03:21,956[0;39m [32m[INFO][0;39m org.springframework.web.servlet.DispatcherServlet http-nio-8082-exec-4 [32mInitializing Servlet 'dispatcherServlet'
+[0;39m[31m2024-04-10 18:03:21,956[0;39m [32m[INFO][0;39m org.springframework.web.servlet.DispatcherServlet http-nio-8082-exec-4 [32mCompleted initialization in 0 ms
+[0;39m[31m2024-04-10 18:03:22,354[0;39m [32m[ERROR][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] http-nio-8082-exec-4 [32mServlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.math.BigDecimal cannot be cast to java.lang.Long] with root cause
+[0;39mjava.lang.ClassCastException: java.math.BigDecimal cannot be cast to java.lang.Long
+	at mybank.dao.mybankdeposits.service.DepositService.searchDepositsByRoi(DepositService.java:75)
+	at mybank.dao.mybankdeposits.service.DepositService$$FastClassBySpringCGLIB$$b77b225f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at mybank.dao.mybankdeposits.service.DepositService$$EnhancerBySpringCGLIB$$3af26bde.searchDepositsByRoi(<generated>)
+	at org.web.service.mybankdepositsweb.rest.DepositController.listDepositsByRoi(DepositController.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:502)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[31m2024-04-10 18:06:27,651[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mStarting MybankDepositsWebApplication using Java 1.8.0_292 on WPF45CNXG with PID 23496 (C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web\target\classes started by xxshettn in C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web)
+[0;39m[31m2024-04-10 18:06:27,651[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mNo active profile set, falling back to 1 default profile: "default"
+[0;39m[31m2024-04-10 18:06:27,740[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.restart.ChangeableUrls restartedMain [32mThe Class-Path manifest attribute in C:\Users\xxshettn\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
+[0;39m[31m2024-04-10 18:06:27,745[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor restartedMain [32mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[0;39m[31m2024-04-10 18:06:27,745[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor restartedMain [32mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[0;39m[31m2024-04-10 18:06:28,550[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[0;39m[31m2024-04-10 18:06:28,550[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mFinished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
+[0;39m[31m2024-04-10 18:06:28,755[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'soapServiceConfiguration' of type [org.web.service.mybankdepositsweb.configs.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$3d653879] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[0;39m[31m2024-04-10 18:06:28,771[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$1fb90db6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[0;39m[31m2024-04-10 18:06:28,823[0;39m [32m[INFO][0;39m org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping restartedMain [32mSupporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[0;39m[31m2024-04-10 18:06:29,165[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [32mTomcat initialized with port(s): 8082 (http)
+[0;39m[31m2024-04-10 18:06:29,181[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardService restartedMain [32mStarting service [Tomcat]
+[0;39m[31m2024-04-10 18:06:29,181[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardEngine restartedMain [32mStarting Servlet engine: [Apache Tomcat/9.0.73]
+[0;39m[31m2024-04-10 18:06:29,308[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] restartedMain [32mInitializing Spring embedded WebApplicationContext
+[0;39m[31m2024-04-10 18:06:29,308[0;39m [32m[INFO][0;39m org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext restartedMain [32mRoot WebApplicationContext: initialization completed in 1563 ms
+[0;39m[31m2024-04-10 18:06:30,008[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [32mHikariPool-1 - Starting...
+[0;39m[31m2024-04-10 18:06:30,008[0;39m [32m[WARN][0;39m com.zaxxer.hikari.util.DriverDataSource restartedMain [32mRegistered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[0;39m[31m2024-04-10 18:06:30,102[0;39m [32m[INFO][0;39m com.zaxxer.hikari.pool.PoolBase restartedMain [32mHikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+[0;39m[31m2024-04-10 18:06:30,102[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [32mHikariPool-1 - Start completed.
+[0;39m[31m2024-04-10 18:06:30,232[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer restartedMain [32mLiveReload server is running on port 35729
+[0;39m[31m2024-04-10 18:06:30,276[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [32mTomcat started on port(s): 8082 (http) with context path ''
+[0;39m[31m2024-04-10 18:06:30,293[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mStarted MybankDepositsWebApplication in 3.205 seconds (JVM running for 4.24)
+[0;39m[31m2024-04-10 18:06:58,688[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] http-nio-8082-exec-1 [32mInitializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m[31m2024-04-10 18:06:58,688[0;39m [32m[INFO][0;39m org.springframework.web.servlet.DispatcherServlet http-nio-8082-exec-1 [32mInitializing Servlet 'dispatcherServlet'
+[0;39m[31m2024-04-10 18:06:58,698[0;39m [32m[INFO][0;39m org.springframework.web.servlet.DispatcherServlet http-nio-8082-exec-1 [32mCompleted initialization in 10 ms
+[0;39m[31m2024-04-10 18:06:59,062[0;39m [32m[ERROR][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] http-nio-8082-exec-1 [32mServlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.math.BigDecimal cannot be cast to java.lang.Long] with root cause
+[0;39mjava.lang.ClassCastException: java.math.BigDecimal cannot be cast to java.lang.Long
+	at mybank.dao.mybankdeposits.service.DepositService.searchDepositsByRoi(DepositService.java:75)
+	at mybank.dao.mybankdeposits.service.DepositService$$FastClassBySpringCGLIB$$b77b225f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at mybank.dao.mybankdeposits.service.DepositService$$EnhancerBySpringCGLIB$$30b7644e.searchDepositsByRoi(<generated>)
+	at org.web.service.mybankdepositsweb.rest.DepositController.listDepositsByRoi(DepositController.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:502)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[31m2024-04-10 18:15:51,702[0;39m [32m[ERROR][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] http-nio-8082-exec-10 [32mServlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.math.BigDecimal cannot be cast to java.lang.Long] with root cause
+[0;39mjava.lang.ClassCastException: java.math.BigDecimal cannot be cast to java.lang.Long
+	at mybank.dao.mybankdeposits.service.DepositService.searchDepositsByRoi(DepositService.java:75)
+	at mybank.dao.mybankdeposits.service.DepositService$$FastClassBySpringCGLIB$$b77b225f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at mybank.dao.mybankdeposits.service.DepositService$$EnhancerBySpringCGLIB$$30b7644e.searchDepositsByRoi(<generated>)
+	at org.web.service.mybankdepositsweb.rest.DepositController.listDepositsByRoi(DepositController.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:502)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[31m2024-04-10 18:16:11,033[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mStarting MybankDepositsWebApplication using Java 1.8.0_292 on WPF45CNXG with PID 6748 (C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web\target\classes started by xxshettn in C:\DLTE-JavaFullStack-Nishmitha-2024\MyBank-Project\mybank-deposits-web)
+[0;39m[31m2024-04-10 18:16:11,033[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mNo active profile set, falling back to 1 default profile: "default"
+[0;39m[31m2024-04-10 18:16:11,095[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.restart.ChangeableUrls restartedMain [32mThe Class-Path manifest attribute in C:\Users\xxshettn\.m2\repository\com\oracle\database\security\oraclepki\21.5.0.0\oraclepki-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_core.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/21.5.0.0/osdt_cert.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/C:/Users/xxshettn/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
+[0;39m[31m2024-04-10 18:16:11,095[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor restartedMain [32mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[0;39m[31m2024-04-10 18:16:11,095[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor restartedMain [32mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[0;39m[31m2024-04-10 18:16:11,837[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[0;39m[31m2024-04-10 18:16:11,855[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate restartedMain [32mFinished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+[0;39m[31m2024-04-10 18:16:12,044[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'soapServiceConfiguration' of type [org.web.service.mybankdepositsweb.configs.SoapServiceConfiguration$$EnhancerBySpringCGLIB$$9416f5de] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[0;39m[31m2024-04-10 18:16:12,044[0;39m [32m[INFO][0;39m org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker restartedMain [32mBean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$766acb1b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[0;39m[31m2024-04-10 18:16:12,091[0;39m [32m[INFO][0;39m org.springframework.ws.soap.addressing.server.AnnotationActionEndpointMapping restartedMain [32mSupporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[0;39m[31m2024-04-10 18:16:12,410[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [32mTomcat initialized with port(s): 8082 (http)
+[0;39m[31m2024-04-10 18:16:12,440[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardService restartedMain [32mStarting service [Tomcat]
+[0;39m[31m2024-04-10 18:16:12,441[0;39m [32m[INFO][0;39m org.apache.catalina.core.StandardEngine restartedMain [32mStarting Servlet engine: [Apache Tomcat/9.0.73]
+[0;39m[31m2024-04-10 18:16:12,599[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] restartedMain [32mInitializing Spring embedded WebApplicationContext
+[0;39m[31m2024-04-10 18:16:12,599[0;39m [32m[INFO][0;39m org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext restartedMain [32mRoot WebApplicationContext: initialization completed in 1504 ms
+[0;39m[31m2024-04-10 18:16:13,200[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [32mHikariPool-1 - Starting...
+[0;39m[31m2024-04-10 18:16:13,200[0;39m [32m[WARN][0;39m com.zaxxer.hikari.util.DriverDataSource restartedMain [32mRegistered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[0;39m[31m2024-04-10 18:16:13,282[0;39m [32m[INFO][0;39m com.zaxxer.hikari.pool.PoolBase restartedMain [32mHikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+[0;39m[31m2024-04-10 18:16:13,295[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource restartedMain [32mHikariPool-1 - Start completed.
+[0;39m[31m2024-04-10 18:16:13,391[0;39m [32m[INFO][0;39m org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer restartedMain [32mLiveReload server is running on port 35729
+[0;39m[31m2024-04-10 18:16:13,433[0;39m [32m[INFO][0;39m org.springframework.boot.web.embedded.tomcat.TomcatWebServer restartedMain [32mTomcat started on port(s): 8082 (http) with context path ''
+[0;39m[31m2024-04-10 18:16:13,438[0;39m [32m[INFO][0;39m org.web.service.mybankdepositsweb.MybankDepositsWebApplication restartedMain [32mStarted MybankDepositsWebApplication in 2.909 seconds (JVM running for 4.042)
+[0;39m[31m2024-04-10 18:16:20,071[0;39m [32m[INFO][0;39m org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] http-nio-8082-exec-3 [32mInitializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m[31m2024-04-10 18:16:20,071[0;39m [32m[INFO][0;39m org.springframework.web.servlet.DispatcherServlet http-nio-8082-exec-3 [32mInitializing Servlet 'dispatcherServlet'
+[0;39m[31m2024-04-10 18:16:20,071[0;39m [32m[INFO][0;39m org.springframework.web.servlet.DispatcherServlet http-nio-8082-exec-3 [32mCompleted initialization in 0 ms
+[0;39m

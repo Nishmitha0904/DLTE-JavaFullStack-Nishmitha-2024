@@ -15,7 +15,6 @@ import org.springframework.xml.xsd.XsdSchema;
 
 @EnableWs
 @Configuration
-
 public class SoapServiceConfiguration extends WsConfigurerAdapter {
 
     //xsd to wsdl

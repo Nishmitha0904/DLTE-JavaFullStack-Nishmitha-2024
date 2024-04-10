@@ -39,8 +39,6 @@ public class EndpointTesting {
     private DepositInterface depositInterface;
     @InjectMocks
     DepositSoap depositSoap;
-    @Mock
-    JdbcTemplate jdbcTemplate;
 
     @Test
     void testListAll() throws SQLSyntaxErrorException {
@@ -50,7 +48,6 @@ public class EndpointTesting {
 
         mockDepositList = Stream.of(deposit1, deposit2).collect(Collectors.toList());
 
-//        when(jdbcTemplate.query(anyString(), any(BeanPropertyRowMapper.class))).thenReturn(mockDepositList);
         when(depositInterface.listAllDeposits()).thenReturn(mockDepositList);
 
         ListAllDepositsRequest request = new ListAllDepositsRequest();
