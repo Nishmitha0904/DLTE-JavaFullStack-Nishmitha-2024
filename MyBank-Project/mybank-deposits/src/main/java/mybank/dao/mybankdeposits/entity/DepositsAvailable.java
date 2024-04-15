@@ -6,22 +6,22 @@ import javax.validation.constraints.NotNull;
 
 public class DepositsAvailable {
 
-    @NotNull(message = "{deposit.id.null}")
-    private long depositId;
-    @NotNull(message = "{deposit.name.null}")
+    @Digits(integer = 2, fraction = 0, message = "{deposit.id}")
+    private Long depositId;
+//    @NotNull(message = "{deposit.name.null}")
     private String depositName;
-    @NotNull(message = "{deposit.roi.null}")
+//    @NotNull(message = "{deposit.roi.null}")
     @Digits(integer = 2, fraction = 2, message = "{deposit.roi}")
-    private double depositRoi;
-    @NotNull(message = "{deposit.type.null}")
+    private Double depositRoi;
+//    @NotNull(message = "{deposit.type.null}")
     private String depositType;
-    @NotNull(message = "{deposit.desc.null}")
+//    @NotNull(message = "{deposit.desc.null}")
     private String depositDescription;
 
     public DepositsAvailable() {
     }
 
-    public DepositsAvailable(long depositId, String depositName, double depositRoi, String depositType, String depositDescription) {
+    public DepositsAvailable(Long depositId, String depositName, Double depositRoi, String depositType, String depositDescription) {
         this.depositId = depositId;
         this.depositName = depositName;
         this.depositRoi = depositRoi;
@@ -29,11 +29,11 @@ public class DepositsAvailable {
         this.depositDescription = depositDescription;
     }
 
-    public long getDepositId() {
+    public Long getDepositId() {
         return depositId;
     }
 
-    public void setDepositId(long depositId) {
+    public void setDepositId(Long depositId) {
         this.depositId = depositId;
     }
 
@@ -45,11 +45,11 @@ public class DepositsAvailable {
         this.depositName = depositName;
     }
 
-    public double getDepositRoi() {
+    public Double getDepositRoi() {
         return depositRoi;
     }
 
-    public void setDepositRoi(double depositRoi) {
+    public void setDepositRoi(Double depositRoi) {
         this.depositRoi = depositRoi;
     }
 
