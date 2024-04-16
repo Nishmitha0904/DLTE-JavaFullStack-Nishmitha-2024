@@ -1,9 +1,8 @@
-package org.web.service.mybankdepositsweb.configs;
+package org.web.service.mybankdepositsweb.soap;
 
 import mybank.dao.mybankdeposits.entity.DepositsAvailable;
 import mybank.dao.mybankdeposits.exception.DepositException;
 import mybank.dao.mybankdeposits.interfaces.DepositInterface;
-import mybank.dao.mybankdeposits.service.DepositService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
@@ -21,7 +20,6 @@ import services.deposits.ServiceStatus;
 import javax.servlet.http.HttpServletResponse;
 import java.sql.SQLSyntaxErrorException;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.ResourceBundle;
 
