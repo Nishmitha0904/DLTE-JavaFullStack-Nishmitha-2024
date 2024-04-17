@@ -40,7 +40,6 @@ public class MyBankConfig {
 
         httpSecurity.authorizeRequests().antMatchers("/profile/register").permitAll();
         httpSecurity.authorizeRequests().antMatchers("/v3/api-docs").permitAll();
-        httpSecurity.authorizeRequests().antMatchers("/deposit/view/*").permitAll();
         httpSecurity.authorizeRequests().anyRequest().authenticated();
 
         AuthenticationManagerBuilder builder=httpSecurity.getSharedObject(AuthenticationManagerBuilder.class);

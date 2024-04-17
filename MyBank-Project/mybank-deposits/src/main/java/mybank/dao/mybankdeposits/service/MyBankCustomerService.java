@@ -31,6 +31,10 @@ public class MyBankCustomerService implements UserDetailsService {
         Customer customer = jdbcTemplate.queryForObject("select * from mybank_app_customer where username=?",
                 new Object[]{username}, new BeanPropertyRowMapper<>(Customer.class));
         return customer;
+//        List<Customer> customerList = jdbcTemplate.query("select * from mybank_app_customer where username=?",
+//                new BeanPropertyRowMapper<>(Customer.class));
+//        Optional<Customer> customer = customerList.stream().filter(cust -> cust.getUsername().equalsIgnoreCase(username)).findFirst();
+
     }
 
     public void updateAttempts(Customer customer) {

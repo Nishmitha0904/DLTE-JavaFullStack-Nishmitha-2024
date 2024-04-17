@@ -13,6 +13,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ResourceBundle;
 
 @Component
 public class CustomerSuccessHandler extends SimpleUrlAuthenticationSuccessHandler {
@@ -20,6 +21,7 @@ public class CustomerSuccessHandler extends SimpleUrlAuthenticationSuccessHandle
     MyBankCustomerService service;
 
     Logger logger = LoggerFactory.getLogger(CustomerSuccessHandler.class);
+    ResourceBundle secureBundle = ResourceBundle.getBundle("secure");
 
     @Override
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
@@ -29,11 +31,11 @@ public class CustomerSuccessHandler extends SimpleUrlAuthenticationSuccessHandle
                 customer.setAttempts(1);
                 service.updateAttempts(customer);
             }
-//            super.setDefaultTargetUrl("/depositsrepo/deposits.wsdl");
-            super.setDefaultTargetUrl("/deposit/view");
+            super.setDefaultTargetUrl("/depositsrepo/deposits.wsdl");
+//            super.setDefaultTargetUrl("/deposit/view/");
         }
         else{
-            logger.warn("Max attempts reached! Contact admin");
+            logger.warn(secureBundle.getString("max.attempts.admin"));
             super.setDefaultTargetUrl("/login");
         }
         super.onAuthenticationSuccess(request, response, authentication);

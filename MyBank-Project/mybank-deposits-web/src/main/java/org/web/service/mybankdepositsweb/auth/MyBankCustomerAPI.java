@@ -22,4 +22,5 @@ public class MyBankCustomerAPI {
         customer.setPassword(passwordEncoder.encode(customer.getPassword()));
         return service.signingUp(customer);
     }
+
 }

@@ -29,6 +29,7 @@ public class DepositSoap {
     private final String url = "http://deposits.services";
 
     ResourceBundle resourceBundle = ResourceBundle.getBundle("application");
+    ResourceBundle messageBundle = ResourceBundle.getBundle("messages");
     Logger logger = LoggerFactory.getLogger(DepositSoap.class);
 
     @Autowired
@@ -51,19 +52,19 @@ public class DepositSoap {
                 actualDeposits.add(deposits);
             });
             listAllDepositsResponse.getDeposits().addAll(actualDeposits);
-            serviceStatus.setMessage(resourceBundle.getString("fetch.success"));
-            logger.info(resourceBundle.getString("fetch.success"));
+            serviceStatus.setMessage(messageBundle.getString("fetch.success"));
+            logger.info(messageBundle.getString("fetch.success"));
             logger.info(String.valueOf(HttpServletResponse.SC_OK));
             serviceStatus.setStatus(HttpServletResponse.SC_OK);
             listAllDepositsResponse.setServiceStatus(serviceStatus);
         } catch (SQLSyntaxErrorException e) {
-            logger.error(resourceBundle.getString("internal.error"));
-            serviceStatus.setMessage(resourceBundle.getString("internal.error"));
+            logger.error(messageBundle.getString("internal.error"));
+            serviceStatus.setMessage(messageBundle.getString("internal.error"));
             serviceStatus.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             listAllDepositsResponse.setServiceStatus(serviceStatus);
         } catch (DepositException exception) {
-            logger.warn(resourceBundle.getString("deposit.exception"));
-            serviceStatus.setMessage(resourceBundle.getString("deposit.exception"));
+            logger.warn(messageBundle.getString("deposit.exception"));
+            serviceStatus.setMessage(messageBundle.getString("deposit.exception"));
             serviceStatus.setStatus(HttpServletResponse.SC_NO_CONTENT);
             listAllDepositsResponse.setServiceStatus(serviceStatus);
         }
