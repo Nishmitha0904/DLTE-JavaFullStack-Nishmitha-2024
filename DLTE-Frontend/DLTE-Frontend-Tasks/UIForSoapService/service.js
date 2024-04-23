@@ -1,11 +1,22 @@
 
 function displayDepositCards() {
+
+    //JSON array
+    var deposits = [
+        { id: 1, name: "Fixed Savings", roi: 4.5, type: "Term Deposit", description: "A fixed-term savings account" },
+        { id: 2, name: "Flexi Saver", roi: 3.2, type: "Savings Account", description: "A flexible savings account" },
+        { id: 3, name: "SteadySaver RD", roi: 5.0, type: "Recurring Deposit", description: "A disciplined savings account where you contribute a fixed amount regularly" },
+        { id: 4, name: "Maxi Deposit", roi: 11.5, type: "Fixed Deposit", description: "High-interest term deposit" },
+        { id: 5, name: "Holiday Fund", roi: 3.2, type: "Savings Account", description: "Save for your dream vacation" },
+        { id: 6, name: "Wealth Grower", roi: 5.0, type: "Investment Account", description: "Invest in your future" }
+    ];
+    localStorage.setItem("deposits", JSON.stringify(deposits));
     // Retrieve deposit details from local storage
     var deposits = JSON.parse(localStorage.getItem("deposits"));
 
     // Display deposit cards
-    var depositDetailsContainer = document.getElementById("depositDetails");
-    depositDetailsContainer.innerHTML = ''; 
+    var depositDetails = document.getElementById("depositDetails");
+    depositDetails.innerHTML = ''; 
     deposits.forEach(function(deposit) {
         var cardHtml = `
             <div class="col">
@@ -30,17 +41,9 @@ function displayDepositCards() {
                 </div>
             </div>
         `;
-        depositDetailsContainer.innerHTML += cardHtml;
+        depositDetails.innerHTML += cardHtml;
     });
 }
-
-var deposits = [
-    { id: 1, name: "Fixed Savings", roi: 4.5, type: "Term Deposit", description: "A fixed-term savings account" },
-    { id: 2, name: "Flexi Saver", roi: 3.2, type: "Savings Account", description: "A flexible savings account" },
-    { id: 3, name: "SteadySaver RD", roi: 5.0, type: "Recurring Deposit", description: "A disciplined savings account where you contribute a fixed amount regularly" }
-];
-
-localStorage.setItem("deposits", JSON.stringify(deposits));
 
 function toggleButton(button) {
     if (button.innerHTML === 'Know More') {
