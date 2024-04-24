@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View All Deposits</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        // Function to fetch all deposits using AJAX
+        const listAll=()=>{
+            let soapRequest = `<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:deposit="http://deposits.services">
+                        <soapenv:Header/>
+                        <soapenv:Body>
+                            <deposit:listAllDepositsRequest/>
+                        </soapenv:Body>
+                    </soapenv:Envelope>`
+            $.ajax({
+                url: 'http://localhost:8082/depositsrepo',
+                type: 'POST',
+                dataType: 'xml',
+                beforeSend: function (handler) {
+                    handler.setRequestHeader("Authorization", "Basic " + btoa("nish:Nish2024"));
+                    handler.setRequestHeader("SOAPAction", "listAllDepositsRequest");
+                },
+                contentType:"text/xml;charset=utf-8",
+                data:soapRequest,
+                success:function(response){
+                    // alert(JSON.stringify(response))
+                    console.log(response)
+
+                    $('#depositList').empty();
+                    
+                        // Parse the XML response
+                        $(response).find('ns2\\:DepositsAvailable').each(function() {
+                            console.log("Hello")
+                            var depositId = $(this).find('ns2\\:depositId').text();
+                            var depositName = $(this).find('ns2\\:depositName').text();
+                            var depositRoi = $(this).find('ns2\\:depositRoi').text();
+                            var depositType = $(this).find('ns2\\:depositType').text();
+                            var depositDescription = $(this).find('ns2\\:depositDescription').text();
+                            const depositHtml = `
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">${depositName}</h5>
+                                        <p class="card-text">Type: ${depositType}</p>
+                                        <p class="card-text">Description: ${depositDescription}</p>
+                                        <p class="card-text">ROI: ${depositRoi}%</p>
+                                    </div>
+                                </div>
+                            </div>`;
+                            $('#depositList').append(depositHtml);
+                        });
+                    
+                },
+                error: function (xhr, status, error) {
+                    console.error(xhr.responseText);
+                }
+            });
+        }
+        
+        $(document).ready(()=>{
+            listAll();
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Deposits</h1>
+        <div class="row justify-content-center" id="depositList"></div>
+    </div>
+</body>
+</html>
