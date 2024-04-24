@@ -31,7 +31,7 @@
                     $('#depositList').empty();
                     
                         // Parse the XML response
-                        $(response).find('ns2\\:DepositsAvailable').each(function() {
+                        $(response).find('ns2\\:deposits').each(function() {
                             console.log("Hello")
                             var depositId = $(this).find('ns2\\:depositId').text();
                             var depositName = $(this).find('ns2\\:depositName').text();
