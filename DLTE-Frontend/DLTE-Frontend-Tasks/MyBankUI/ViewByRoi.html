@@ -33,18 +33,17 @@
                         let viewPart = $("#viewSection")
                         viewPart.empty()
                         response.map((each)=>{
-                            
+                            // console.log(each)
                             viewPart.append(`
                             <div class="card col-12 col-lg-3 col-md-6 p-5 rounded-5 m-4 shadow-lg bg-primary-subtle text-primary">
-                                <h1 class="card-title display-6 text-center">${each.depositName}</h1>
-                                <h5 class="card-text text-center">${each.depositRoi}</h5>
+                                <h2 class="card-title display-6 text-center">${each.DEPOSIT_NAME}</h2>
+                                <h5 class="card-text text-center">ROI: ${each.DEPOSIT_ROI}</h5>
                                 <hr/>
                                 <div class="card-body">
-                                <p class="card-text text-center">${each.depositType}</p>
+                                <p class="card-text text-center">${each.DEPOSIT_TYPE}</p>
                                 </div>
-                                <hr/>
                                 <div class="card-body">
-                                <p class="card-text float-start">${each.depositDescription}</p>
+                                <p class="card-text float-start">${each.DEPOSIT_DESCRIPTION}</p>
                                 </div>
                             </div>
                             `)
