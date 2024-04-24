@@ -8,72 +8,66 @@
     <script>
         // Function to fetch all deposits using AJAX
         const listAll=()=>{
-            let soapRequest = `<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:deposits="http://deposits.services">
+            let soapRequest = `<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:deposit="http://deposits.services">
                         <soapenv:Header/>
                         <soapenv:Body>
-                            <dep:listAllDepositsRequest/>
+                            <deposit:listAllDepositsRequest/>
                         </soapenv:Body>
                     </soapenv:Envelope>`
             $.ajax({
                 url: 'http://localhost:8082/depositsrepo',
-                type: "GET",
-                dataType: "xml",
-                headers: {
-                    'Authorization': 'Basic ' + btoa('nish:Nish2024')
+                type: 'POST',
+                dataType: 'xml',
+                beforeSend: function (handler) {
+                    handler.setRequestHeader("Authorization", "Basic " + btoa("nish:Nish2024"));
+                    handler.setRequestHeader("SOAPAction", "listAllDepositsRequest");
                 },
                 contentType:"text/xml;charset=utf-8",
                 data:soapRequest,
                 success:function(response){
                     // alert(JSON.stringify(response))
                     console.log(response)
-                    let viewPart = $("#viewSection")
-                    viewPart.empty()
-                    response.map((each)=>{
-                        viewPart.append(`
-                        <div class="card col-12 col-lg-3 col-md-6 p-5 rounded-5 m-4 shadow-lg bg-danger-subtle text-danger">
-                            <h1 class="card-title display-6 text-center">${each.depositId}</h1>
-                            <h5 class="card-text text-center">${each.depositName}</h5>
-                            <hr/>
-                            <div class="card-body">
-                               <p class="card-text text-center">${each.depositRoi}</p>
-                            </div>
-                            <hr/>
-                            <div class="card-body">
-                               <p class="card-text float-start">${each.depositType}</p>
-                               <p class="card-text float-end">${each.depositDescription}</p>
-                            </div>                        </div>
-                        `)
-                    })
-                    const info = $(response).find(`ns2\\:serviceStatus`).find("ns2\\:status").text()
-                    alert(info)
-                    location.assign("http://127.0.0.1:5500/ViewAll.html")
+
+                    $('#depositList').empty();
+                    
+                        // Parse the XML response
+                        $(response).find('ns2\\:deposits').each(function() {
+                            console.log("Hello")
+                            var depositId = $(this).find('ns2\\:depositId').text();
+                            var depositName = $(this).find('ns2\\:depositName').text();
+                            var depositRoi = $(this).find('ns2\\:depositRoi').text();
+                            var depositType = $(this).find('ns2\\:depositType').text();
+                            var depositDescription = $(this).find('ns2\\:depositDescription').text();
+                            const depositHtml = `
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">${depositName}</h5>
+                                        <p class="card-text">Type: ${depositType}</p>
+                                        <p class="card-text">Description: ${depositDescription}</p>
+                                        <p class="card-text">ROI: ${depositRoi}%</p>
+                                    </div>
+                                </div>
+                            </div>`;
+                            $('#depositList').append(depositHtml);
+                        });
+                    
                 },
-                error:function(error){
-                    //alert(JSON.stringify(error))
-                    let viewPart = $("#viewSection")
-                    viewPart.empty()
-                    viewPart.append(`
-                        <div class="alert alert-warning text-center display-2">
-                            ${error.status}
-                        </div>
-                    `)
+                error: function (xhr, status, error) {
+                    console.error(xhr.responseText);
                 }
-            })
+            });
         }
         
         $(document).ready(()=>{
-            listAll()
-        })
-
+            listAll();
+        });
     </script>
 </head>
 <body>
-    <h1>All Deposits</h1>
-    <div id="depositList"></div>
     <div class="container">
-        <div class="row justify-content-around" id="viewSection">
-
-        </div>
+        <h1 class="text-center">Deposits</h1>
+        <div class="row justify-content-center" id="depositList"></div>
     </div>
 </body>
 </html>
