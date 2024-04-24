@@ -24,12 +24,31 @@
                     dataType:"json",
                     //Authorization
                     beforeSend: function(handler){
-                        // console.log("Authorization header being set...");
                         handler.setRequestHeader("Authorization", "Basic " + btoa("nish:Nish2024"))
+                        // handler.setRequestHeader("Authorization","Basic "+sessionStorage.getItem("logged"))
                     },
 
                     success:function(response){
-                        alert(JSON.stringify(response))
+                        // alert(JSON.stringify(response))
+                        let viewPart = $("#viewSection")
+                        viewPart.empty()
+                        response.map((each)=>{
+                            
+                            viewPart.append(`
+                            <div class="card col-12 col-lg-3 col-md-6 p-5 rounded-5 m-4 shadow-lg bg-primary-subtle text-primary">
+                                <h1 class="card-title display-6 text-center">${each.depositName}</h1>
+                                <h5 class="card-text text-center">${each.depositRoi}</h5>
+                                <hr/>
+                                <div class="card-body">
+                                <p class="card-text text-center">${each.depositType}</p>
+                                </div>
+                                <hr/>
+                                <div class="card-body">
+                                <p class="card-text float-start">${each.depositDescription}</p>
+                                </div>
+                            </div>
+                            `)
+                        })
                     },
                     error:function(err){
                         let element = $("#status")
@@ -52,6 +71,11 @@
                 </div>
                 <div class="m-5 row justify-content-around">
                     <button id="search" class="col-1 btn btn-outline-primary"><p class="display-6 bi bi-search"></p></button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-around" id="viewSection">
+        
                 </div>
             </div>
         </div>
