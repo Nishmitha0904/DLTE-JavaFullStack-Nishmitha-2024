@@ -1,0 +1,96 @@
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:sch="http://employee.services"
+                  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://employee.services"
+                  xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://employee.services">
+    <wsdl:types>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+            <xsd:import namespace="http://employee.services" schemaLocation="employee.xsd">
+            </xsd:import>
+        </xsd:schema>
+    </wsdl:types>
+    <wsdl:message name="saveRequest">
+        <wsdl:part element="tns:saveRequest" name="saveRequest"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="findAllEmployeesRequest">
+        <wsdl:part element="tns:findAllEmployeesRequest" name="findAllEmployeesRequest"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="saveResponse">
+        <wsdl:part element="tns:saveResponse" name="saveResponse"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="findAllEmployeesResponse">
+        <wsdl:part element="tns:findAllEmployeesResponse" name="findAllEmployeesResponse"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="findByPincodeRequest">
+        <wsdl:part element="tns:findByPincodeRequest" name="findByPincodeRequest"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="findByIdRequest">
+        <wsdl:part element="tns:findByIdRequest" name="findByIdRequest"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="findByPincodeResponse">
+        <wsdl:part element="tns:findByPincodeResponse" name="findByPincodeResponse"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="findByIdResponse">
+        <wsdl:part element="tns:findByIdResponse" name="findByIdResponse"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:portType name="EmployeePort">
+        <wsdl:operation name="save">
+            <wsdl:input message="tns:saveRequest" name="saveRequest"> </wsdl:input>
+            <wsdl:output message="tns:saveResponse" name="saveResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="findAllEmployees">
+            <wsdl:input message="tns:findAllEmployeesRequest" name="findAllEmployeesRequest"> </wsdl:input>
+            <wsdl:output message="tns:findAllEmployeesResponse" name="findAllEmployeesResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="findByPincode">
+            <wsdl:input message="tns:findByPincodeRequest" name="findByPincodeRequest"> </wsdl:input>
+            <wsdl:output message="tns:findByPincodeResponse" name="findByPincodeResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="findById">
+            <wsdl:input message="tns:findByIdRequest" name="findByIdRequest"> </wsdl:input>
+            <wsdl:output message="tns:findByIdResponse" name="findByIdResponse"> </wsdl:output>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="EmployeePortSoap11" type="tns:EmployeePort">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="save">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="saveRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="saveResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="findAllEmployees">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="findAllEmployeesRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="findAllEmployeesResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="findByPincode">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="findByPincodeRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="findByPincodeResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="findById">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="findByIdRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="findByIdResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="EmployeePortService">
+        <wsdl:port binding="tns:EmployeePortSoap11" name="EmployeePortSoap11">
+            <soap:address location="http://localhost:8181/employee"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>
