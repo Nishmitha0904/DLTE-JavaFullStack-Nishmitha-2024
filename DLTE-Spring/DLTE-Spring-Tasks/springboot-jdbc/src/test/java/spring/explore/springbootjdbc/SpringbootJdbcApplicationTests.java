@@ -10,6 +10,8 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.jdbc.core.JdbcTemplate;
+import spring.explore.springbootjdbc.entity.Transaction;
+import spring.explore.springbootjdbc.service.MyBankService;
 
 import java.util.Date;
 import java.util.List;
