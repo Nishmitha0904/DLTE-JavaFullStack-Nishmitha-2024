@@ -31,7 +31,7 @@ public class CustomerSuccessHandler extends SimpleUrlAuthenticationSuccessHandle
                 customer.setAttempts(1);
                 service.updateAttempts(customer);
             }
-            super.setDefaultTargetUrl("/depositsrepo/deposits.wsdl");
+            super.setDefaultTargetUrl(secureBundle.getString("target.url"));
 //            super.setDefaultTargetUrl("/deposit/view/");
         }
         else{

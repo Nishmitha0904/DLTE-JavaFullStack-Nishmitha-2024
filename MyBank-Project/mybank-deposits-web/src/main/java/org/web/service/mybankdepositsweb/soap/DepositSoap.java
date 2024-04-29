@@ -65,21 +65,12 @@ public class DepositSoap {
         } catch (DepositException exception) {
             logger.warn(messageBundle.getString("deposit.exception"));
             serviceStatus.setMessage(messageBundle.getString("deposit.exception"));
-            serviceStatus.setStatus(HttpServletResponse.SC_NO_CONTENT);
+            serviceStatus.setStatus(HttpServletResponse.SC_OK);
             listAllDepositsResponse.setServiceStatus(serviceStatus);
         }
         finally {
             return listAllDepositsResponse;
         }
-//        System.out.println(daoDeposits.toString());
-
-//        Iterator<DepositsAvailable> iterator = fromDao.iterator();
-
-//        while (iterator.hasNext()) {
-//            Deposits currentDeposits = new Deposits();
-//            BeanUtils.copyProperties(iterator.next(), currentDeposits);
-//            actualDeposits.add(currentDeposits);
-//        }
 
     }
 }
