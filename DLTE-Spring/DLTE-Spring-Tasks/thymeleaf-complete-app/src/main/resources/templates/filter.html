@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="UTF-8">
+        <title>Search Transaction</title>
+    </head>
+    <body>
+        <form th:action="@{/transactions/search}" method="get">
+            <label>Filter By:</label>
+            <select id="filterBy" name="filterBy">
+                <option th:value="filterBySender">Filter By Sender</option>
+                <option th:value="filterByReceiver">Filter By Receiver</option>
+                <option th:value="filterByAmount">Filter By Amount</option>
+            </select>
+            <input type="text" id="search" name="search" placeholder="Search term">
+            <button type="submit">Search</button>
+        </form>
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Transaction ID</th>
+                <th>Date</th>
+                <th>Sender</th>
+                <th>Receiver</th>
+                <th>Remarks</th>
+                <th>Amount</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="transaction : ${transactions}">
+                <td th:text="${transaction.transactionId}"></td>
+                <td th:text="${transaction.transactionDate}"></td>
+                <td th:text="${transaction.transactionBy}"></td>
+                <td th:text="${transaction.transactionTo}"></td>
+                <td th:text="${transaction.remarks}"></td>
+                <td th:text="${transaction.transactionAmount}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

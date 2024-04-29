@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>New Transaction</title>
+</head>
+<body>
+<div class="container">
+    <form th:action="@{/transactions/new}" th:object="${transaction}" method="post">
+        <p th:class="text-danger" th:if="${#fields.hasErrors('transactionId')}" th:errors="*{transactionId}"></p>
+        <input type="text" th:field="*{transactionId}" placeholder="Transaction ID"/>
+        <p th:class="text-danger" th:if="${#fields.hasErrors('transactionDate')}" th:errors="*{transactionDate}"></p>
+        <input type="text" th:field="*{transactionDate}" placeholder="Transaction Date"/>
+        <p th:class="text-danger" th:if="${#fields.hasErrors('transactionBy')}" th:errors="*{transactionBy}"></p>
+        <input type="text" th:field="*{transactionBy}" placeholder="Transaction By"/>
+        <p th:class="text-danger" th:if="${#fields.hasErrors('transactionTo')}" th:errors="*{transactionTo}"></p>
+        <input type="text" th:field="*{transactionTo}" placeholder="Transaction To"/>
+        <p th:class="text-danger" th:if="${#fields.hasErrors('remarks')}" th:errors="*{remarks}"></p>
+        <input type="text" th:field="*{remarks}" placeholder="Remarks"/>
+        <p th:class="text-danger" th:if="${#fields.hasErrors('transactionAmount')}" th:errors="*{transactionAmount}"></p>
+        <input type="text" th:field="*{transactionAmount}" placeholder="Transaction Amount"/>
+        <div  th:if="${message}" th:text="${message}" class="message"></div>
+        <button type="submit">Add</button>
+    </form>
+</div>
+</body>
+</html>
