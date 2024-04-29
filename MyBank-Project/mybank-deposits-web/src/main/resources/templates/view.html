@@ -54,17 +54,17 @@
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h1 class="modal-title fs-5" id="staticBackdropLabel">${depositName}</h1>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                <h1 class="modal-title fs-5" id="staticBackdropLabel" style="color: #182052">${depositName}</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
                                             </div>
-                                            <div class="modal-body">
+                                            <div class="modal-body" style="color: #182052">
                                                 <h5>Type: ${depositType}</h5>
                                                 <h5>ROI: ${depositRoi}</h5>
                                                 <h5>${depositDescription}</h5>
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Apply</button>
-                                                <button type="button" class="btn btn-primary">Calculate returns</button>
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="color: #182052">Apply</button>
+                                                <button type="button" class="btn btn-primary" style="color: #182052">Calculate returns</button>
                                             </div>
                                         </div>
                                     </div>
@@ -86,7 +86,7 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="text-center">Deposits Available</h1>
+        <h1 class="text-center" style="color: #182052">Deposits Available</h1>
         <div class="row" id="depositList"></div>
     </div>
 </body>
