@@ -14,11 +14,6 @@ public class DepositController {
         return "dashboard";
     }
 
-    @RequestMapping(value = "/viewall",method = RequestMethod.GET)
-    public String viewAll() {
-        return "viewall";
-    }
-
     @RequestMapping(value = "/roiview",method = RequestMethod.GET)
     public String viewByRoi() {
         return "viewbyroi";

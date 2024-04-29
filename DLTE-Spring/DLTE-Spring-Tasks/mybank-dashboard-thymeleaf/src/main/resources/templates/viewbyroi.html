@@ -1,28 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>View Deposits by ROI</title>
+    <title>Deposits Available</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/styles.css}">
+    <link rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
 </head>
 <body>
-    <div class="container">
-        <div class="row justify-content-center">
-            <p id="status" class="display-6 text-center text-primary"></p>
-            <div class="p-5 m-5 rounded-5 shadow">
-                <div class="form group">
-                    <label>Deposit ROI</label>
-                    <input type="number" id="depositRoi" class="form-control" placeholder="Deposit ROI" />
-                </div>
-                <div class="m-5 row justify-content-around">
-                    <button id="search" class="col-1 btn btn-outline-primary"><p class="display-6 bi bi-search"></p></button>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row justify-content-around" id="viewSection">
-
-                </div>
-            </div>
+<nav class="navbar navbar-expand-lg" style="background:linear-gradient(90deg,white,blue);">
+    <div class="container-fluid">
+        <!-- 1st logo/ brand -->
+        <a class="navbar-brand text-danger display-6 text-uppercase" style="font-weight: bold;" href="#">MyBank</a>
+        <!-- 2nd toggle button -->
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#myBankMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- 3rd Menu -->
+        <div class="collapse navbar-collapse" id="myBankMenu">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a th:href="@{/deposit/roiview}" class="search btn btn-outline-light rounded-5 me-2"><span class="bi bi-search"></span>Search by ROI</a>
+                </li>
+                <li class="nav-item">
+                    <a class="logout btn btn-outline-light rounded-5 me-2"><span class="bi bi-door-open"></span> Logout</a>
+                </li>
+            </ul>
         </div>
     </div>
+</nav>
+<div class="container mt-5">
+    <h1 class="text-center mb-5">Deposits Available</h1>
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="form-group">
+                <label for="depositRoi">Deposit ROI</label>
+                <input th:class="form-control" id="depositRoi" placeholder="Enter ROI">
+            </div>
+            <button id="searchButton" class="btn btn-primary mb-2"style="background: dodgerblue;" >Search</button>
+            <div id="status" class="text-center"></div>
+            <div id="cardContainer" class="row"></div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
