@@ -10,13 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
+<header th:fragment="navbar">
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <!--        logo-->
             <div class="row">
                 <div class="col-auto">
-                    <img src="../static/images/logo.png" class="static" style="width: 30px; height: 30px"/>
+                    <img th:src="@{../static/images/logo.png}" class="static" style="width: 30px; height: 30px"/>
                 </div>
                 <div class="col">
                     <a class="navbar-brand display-6 fw-bold" style="font-weight: bold; font-family: 'Montserrat'; color: #182052" th:href="#">MyBank</a>
