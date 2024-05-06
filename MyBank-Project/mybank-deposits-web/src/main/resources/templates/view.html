@@ -113,7 +113,6 @@
         }
 
         const listAllByRoi = (roi) => {
-            currentPage = 1;
             $.ajax({
                 url: `http://localhost:8082/deposit/view/${roi}`,
                 type: 'GET',
@@ -192,17 +191,30 @@
 
         $(document).on('click', '#pagination-next', function (event) {
             event.preventDefault();
-            currentPage++;
-            listAll();
+            if ($('#roi').val() !== '') {
+                currentPage++;
+                listAllByRoi($('#roi').val());
+            } else {
+                currentPage++;
+                listAll();
+            }
         });
 
         $(document).on('click', '#pagination-prev', function (event) {
             event.preventDefault();
-            if (currentPage > 1) {
-                currentPage--;
-                listAll();
+            if ($('#roi').val() !== '') {
+                if (currentPage > 1) {
+                    currentPage--;
+                    listAllByRoi($('#roi').val());
+                }
+            } else {
+                if (currentPage > 1) {
+                    currentPage--;
+                    listAll();
+                }
             }
         });
+
     </script>
 </head>
 <header th:replace="nav::navbar"></header>
