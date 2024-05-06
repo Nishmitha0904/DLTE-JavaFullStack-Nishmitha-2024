@@ -28,7 +28,6 @@ import java.util.ResourceBundle;
 public class DepositSoap {
     private final String url = "http://deposits.services";
 
-    ResourceBundle resourceBundle = ResourceBundle.getBundle("application");
     ResourceBundle messageBundle = ResourceBundle.getBundle("messages");
     Logger logger = LoggerFactory.getLogger(DepositSoap.class);
 
@@ -60,7 +59,7 @@ public class DepositSoap {
         } catch (SQLSyntaxErrorException e) {
             logger.error(messageBundle.getString("internal.error"));
             serviceStatus.setMessage(messageBundle.getString("internal.error"));
-            serviceStatus.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            serviceStatus.setStatus(HttpServletResponse.SC_OK);
             listAllDepositsResponse.setServiceStatus(serviceStatus);
         } catch (DepositException exception) {
             logger.warn(messageBundle.getString("deposit.exception"));

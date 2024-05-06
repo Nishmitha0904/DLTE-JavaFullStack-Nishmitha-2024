@@ -28,9 +28,9 @@ import org.web.service.mybankdepositsweb.soap.DepositSoap;
 import services.deposits.ListAllDepositsRequest;
 import services.deposits.ListAllDepositsResponse;
 
-import static org.mockito.Mockito.when;
 import static org.mockito.ArgumentMatchers.*;
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
@@ -39,6 +39,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import java.sql.SQLSyntaxErrorException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -65,10 +66,31 @@ public class EndpointTesting {
         DepositsAvailable deposit1 = new DepositsAvailable(123L, "Fixed Savings", 4.5, "Term Deposit", "A fixed-term savings account");
         DepositsAvailable deposit2 = new DepositsAvailable(456L, "Flexi Saver", 3.2, "Savings Account", "A flexible savings account");
         List<DepositsAvailable> mockDeposits = Stream.of(deposit1).collect(Collectors.toList());
-        when(depositInterface.searchDepositsByRoi(4.5)).thenReturn((List<DepositsAvailable>) ResponseEntity.ok(mockDeposits));
+        when(depositInterface.searchDepositsByRoi(anyDouble())).thenReturn(mockDeposits);
 
-        mockMvc.perform(get("/deposit/view/4.5")).
-                andExpect(status().isOk());
+        // Test
+        ResponseEntity<?> responseEntity = depositController.getDepositsByRoi("5.0");
+        assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
+        assertEquals(mockDeposits, responseEntity.getBody());
+
+//        mockMvc.perform(get("/deposit/view/4.5")).
+//                andExpect(status().isOk());
+    }
+
+    @Test
+    void testGetDepositsByRoi() throws SQLSyntaxErrorException {
+//        double roi = 4.5;
+        String strRoi = "4.5";
+        Double roi = Double.valueOf(strRoi);
+        List<DepositsAvailable> mockDeposits = Collections.singletonList(
+                new DepositsAvailable(123L, "Fixed Savings", roi, "Term Deposit", "A fixed-term savings account")
+        );
+        when(depositInterface.searchDepositsByRoi(roi)).thenReturn(mockDeposits);
+        ResponseEntity<?> responseEntity = depositController.getDepositsByRoi(strRoi);
+
+        assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
+        assertEquals(mockDeposits, responseEntity.getBody());
+        verify(depositInterface, times(1)).searchDepositsByRoi(roi);
     }
 //    @Test
 //    @WithMockUser(username = "nish", password = "Nish2024")

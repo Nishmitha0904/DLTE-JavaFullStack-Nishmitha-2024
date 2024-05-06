@@ -42,8 +42,8 @@ public class MyBankConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOriginPatterns(Arrays.asList(secureBundle.getString("cors.url")));
-
+//        configuration.setAllowedOriginPatterns(Arrays.asList(secureBundle.getString("cors.url1"),secureBundle.getString("cors.url2")));
+        configuration.setAllowedOriginPatterns(Arrays.asList("http://127.0.0.1:5500", "http://127.0.0.1:5503"));
         configuration.addAllowedMethod("*");
         configuration.addAllowedHeader("*");
         configuration.setAllowCredentials(true);
@@ -56,7 +56,7 @@ public class MyBankConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
         httpSecurity.httpBasic();
-        httpSecurity.formLogin().
+        httpSecurity.formLogin().loginPage("/login/").
                 usernameParameter("username").
                 failureHandler(customerFailureHandler).
                 successHandler(customerSuccessHandler);
@@ -64,6 +64,7 @@ public class MyBankConfig {
         httpSecurity.cors();
 
 
+        httpSecurity.authorizeRequests().antMatchers("/").permitAll();
         httpSecurity.authorizeRequests().antMatchers("/profile/register").permitAll();
         httpSecurity.authorizeRequests().antMatchers("/v3/api-docs").permitAll();
         httpSecurity.authorizeRequests().antMatchers("/static/images/**").permitAll();
