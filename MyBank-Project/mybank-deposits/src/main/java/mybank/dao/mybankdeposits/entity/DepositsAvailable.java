@@ -1,21 +1,11 @@
 package mybank.dao.mybankdeposits.entity;
 
-
-import javax.validation.constraints.Digits;
-import javax.validation.constraints.NotNull;
-
 public class DepositsAvailable {
 
-    @Digits(integer = 2, fraction = 0, message = "{deposit.id}")
     private Long depositId;
-//    @NotNull(message = "{deposit.name.null}")
     private String depositName;
-//    @NotNull(message = "{deposit.roi.null}")
-    @Digits(integer = 2, fraction = 2, message = "{deposit.roi}")
     private Double depositRoi;
-//    @NotNull(message = "{deposit.type.null}")
     private String depositType;
-//    @NotNull(message = "{deposit.desc.null}")
     private String depositDescription;
 
     public DepositsAvailable() {
@@ -69,14 +59,4 @@ public class DepositsAvailable {
         this.depositDescription = depositDescription;
     }
 
-    @Override
-    public String toString() {
-        return "DepositsAvailable{" +
-                "depositId=" + depositId +
-                ", depositName='" + depositName + '\'' +
-                ", depositRoi=" + depositRoi +
-                ", depositType='" + depositType + '\'' +
-                ", depositDescription='" + depositDescription + '\'' +
-                '}';
-    }
 }

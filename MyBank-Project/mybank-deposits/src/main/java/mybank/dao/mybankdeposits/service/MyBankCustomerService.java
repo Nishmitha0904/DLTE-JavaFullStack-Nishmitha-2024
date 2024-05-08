@@ -11,6 +11,9 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.Optional;
+
 @Service
 public class MyBankCustomerService implements UserDetailsService {
     @Autowired
@@ -28,13 +31,10 @@ public class MyBankCustomerService implements UserDetailsService {
     }
 
     public Customer findByUsername(String username) {
-        Customer customer = jdbcTemplate.queryForObject("select * from mybank_app_customer where username=?",
-                new Object[]{username}, new BeanPropertyRowMapper<>(Customer.class));
+        List<Customer> customerList = jdbcTemplate.query("select * from mybank_app_customer",
+                new BeanPropertyRowMapper<>(Customer.class));
+        Customer customer = customerList.stream().filter(cust -> cust.getUsername().equals(username)).findFirst().orElse(null);
         return customer;
-//        List<Customer> customerList = jdbcTemplate.query("select * from mybank_app_customer where username=?",
-//                new BeanPropertyRowMapper<>(Customer.class));
-//        Optional<Customer> customer = customerList.stream().filter(cust -> cust.getUsername().equalsIgnoreCase(username)).findFirst();
-
     }
 
     public void updateAttempts(Customer customer) {
@@ -53,5 +53,15 @@ public class MyBankCustomerService implements UserDetailsService {
         if (customer == null)
             throw new UsernameNotFoundException(username);
         return customer;
+    }
+
+    public String getCustomerName(String username) {
+        try {
+            String sql = "SELECT customer_name FROM MYBANK_APP_CUSTOMER  WHERE username =  ?";
+            return jdbcTemplate.queryForObject(sql, new Object[]{username}, String.class);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }

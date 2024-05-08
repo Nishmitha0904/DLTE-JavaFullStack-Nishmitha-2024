@@ -10,28 +10,10 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" th:href="@{'/css/dashboard.css'}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<!--    <link rel="stylesheet" type="text/css" th:href="@{'/css/dashboard.css'}">-->
+    <link rel="stylesheet" type="text/css" th:href="@{'/css/view.css'}">
     <title>Deposits</title>
-    <style>
-        .buttons {
-            display: none;
-        }
-        @media only screen and (max-width: 768px) {
-            .arrows {
-                display: none;
-            }
-            .buttons {
-                display: block;!important;
-            }
-        }
-        @media only screen and (min-width:768px) {
-            .footer {
-                position: absolute;
-                bottom:0;
-                width: 100%;
-            }
-        }
-    </style>
     <script>
         let currentPage = 1;
         const pageSize = 3;
@@ -87,8 +69,8 @@
                                                     <h5>${depositDescription}</h5>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="color: #182052">Apply</button>
-                                                    <button type="button" class="btn btn-primary" style="color: #182052">Calculate returns</button>
+                                                    <button type="button" class="btn btn-secondary" onclick="redirectToErrorPage()" style="background-color: #182052";>Apply</button>
+                                                    <button type="button" class="btn btn-primary" onclick="redirectToErrorPage()" style="background-color: #182052" >Calculate returns</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -148,8 +130,8 @@
                                             <h5>${deposit.DEPOSIT_DESCRIPTION}</h5>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="color: #182052">Apply</button>
-                                            <button type="button" class="btn btn-primary" style="color: #182052">Calculate returns</button>
+                                            <button type="button" class="btn" onclick="redirectToErrorPage()" style="background-color: #182052">Apply</button>
+                                            <button type="button" class="btn" onclick="redirectToErrorPage()" style=background-color: #182052">Calculate returns</button>
                                         </div>
                                     </div>
                                 </div>
@@ -169,11 +151,13 @@
                 },
                 error: function (xhr, status, error) {
                     console.error(xhr.responseText);
+                    let errorMessage = "There are no deposits available greater than or equal to the given roi.";
+                    $('#noDepositsFoundModal .modal-body').html(`<span style="color: black;">${errorMessage}</span>`);
+                    $('#noDepositsFoundModal').modal('show');
                 }
+
             });
         }
-
-
 
         $(document).ready(() => {
             listAll(currentPage);
@@ -181,6 +165,12 @@
             $('#searchByRoi').on('click', function () {
                 const roiFilterValue = $('#roi').val(); // Get the ROI value from the input field
                 if (roiFilterValue !== '') {
+                    //Validation
+                    const roiInput = document.getElementById("roi").value;
+                    if (!/^\d*\.?\d+$/.test(roiInput) || parseFloat(roiInput) <= 0) {
+                        alert("Please enter a valid ROI greater than 0.");
+                        return;
+                    }
                     listAllByRoi(roiFilterValue);
                 } else {
                     listAll();
@@ -199,7 +189,13 @@
                 listAll();
             }
         });
-
+        $('#pagination-next-btn').on('click', function (event) {
+            event.preventDefault();
+            if (currentPage < 2) {
+                currentPage++;
+                listAll(currentPage);
+            }
+        });
         $(document).on('click', '#pagination-prev', function (event) {
             event.preventDefault();
             if ($('#roi').val() !== '') {
@@ -214,31 +210,45 @@
                 }
             }
         });
+        $('#pagination-prev-btn').on('click',function (event) {
+            event.preventDefault();
+            if (currentPage > 1) {
+                currentPage--;
+                listAll(currentPage);
+            }
+        });
+
+        //Error page
+        function redirectToErrorPage() {
+            window.location.href = '/errors?code=404&msg=Page Under Construction';
+        }
+
+
 
     </script>
 </head>
 <header th:replace="nav::navbar"></header>
 <body>
+<div class="container mt-3">
+    <div class="row">
+        <div class="col text-left">
+            <i class="bi bi-arrow-left-circle-fill ml-1 " style="color: #182052; font-size: 2rem;" onclick="window.history.back()"></i>
+        </div>
+    </div>
+</div>
 <div class="container my-5">
     <h1 class="text-center" style="color: #182052">Deposits Available</h1>
 </div>
 <div class="container my-5">
-<!--    <input type="text" id="roiFilter" class="form-control mb-3" placeholder="Enter ROI">-->
-    <!-- Search by ROI -->
-    <div class="col-6">
-        <div class="form-group" style="border: 1px solid #182052; padding: 10px;">
-            <h6 class="mb-3" style="color: #182052; font-weight: bold;">Find by ROI</h6>
-            <div class="form-row">
-                <div class="col">
-                    <input type="text" id="roi" class="form-control" placeholder="Enter ROI">
-                </div>
-                <button id="searchByRoi" style="padding: 5px">
-                    Search
-                </button>
+    <div class="row justify-content-end">
+        <div class="col-6">
+            <div class="input-group">
+                <input type="text" id="roi" class="form-control" placeholder="Filter based on return of interest">
+                <button id="searchByRoi" class="btn" style="border-top-left-radius: 0; border-bottom-left-radius: 0; background-color: #f25c19; color: #182052;">Filter</button>
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row mt-3">
         <div class="col arrows">
             <button id="pagination-prev" class="btn btn-link" aria-label="Previous">
                 <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1) grayscale(100);"></span>
@@ -256,6 +266,22 @@
         <div class="col buttons">
             <button id="pagination-prev-btn" class="btn btn-info">Previous</button>
             <button id="pagination-next-btn" class="btn btn-primary">Next</button>
+        </div>
+    </div>
+
+    <div class="modal fade" id="noDepositsFoundModal" tabindex="-1" role="dialog" aria-labelledby="noDepositsFoundModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="noDepositsFoundModalLabel">No Deposits Found</h5>
+                </div>
+                <div class="modal-body">
+                    There are no deposits available greater than or equal to the given roi.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" style="background-color: #182052; border-color: darkblue;" onclick="location.reload()">Back</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>

@@ -27,7 +27,7 @@ public class CustomerSuccessHandler extends SimpleUrlAuthenticationSuccessHandle
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
         Customer customer= (Customer) authentication.getPrincipal();
         if(customer.getCustomerStatus().equalsIgnoreCase("active")){
-            if(customer.getAttempts()>=1){
+            if(customer.getAttempts()>1){
                 customer.setAttempts(1);
                 service.updateAttempts(customer);
             }
@@ -37,7 +37,7 @@ public class CustomerSuccessHandler extends SimpleUrlAuthenticationSuccessHandle
         }
         else{
             logger.warn(secureBundle.getString("max.attempts.admin"));
-            super.setDefaultTargetUrl("/login");
+            super.setDefaultTargetUrl("/login/?errors="+ " contact the admin");
         }
         super.onAuthenticationSuccess(request, response, authentication);
     }

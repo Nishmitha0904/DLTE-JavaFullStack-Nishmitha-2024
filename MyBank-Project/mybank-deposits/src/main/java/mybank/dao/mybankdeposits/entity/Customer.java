@@ -3,25 +3,16 @@ package mybank.dao.mybankdeposits.entity;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import javax.validation.constraints.NotNull;
 import java.util.Collection;
 
 public class Customer implements UserDetails {
-    @NotNull
     private Long customerId;
-    @NotNull
     private String customerName;
-    @NotNull
     private String customerAddress;
-    @NotNull
     private String customerStatus;
-    @NotNull
     private Long customerContact;
-    @NotNull
     private String username;
-    @NotNull
     private String password;
-    @NotNull
     private Integer attempts;
     private final int maxAttempt=3;
 
@@ -85,7 +76,7 @@ public class Customer implements UserDetails {
         return maxAttempt;
     }
 
-    public Customer(@NotNull Long customerId, @NotNull String customerName, @NotNull String customerAddress, @NotNull String customerStatus, @NotNull Long customerContact, @NotNull String username, @NotNull String password, @NotNull Integer attempts) {
+    public Customer(Long customerId, String customerName, String customerAddress, String customerStatus, Long customerContact, String username, String password) {
         this.customerId = customerId;
         this.customerName = customerName;
         this.customerAddress = customerAddress;
@@ -93,7 +84,6 @@ public class Customer implements UserDetails {
         this.customerContact = customerContact;
         this.username = username;
         this.password = password;
-        this.attempts = attempts;
     }
 
     public Customer() {

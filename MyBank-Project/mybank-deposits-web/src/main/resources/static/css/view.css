@@ -1,0 +1,18 @@
+.buttons {
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    .arrows {
+        display: none;
+    }
+    .buttons {
+        display: block;!important;
+    }
+}
+@media only screen and (min-width:768px) {
+    .footer {
+        position: absolute;
+        bottom:0;
+        width: 100%;
+    }
+}

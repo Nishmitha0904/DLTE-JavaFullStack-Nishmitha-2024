@@ -1,6 +1,7 @@
     package org.web.service.mybankdepositsweb.mvc;
 
     import mybank.dao.mybankdeposits.entity.DepositsAvailable;
+    import mybank.dao.mybankdeposits.interfaces.DepositInterface;
     import mybank.dao.mybankdeposits.service.DepositService;
     import org.springframework.beans.factory.annotation.Autowired;
     import org.springframework.stereotype.Controller;
@@ -15,10 +16,15 @@
     @Controller
     public class MvcController {
         @Autowired
-        DepositService depositService;
+        DepositInterface depositInterface;
 
         @GetMapping("/")
         public String login(){
+            return "index";
+        }
+
+        @GetMapping("/login/")
+        public String redirectLogin(){
             return "index";
         }
 
@@ -32,9 +38,12 @@
             return "view";
         }
 
+        @GetMapping("/error")
+        public String errorPage(){ return "error";}
+
         @GetMapping("/view/{roi}")
         public String viewDepositsByRoi(@RequestParam Double roi, Model model) throws SQLSyntaxErrorException {
-            List<DepositsAvailable> deposits = depositService.searchDepositsByRoi(roi);
+            List<DepositsAvailable> deposits = depositInterface.searchDepositsByRoi(roi);
             model.addAttribute("deposits",deposits);
             return "view";
         }

@@ -3,11 +3,14 @@ package org.web.service.mybankdepositsweb.rest;
 import mybank.dao.mybankdeposits.entity.DepositsAvailable;
 import mybank.dao.mybankdeposits.exception.DepositException;
 import mybank.dao.mybankdeposits.interfaces.DepositInterface;
+import mybank.dao.mybankdeposits.service.MyBankCustomerService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
 
@@ -21,6 +24,8 @@ import java.util.regex.Pattern;
 public class DepositController {
     @Autowired
     DepositInterface depositInterface;
+    @Autowired
+    MyBankCustomerService myBankCustomerService;
 
     Logger logger = LoggerFactory.getLogger(DepositController.class);
     ResourceBundle messageBundle = ResourceBundle.getBundle("messages");
@@ -34,10 +39,6 @@ public class DepositController {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(messageBundle.getString("roi.format"));
         }
         Double roi = Double.valueOf(strRoi);
-//        if (roi < 0) {
-//            logger.warn(messageBundle.getString("roi.negative"));
-//            return ResponseEntity.status(HttpStatus.OK).body(messageBundle.getString("roi.negative"));
-//        }
         try {
             List<DepositsAvailable> deposits = depositInterface.searchDepositsByRoi(roi);
             return ResponseEntity.ok().body(deposits);
@@ -52,4 +53,15 @@ public class DepositController {
         }
     }
 
+    @GetMapping("/name")
+    public String getCustomerName() {
+        String name = getUser();
+        String user = myBankCustomerService.getCustomerName(name);
+        return user;
+    }
+    public String getUser() {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        String name = authentication.getName();
+        return name;
+    }
 }
