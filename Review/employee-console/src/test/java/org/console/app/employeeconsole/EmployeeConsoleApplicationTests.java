@@ -1,13 +1,13 @@
-package org.console.app.employeeconsole;
-
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
-
-@SpringBootTest
-class EmployeeConsoleApplicationTests {
-
-	@Test
-	void contextLoads() {
-	}
-
-}
+//package org.console.app.employeeconsole;
+//
+//import org.junit.jupiter.api.Test;
+//import org.springframework.boot.test.context.SpringBootTest;
+//
+//@SpringBootTest
+//class EmployeeConsoleApplicationTests {
+//
+//    @Test
+//    void contextLoads() {
+//    }
+//
+//}

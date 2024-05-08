@@ -1,4 +1,4 @@
-package org.entity;
+package employee.file;
 
 import java.io.Serializable;
 

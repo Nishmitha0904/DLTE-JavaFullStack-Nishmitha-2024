@@ -1,6 +1,9 @@
-package console.app;
+package org.entity;
 
-public class Address {
+import java.io.Serializable;
+
+public class Address implements Serializable {
+//    private static final long serialVersionUID = 6574647645363L;
     private String homeAddress;
     private String area;
     private String city;

@@ -14,10 +14,8 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
 
-import javax.validation.constraints.Digits;
 import java.sql.SQLSyntaxErrorException;
 import java.util.*;
-import java.util.regex.Pattern;
 
 @RestController
 @RequestMapping("/deposit")

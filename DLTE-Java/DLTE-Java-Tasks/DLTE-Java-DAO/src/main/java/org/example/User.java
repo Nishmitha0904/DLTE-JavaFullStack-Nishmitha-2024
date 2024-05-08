@@ -1,6 +1,6 @@
 package org.example;
 
-public class Users {
+public class User {
     private String username;
     private String password;
     private String address;
@@ -8,10 +8,10 @@ public class Users {
     private Long contact;
     private Double balance;
 
-    public Users() {
+    public User() {
     }
 
-    public Users(String username, String password, String address, String email, Long contact, Double balance) {
+    public User(String username, String password, String address, String email, Long contact, Double balance) {
         this.username = username;
         this.password = password;
         this.address = address;

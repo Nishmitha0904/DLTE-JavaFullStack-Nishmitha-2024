@@ -13,6 +13,8 @@ import java.io.IOException;
 //Adding annotation @WebServlet -> name usually same as classname but can be different; value is for url
 //@WebServlet(name = "MyFirstServlet", value="/first/api/")
 //Only value also can be mentioned to call Servlet
+
+
 @WebServlet(value="/first/api/*")
 public class MyFirstServlet extends HttpServlet {
     Logger logger;

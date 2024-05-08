@@ -8,5 +8,6 @@ public interface UserRepository {
     User findById(String username);
     List<User> findAll();
     List<Transaction> findAllByUsername(String username);
-    List<Transaction> findAllByDateAndUsername(String username, Date transactionDate);
+    List<Transaction> findAllByDateAndUsername(String username, String transactionDate);
+    List<Transaction> findAllTransactions();
 }

@@ -1,4 +1,4 @@
-package console.app;
+package org.entity;
 
 public class Address {
     private String homeAddress;

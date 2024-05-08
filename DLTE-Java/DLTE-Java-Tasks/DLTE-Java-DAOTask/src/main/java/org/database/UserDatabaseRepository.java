@@ -140,13 +140,13 @@ public class UserDatabaseRepository implements UserRepository {
     }
 
 
-    public List<Transaction> findAllByDateAndUsername(String username, Date transactionDate) {
+    public List<Transaction> findAllByDateAndUsername(String username, String transactionDate) {
         List<Transaction> transactionList = new ArrayList<>();
         try {
             String query = "select * from transactions where transaction_doneby=? and transaction_date=?";
             preparedStatement=connection.prepareStatement(query);
             preparedStatement.setString(1,username);
-            preparedStatement.setDate(2,  transactionDate);
+            preparedStatement.setString(2,  transactionDate);
             resultSet = preparedStatement.executeQuery();
             Transaction transaction = null;
             while (resultSet.next()) {
@@ -161,6 +161,28 @@ public class UserDatabaseRepository implements UserRepository {
                 throw new UserException();
         } catch (SQLException e) {
             e.printStackTrace();
+        }
+        return transactionList;
+    }
+
+    @Override
+    public List<Transaction> findAllTransactions() {
+        List<Transaction> transactionList = new ArrayList<>();
+        try {
+            String query = "select * from transactions";
+            preparedStatement=connection.prepareStatement(query);
+            resultSet = preparedStatement.executeQuery();
+            Transaction transaction = null;
+            while (resultSet.next()) {
+                transaction = new Transaction();
+                transaction.setTransactionDoneBy(resultSet.getString(1));
+                transaction.setTransactionType(resultSet.getString(2));
+                transaction.setTransactionAmount(resultSet.getDouble(3));
+                transaction.setTransactionDate(resultSet.getDate(4));
+                transactionList.add(transaction);
+            }
+        } catch (SQLException sqlException) {
+            System.out.println(sqlException);
         }
         return transactionList;
     }

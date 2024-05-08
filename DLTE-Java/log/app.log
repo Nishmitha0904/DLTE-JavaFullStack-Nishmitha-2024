@@ -1,0 +1,2 @@
+10:24:10.078 [34m[main][0;39m INFO  org.example.CreditCardAnalysis - [34mSuccessfully found the credit card holders having given limit [0;39m 
+10:24:41.988 [31m[main][0;39m WARN  org.example.CreditCardAnalysis - [31mNo credit card holders found![0;39m 

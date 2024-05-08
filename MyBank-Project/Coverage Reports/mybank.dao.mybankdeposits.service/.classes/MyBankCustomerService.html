@@ -1,0 +1,150 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: MyBankCustomerService</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">mybank.dao.mybankdeposits.service</a> ]
+</div>
+
+<h1>Coverage Summary for Class: MyBankCustomerService (mybank.dao.mybankdeposits.service)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">MyBankCustomerService</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (7/ 7)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    83.3%
+  </span>
+  <span class="absValue">
+    (20/ 24)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package mybank.dao.mybankdeposits.service;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import mybank.dao.mybankdeposits.entity.Customer;
+<i>4</i>&nbsp;import org.slf4j.Logger;
+<i>5</i>&nbsp;import org.slf4j.LoggerFactory;
+<i>6</i>&nbsp;import org.springframework.beans.factory.annotation.Autowired;
+<i>7</i>&nbsp;import org.springframework.jdbc.core.BeanPropertyRowMapper;
+<i>8</i>&nbsp;import org.springframework.jdbc.core.JdbcTemplate;
+<i>9</i>&nbsp;import org.springframework.security.core.userdetails.UserDetails;
+<i>10</i>&nbsp;import org.springframework.security.core.userdetails.UserDetailsService;
+<i>11</i>&nbsp;import org.springframework.security.core.userdetails.UsernameNotFoundException;
+<i>12</i>&nbsp;import org.springframework.stereotype.Service;
+<i>13</i>&nbsp;
+<i>14</i>&nbsp;import java.util.List;
+<i>15</i>&nbsp;import java.util.Optional;
+<i>16</i>&nbsp;
+<i>17</i>&nbsp;@Service
+<b class="fc"><i>18</i>&nbsp;public class MyBankCustomerService implements UserDetailsService {</b>
+<i>19</i>&nbsp;    @Autowired
+<i>20</i>&nbsp;    private JdbcTemplate jdbcTemplate;
+<i>21</i>&nbsp;
+<b class="fc"><i>22</i>&nbsp;    Logger logger = LoggerFactory.getLogger(MyBankCustomerService.class);</b>
+<i>23</i>&nbsp;
+<i>24</i>&nbsp;    public Customer signingUp(Customer customer) {
+<b class="fc"><i>25</i>&nbsp;        int ack = jdbcTemplate.update(&quot;insert into mybank_app_customer(customer_id,customer_name,customer_address,customer_status,customer_contact,username,password) values(?,?,?,?,?,?,?)&quot;,</b>
+<i>26</i>&nbsp;                new Object[]{
+<b class="fc"><i>27</i>&nbsp;                        customer.getCustomerId(), customer.getCustomerName(), customer.getCustomerAddress(),</b>
+<b class="fc"><i>28</i>&nbsp;                        customer.getCustomerStatus(), customer.getCustomerContact(), customer.getUsername(), customer.getPassword()</b>
+<i>29</i>&nbsp;                });
+<b class="fc"><i>30</i>&nbsp;        return customer;</b>
+<i>31</i>&nbsp;    }
+<i>32</i>&nbsp;
+<i>33</i>&nbsp;    public Customer findByUsername(String username) {
+<b class="fc"><i>34</i>&nbsp;        List&lt;Customer&gt; customerList = jdbcTemplate.query(&quot;select * from mybank_app_customer&quot;,</b>
+<i>35</i>&nbsp;                new BeanPropertyRowMapper&lt;&gt;(Customer.class));
+<b class="fc"><i>36</i>&nbsp;        Customer customer = customerList.stream().filter(cust -&gt; cust.getUsername().equals(username)).findFirst().orElse(null);</b>
+<b class="fc"><i>37</i>&nbsp;        return customer;</b>
+<i>38</i>&nbsp;    }
+<i>39</i>&nbsp;
+<i>40</i>&nbsp;    public void updateAttempts(Customer customer) {
+<b class="fc"><i>41</i>&nbsp;        jdbcTemplate.update(&quot;update mybank_app_customer set attempts=? where username=?&quot;,</b>
+<b class="fc"><i>42</i>&nbsp;                new Object[]{customer.getAttempts(), customer.getUsername()});</b>
+<b class="fc"><i>43</i>&nbsp;    }</b>
+<i>44</i>&nbsp;
+<i>45</i>&nbsp;    public void updateStatus(Customer customer) {
+<b class="fc"><i>46</i>&nbsp;        jdbcTemplate.update(&quot;update mybank_app_customer set customer_status=&#39;inactive&#39; where username=?&quot;,</b>
+<b class="fc"><i>47</i>&nbsp;                new Object[]{customer.getUsername()});</b>
+<b class="fc"><i>48</i>&nbsp;    }</b>
+<i>49</i>&nbsp;
+<i>50</i>&nbsp;    @Override
+<i>51</i>&nbsp;    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+<b class="fc"><i>52</i>&nbsp;        Customer customer = findByUsername(username);</b>
+<b class="fc"><i>53</i>&nbsp;        if (customer == null)</b>
+<b class="fc"><i>54</i>&nbsp;            throw new UsernameNotFoundException(username);</b>
+<b class="nc"><i>55</i>&nbsp;        return customer;</b>
+<i>56</i>&nbsp;    }
+<i>57</i>&nbsp;
+<i>58</i>&nbsp;    public String getCustomerName(String username) {
+<i>59</i>&nbsp;        try {
+<b class="fc"><i>60</i>&nbsp;            String sql = &quot;SELECT customer_name FROM MYBANK_APP_CUSTOMER  WHERE username =  ?&quot;;</b>
+<b class="fc"><i>61</i>&nbsp;            return jdbcTemplate.queryForObject(sql, new Object[]{username}, String.class);</b>
+<b class="nc"><i>62</i>&nbsp;        } catch (Exception e) {</b>
+<b class="nc"><i>63</i>&nbsp;            e.printStackTrace();</b>
+<i>64</i>&nbsp;        }
+<b class="nc"><i>65</i>&nbsp;        return null;</b>
+<i>66</i>&nbsp;    }
+<i>67</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2024-05-08 10:46</div>
+</div>
+</body>
+</html>

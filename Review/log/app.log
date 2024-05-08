@@ -1,0 +1,13 @@
+09:03:28.385 [main] WARN  App.class - Invalid Employee ID. Employee ID must contain numbers only
+09:03:39.897 [main] INFO  App.class - Invalid mobile number entered
+09:04:04.719 [main] INFO  App.class - Translation done
+09:04:04.804 [main] INFO  App.class - Employee details saved
+09:04:06.960 [main] INFO  App.class - Employee details inserted successfully!
+10:35:11.404 [main] INFO  App.class - Translation done
+10:35:11.451 [main] INFO  App.class - Employee details saved
+10:35:13.495 [main] INFO  App.class - Employee details inserted successfully!
+10:41:46.775 [main] INFO  App.class - Translation done
+10:43:54.511 [main] INFO  App.class - Employee details displayed successfully!
+10:44:09.492 [main] INFO  App.class - Employee details having same pincode displayed successfully!
+10:44:16.225 [main] INFO  App.class - Employee details having same pincode displayed successfully!
+11:05:52.574 [main] INFO  App.class - Employee details displayed successfully!

@@ -11,6 +11,14 @@ public class Address {
     public Address() {
     }
 
+    public Address(String houseName, String area, String city, String state, Long pincode) {
+        this.houseName = houseName;
+        this.area = area;
+        this.city = city;
+        this.state = state;
+        this.pincode = pincode;
+    }
+
     public Address(Long empid, String houseName, String area, String city, String state, Long pincode) {
         this.empid = empid;
         this.houseName = houseName;
@@ -71,8 +79,8 @@ public class Address {
     @Override
     public String toString() {
         return "Address{" +
-                "empid=" + empid +
-                ", houseName='" + houseName + '\'' +
+
+                "houseName='" + houseName + '\'' +
                 ", area='" + area + '\'' +
                 ", city='" + city + '\'' +
                 ", state='" + state + '\'' +

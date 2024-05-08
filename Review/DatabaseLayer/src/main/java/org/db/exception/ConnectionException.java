@@ -2,8 +2,8 @@ package org.db.exception;
 
 import java.util.ResourceBundle;
 
-public class ConnectionFailure extends RuntimeException {
-    public ConnectionFailure() {
-        super(String.valueOf(ResourceBundle.getBundle("database")));
+public class ConnectionException extends RuntimeException {
+    public ConnectionException() {
+        super(ResourceBundle.getBundle("exception").getString("connection.fail"));
     }
 }

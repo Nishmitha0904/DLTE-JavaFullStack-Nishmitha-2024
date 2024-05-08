@@ -22,6 +22,13 @@ public class Employee {
         this.employeePermanentAddress = employeePermanentAddress;
     }
 
+    public Employee(Long employeeID, String employeeName, String employeeEmail, Long employeeMobile) {
+        this.employeeID = employeeID;
+        this.employeeName = employeeName;
+        this.employeeEmail = employeeEmail;
+        this.employeeMobile = employeeMobile;
+    }
+
     public Long getEmployeeID() {
         return employeeID;
     }
@@ -68,5 +75,17 @@ public class Employee {
 
     public void setEmployeePermanentAddress(Address employeePermanentAddress) {
         this.employeePermanentAddress = employeePermanentAddress;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "employeeID=" + employeeID +
+                ", employeeName='" + employeeName + '\'' +
+                ", employeeEmail='" + employeeEmail + '\'' +
+                ", employeeMobile=" + employeeMobile +
+                ", employeeTemporaryAddress=" + employeeTemporaryAddress +
+                ", employeePermanentAddress=" + employeePermanentAddress +
+                '}';
     }
 }

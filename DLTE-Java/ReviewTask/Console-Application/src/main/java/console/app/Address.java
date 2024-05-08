@@ -1,4 +1,4 @@
-package org.example;
+package console.app;
 
 public class Address {
     private String homeAddress;
@@ -7,16 +7,6 @@ public class Address {
     private String state;
     private Long pincode;
 
-    @Override
-//    public String toString() {
-//        return "Address{" +
-//                "homeAddress='" + homeAddress + '\'' +
-//                ", area='" + area + '\'' +
-//                ", city='" + city + '\'' +
-//                ", state='" + state + '\'' +
-//                ", pincode=" + pincode +
-//                '}';
-//    }
     public String toString() {
         return homeAddress +
                 ", " + area +

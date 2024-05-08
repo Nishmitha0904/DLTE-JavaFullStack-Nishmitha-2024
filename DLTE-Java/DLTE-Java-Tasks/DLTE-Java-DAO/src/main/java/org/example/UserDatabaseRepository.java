@@ -1,4 +1,4 @@
-package org.database;
+package org.example;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -35,7 +35,6 @@ public class UserDatabaseRepository implements UserRepository {
         } catch (IOException ioException) {
             System.out.println(ioException);
         }
-
     }
 
     @Override

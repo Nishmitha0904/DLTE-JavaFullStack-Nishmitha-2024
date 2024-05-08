@@ -4,6 +4,7 @@ import org.db.EmployeeServices;
 import org.db.entity.Employee;
 import org.db.exception.EmployeeExistsException;
 import org.db.middleware.DatabaseTarget;
+import org.db.middleware.EmployeeImplementations;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,33 +19,36 @@ import java.util.List;
 @WebService
 @SOAPBinding (style = SOAPBinding.Style.RPC)
 public class EmployeeSoap {
-    EmployeeServices services;
-    static Logger logger = LoggerFactory.getLogger("App.class");
+//    EmployeeServices services;
+    EmployeeImplementations implementations;
+//    static Logger logger = LoggerFactory.getLogger("EmployeeSoap.class");
 
+//    public EmployeeSoap() {
+//        DatabaseTarget databaseTarget = new DatabaseTarget();
+//        services=new EmployeeServices(databaseTarget);
+//    }
     public EmployeeSoap() {
-        DatabaseTarget databaseTarget = new DatabaseTarget();
-        services=new EmployeeServices(databaseTarget);
+        implementations = new EmployeeImplementations();
     }
 
     @WebMethod
     public void insertEmployee(@WebParam(name = "Employee") Employee employee) {
         try {
-            services.callSave(employee);
+            implementations.save(employee);
         } catch (EmployeeExistsException existException) {
-            logger.warn("Employee already Exists");
+//            logger.warn("Employee already Exists");
             System.out.println("Employee already exists!!");
-            break;
+//            break;
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
     }
 
     @WebMethod
     public GroupOfEmployees readAll() {
         GroupOfEmployees employeeList = new GroupOfEmployees();
         try {
-            List<Employee> employees = services.callDisplay();
+            List<Employee> employees = implementations.display();
             employeeList.setEmployees(employees);
 
         } catch (SQLException e) {
@@ -57,7 +61,7 @@ public class EmployeeSoap {
     public GroupOfEmployees readAllByPincode(Long pincode) {
         GroupOfEmployees employeeList = new GroupOfEmployees();
         try {
-            List<Employee> employees = services.callDisplayByPincode(pincode);
+            List<Employee> employees = implementations.displayByPincode(pincode);
             employeeList.setEmployees(employees);
         } catch (SQLException e) {
             e.printStackTrace();
@@ -69,8 +73,54 @@ public class EmployeeSoap {
     @WebMethod
     @WebResult(name = "Employee")
     public Employee readById(Long id) {
-        Employee employee = services.callFindById(id);
+        Employee employee = implementations.findById(id);
         return employee;
     }
 
+//    @WebMethod
+//    public void insertEmployee(@WebParam(name = "Employee") Employee employee) {
+//        try {
+//            services.callSave(employee);
+//        } catch (EmployeeExistsException existException) {
+////            logger.warn("Employee already Exists");
+//            System.out.println("Employee already exists!!");
+////            break;
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//
+//    }
+
+//    @WebMethod
+//    public GroupOfEmployees readAll() {
+//        GroupOfEmployees employeeList = new GroupOfEmployees();
+//        try {
+//            List<Employee> employees = services.callDisplay();
+//            employeeList.setEmployees(employees);
+//
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//        return employeeList;
+//    }
+
+//    @WebMethod
+//    public GroupOfEmployees readAllByPincode(Long pincode) {
+//        GroupOfEmployees employeeList = new GroupOfEmployees();
+//        try {
+//            List<Employee> employees = services.callDisplayByPincode(pincode);
+//            employeeList.setEmployees(employees);
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//
+//        return employeeList;
+//    }
+
+//    @WebMethod
+//    @WebResult(name = "Employee")
+//    public Employee readById(Long id) {
+//        Employee employee = services.callFindById(id);
+//        return employee;
+//    }
 }

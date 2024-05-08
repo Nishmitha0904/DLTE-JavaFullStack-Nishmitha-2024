@@ -1,10 +1,14 @@
 package wire.di.springbootautowiring;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public interface LoanInterface {
+
+//    ArrayList<Integer> list;
     List<Loan> loanList = Stream.of(
             new Loan(16752361523423L, 50000.0, "Home", "Open", "John", 7656765456L),
             new Loan(87463253635221L, 100000.0, "Personal", "Open", "Peter", 7647342389L),

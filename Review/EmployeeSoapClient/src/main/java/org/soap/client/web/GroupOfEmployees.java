@@ -57,9 +57,10 @@ public class GroupOfEmployees {
      * Objects of the following type(s) are allowed in the list
      * {@link Employee }
      * 
-     * 
+     *
+     * @return
      */
-    public List<Employee> getEmployees() {
+    public List<web.Employee> getEmployees() {
         if (employees == null) {
             employees = new ArrayList<Employee>();
         }

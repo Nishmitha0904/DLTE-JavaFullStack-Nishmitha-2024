@@ -13,6 +13,6 @@ public class App
         StorageTarget storageTarget = new DatabaseTarget();
         UserServices userServices = new UserServices(storageTarget);
 
-        System.out.println(userServices.callFindByDateAndUsername("nishmitha", Date.valueOf("2024-03-12")));
+        //System.out.println(userServices.callFindByDateAndUsername("nishmitha", Date.valueOf("2024-03-12")));
     }
 }

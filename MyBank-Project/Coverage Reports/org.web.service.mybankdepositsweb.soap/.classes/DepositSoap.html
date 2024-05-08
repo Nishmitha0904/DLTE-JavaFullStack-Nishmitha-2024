@@ -1,0 +1,158 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: DepositSoap</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">org.web.service.mybankdepositsweb.soap</a> ]
+</div>
+
+<h1>Coverage Summary for Class: DepositSoap (org.web.service.mybankdepositsweb.soap)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">DepositSoap</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/ 3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    67.7%
+  </span>
+  <span class="absValue">
+    (21/ 31)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package org.web.service.mybankdepositsweb.soap;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import mybank.dao.mybankdeposits.entity.DepositsAvailable;
+<i>4</i>&nbsp;import mybank.dao.mybankdeposits.exception.DepositException;
+<i>5</i>&nbsp;import mybank.dao.mybankdeposits.interfaces.DepositInterface;
+<i>6</i>&nbsp;import org.slf4j.Logger;
+<i>7</i>&nbsp;import org.slf4j.LoggerFactory;
+<i>8</i>&nbsp;import org.springframework.beans.BeanUtils;
+<i>9</i>&nbsp;import org.springframework.beans.factory.annotation.Autowired;
+<i>10</i>&nbsp;import org.springframework.context.annotation.ComponentScan;
+<i>11</i>&nbsp;import org.springframework.ws.server.endpoint.annotation.Endpoint;
+<i>12</i>&nbsp;import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
+<i>13</i>&nbsp;import org.springframework.ws.server.endpoint.annotation.RequestPayload;
+<i>14</i>&nbsp;import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
+<i>15</i>&nbsp;import services.deposits.Deposits;
+<i>16</i>&nbsp;import services.deposits.ListAllDepositsRequest;
+<i>17</i>&nbsp;import services.deposits.ListAllDepositsResponse;
+<i>18</i>&nbsp;import services.deposits.ServiceStatus;
+<i>19</i>&nbsp;
+<i>20</i>&nbsp;import javax.servlet.http.HttpServletResponse;
+<i>21</i>&nbsp;import java.sql.SQLSyntaxErrorException;
+<i>22</i>&nbsp;import java.util.ArrayList;
+<i>23</i>&nbsp;import java.util.List;
+<i>24</i>&nbsp;import java.util.ResourceBundle;
+<i>25</i>&nbsp;
+<i>26</i>&nbsp;@ComponentScan(&quot;mybank.dao.mybankdeposits&quot;)
+<i>27</i>&nbsp;@Endpoint
+<b class="fc"><i>28</i>&nbsp;public class DepositSoap {</b>
+<b class="fc"><i>29</i>&nbsp;    private final String url = &quot;http://deposits.services&quot;;</b>
+<i>30</i>&nbsp;
+<b class="fc"><i>31</i>&nbsp;    ResourceBundle messageBundle = ResourceBundle.getBundle(&quot;messages&quot;);</b>
+<b class="fc"><i>32</i>&nbsp;    Logger logger = LoggerFactory.getLogger(DepositSoap.class);</b>
+<i>33</i>&nbsp;
+<i>34</i>&nbsp;    @Autowired
+<i>35</i>&nbsp;//    public DepositService service;
+<i>36</i>&nbsp;    private DepositInterface depositInterface;
+<i>37</i>&nbsp;
+<i>38</i>&nbsp;    @PayloadRoot(namespace = url, localPart = &quot;listAllDepositsRequest&quot;)
+<i>39</i>&nbsp;    @ResponsePayload
+<i>40</i>&nbsp;    public ListAllDepositsResponse listDeposits(@RequestPayload ListAllDepositsRequest listAllDepositsRequest) {
+<b class="fc"><i>41</i>&nbsp;        ListAllDepositsResponse listAllDepositsResponse = new ListAllDepositsResponse();</b>
+<b class="fc"><i>42</i>&nbsp;        ServiceStatus serviceStatus = new ServiceStatus();</b>
+<i>43</i>&nbsp;
+<b class="fc"><i>44</i>&nbsp;        List&lt;DepositsAvailable&gt; daoDeposits = null;</b>
+<i>45</i>&nbsp;        try {
+<b class="fc"><i>46</i>&nbsp;            daoDeposits = depositInterface.listAllDeposits();</b>
+<b class="fc"><i>47</i>&nbsp;            List&lt;Deposits&gt; actualDeposits = new ArrayList&lt;&gt;();</b>
+<b class="fc"><i>48</i>&nbsp;            daoDeposits.forEach(each-&gt;{</b>
+<b class="fc"><i>49</i>&nbsp;                Deposits deposits = new Deposits();</b>
+<b class="fc"><i>50</i>&nbsp;                BeanUtils.copyProperties(each,deposits);</b>
+<b class="fc"><i>51</i>&nbsp;                actualDeposits.add(deposits);</b>
+<b class="fc"><i>52</i>&nbsp;            });</b>
+<b class="fc"><i>53</i>&nbsp;            listAllDepositsResponse.getDeposits().addAll(actualDeposits);</b>
+<b class="fc"><i>54</i>&nbsp;            serviceStatus.setMessage(messageBundle.getString(&quot;fetch.success&quot;));</b>
+<b class="fc"><i>55</i>&nbsp;            logger.info(messageBundle.getString(&quot;fetch.success&quot;));</b>
+<b class="fc"><i>56</i>&nbsp;            logger.info(String.valueOf(HttpServletResponse.SC_OK));</b>
+<b class="fc"><i>57</i>&nbsp;            serviceStatus.setStatus(HttpServletResponse.SC_OK);</b>
+<b class="fc"><i>58</i>&nbsp;            listAllDepositsResponse.setServiceStatus(serviceStatus);</b>
+<b class="nc"><i>59</i>&nbsp;        } catch (SQLSyntaxErrorException e) {</b>
+<b class="nc"><i>60</i>&nbsp;            logger.error(messageBundle.getString(&quot;internal.error&quot;));</b>
+<b class="nc"><i>61</i>&nbsp;            serviceStatus.setMessage(messageBundle.getString(&quot;internal.error&quot;));</b>
+<b class="nc"><i>62</i>&nbsp;            serviceStatus.setStatus(HttpServletResponse.SC_OK);</b>
+<b class="nc"><i>63</i>&nbsp;            listAllDepositsResponse.setServiceStatus(serviceStatus);</b>
+<b class="nc"><i>64</i>&nbsp;        } catch (DepositException exception) {</b>
+<b class="nc"><i>65</i>&nbsp;            logger.warn(messageBundle.getString(&quot;deposit.exception&quot;));</b>
+<b class="nc"><i>66</i>&nbsp;            serviceStatus.setMessage(messageBundle.getString(&quot;deposit.exception&quot;));</b>
+<b class="nc"><i>67</i>&nbsp;            serviceStatus.setStatus(HttpServletResponse.SC_OK);</b>
+<b class="nc"><i>68</i>&nbsp;            listAllDepositsResponse.setServiceStatus(serviceStatus);</b>
+<i>69</i>&nbsp;        }
+<i>70</i>&nbsp;        finally {
+<b class="fc"><i>71</i>&nbsp;            return listAllDepositsResponse;</b>
+<i>72</i>&nbsp;        }
+<i>73</i>&nbsp;
+<i>74</i>&nbsp;    }
+<i>75</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2024-05-08 10:47</div>
+</div>
+</body>
+</html>

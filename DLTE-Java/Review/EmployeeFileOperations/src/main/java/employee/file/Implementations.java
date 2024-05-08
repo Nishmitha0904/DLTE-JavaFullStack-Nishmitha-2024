@@ -1,7 +1,5 @@
 package employee.file;
 
-import org.entity.Employee;
-import org.entity.EmployeeDetailInterface;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -10,7 +8,7 @@ import java.util.List;
 public class Implementations implements EmployeeDetailInterface {
 
     List<Employee> employeeList = new ArrayList<>();
-    File filePath = new File("employee.doc");
+    File filePath = new File("Employee.txt");
 
     public void writeIntoFile() throws IOException {
         FileOutputStream fileOutputStream = new FileOutputStream(filePath);
@@ -31,15 +29,18 @@ public class Implementations implements EmployeeDetailInterface {
     @Override
     public void insertDetails(List<Employee> employees) {
         try {
-            readFromFile();
+            if(filePath.exists()){
+                readFromFile();
+            }
             for (Employee employee: employees) {
-                boolean employeeExists = employeeList.stream().anyMatch(exist -> exist.getEmployeeID() == employee.getEmployeeID());
-                if (employeeExists) {
+                boolean alreadyExists = employeeList.stream().anyMatch(exist -> exist.getEmployeeID() == employee.getEmployeeID());
+                if (alreadyExists) {
                     System.out.println("Employee already exists");
                 } else {
                     employeeList.addAll(employees);
                 }
             }
+            writeIntoFile();
         } catch (IOException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {

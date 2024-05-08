@@ -2,140 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08eae746-68db-4e88-8664-d5e455f34b6f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/.idea/969-Testing-Rest-Mappings.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/src/main/java/rest/endpoint/FindAllByDateAndUsername.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/src/main/java/rest/endpoint/FindAllByUsername.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/src/main/java/rest/endpoint/findAllUsers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/src/main/resources/exception.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/target/867-Rest-GetMapping-Transactions.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/target/867-Rest-GetMapping-Transactions/WEB-INF/classes/exception.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/target/867-Rest-GetMapping-Transactions/WEB-INF/classes/rest/endpoint/FindAllByDateAndUsername.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/target/867-Rest-GetMapping-Transactions/WEB-INF/classes/rest/endpoint/FindAllByUsername.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/target/867-Rest-GetMapping-Transactions/WEB-INF/classes/rest/endpoint/findAllUsers.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/target/867-Rest-GetMapping-Transactions/WEB-INF/lib/DLTE-Java-DAOTask-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/target/867-Rest-GetMapping-Transactions/WEB-INF/lib/gson-2.10.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/target/867-Rest-GetMapping-Transactions/WEB-INF/lib/javax.ws.rs-api-2.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/target/867-Rest-GetMapping-Transactions/WEB-INF/lib/logback-classic-1.3.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/target/867-Rest-GetMapping-Transactions/WEB-INF/lib/logback-core-1.3.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/target/867-Rest-GetMapping-Transactions/WEB-INF/lib/ojdbc6-11.2.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/target/867-Rest-GetMapping-Transactions/WEB-INF/lib/ons-11.2.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/target/867-Rest-GetMapping-Transactions/WEB-INF/lib/oraclepki-11.2.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/target/867-Rest-GetMapping-Transactions/WEB-INF/lib/osdt_cert-11.2.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/target/867-Rest-GetMapping-Transactions/WEB-INF/lib/osdt_core-11.2.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/target/867-Rest-GetMapping-Transactions/WEB-INF/lib/simplefan-11.2.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/target/867-Rest-GetMapping-Transactions/WEB-INF/lib/slf4j-api-2.0.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/target/867-Rest-GetMapping-Transactions/WEB-INF/lib/ucp-11.2.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/target/867-Rest-GetMapping-Transactions/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/target/867-Rest-GetMapping-Transactions/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/target/classes/exception.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/target/classes/rest/endpoint/FindAllByDateAndUsername.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/target/classes/rest/endpoint/FindAllByUsername.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/target/classes/rest/endpoint/findAllUsers.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/src/main/java/rest/endpoint/FindAllByDateAndUsername.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/src/main/java/rest/endpoint/FindAllByUsername.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/src/main/java/rest/endpoint/findAllUsers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/src/main/resources/exception.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/target/867-Rest-GetMapping-Transactions.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/target/867-Rest-GetMapping-Transactions/WEB-INF/classes/exception.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/target/867-Rest-GetMapping-Transactions/WEB-INF/classes/rest/endpoint/FindAllByDateAndUsername.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/target/867-Rest-GetMapping-Transactions/WEB-INF/classes/rest/endpoint/FindAllByUsername.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/target/867-Rest-GetMapping-Transactions/WEB-INF/classes/rest/endpoint/findAllUsers.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/target/867-Rest-GetMapping-Transactions/WEB-INF/lib/DLTE-Java-DAOTask-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/target/867-Rest-GetMapping-Transactions/WEB-INF/lib/gson-2.10.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/target/867-Rest-GetMapping-Transactions/WEB-INF/lib/javax.ws.rs-api-2.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/target/867-Rest-GetMapping-Transactions/WEB-INF/lib/logback-classic-1.3.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/target/867-Rest-GetMapping-Transactions/WEB-INF/lib/logback-core-1.3.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/target/867-Rest-GetMapping-Transactions/WEB-INF/lib/ojdbc6-11.2.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/target/867-Rest-GetMapping-Transactions/WEB-INF/lib/ons-11.2.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/target/867-Rest-GetMapping-Transactions/WEB-INF/lib/oraclepki-11.2.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/target/867-Rest-GetMapping-Transactions/WEB-INF/lib/osdt_cert-11.2.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/target/867-Rest-GetMapping-Transactions/WEB-INF/lib/osdt_core-11.2.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/target/867-Rest-GetMapping-Transactions/WEB-INF/lib/simplefan-11.2.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/target/867-Rest-GetMapping-Transactions/WEB-INF/lib/slf4j-api-2.0.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/target/867-Rest-GetMapping-Transactions/WEB-INF/lib/ucp-11.2.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/target/867-Rest-GetMapping-Transactions/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/target/867-Rest-GetMapping-Transactions/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/target/classes/exception.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/target/classes/rest/endpoint/FindAllByDateAndUsername.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/target/classes/rest/endpoint/FindAllByUsername.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/target/classes/rest/endpoint/findAllUsers.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-RestMappings/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-RestMappings/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-RestMappings/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-RestMappings/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-RestMappings/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DLTE-Spring-Class/src/main/java/di/ioc/Branch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DLTE-Spring-Class/src/main/java/di/ioc/MyBankContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DLTE-Spring-Class/src/main/resources/mybank-branches.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../soapservice-soapui-project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/ConsoleApplication/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/ConsoleApplication/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/ConsoleApplication/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/ConsoleApplication/src/main/java/org/console/app/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/ConsoleApplication/src/main/java/org/console/app/EmployeeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/ConsoleApplication/src/main/java/org/console/app/Validation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/ConsoleApplication/src/main/java/org/console/app/entity/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/ConsoleApplication/src/main/java/org/console/app/entity/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/ConsoleApplication/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/ConsoleApplication/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/ConsoleApplication/src/test/java/org/console/app/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/ConsoleApplication/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/ConsoleApplication/target/test-classes/META-INF/ConsoleApplication.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/ConsoleApplication/target/test-classes/org/console/app/AppTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/EmployeeServices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/entity/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/entity/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/middleware/DatabaseTarget.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/middleware/EmployeeImplementations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/remote/EmployeeInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/remote/StorageTarget.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/DatabaseLayer-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/classes/database.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/classes/org/db/App.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/classes/org/db/EmployeeServices.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/classes/org/db/entity/Address.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/classes/org/db/entity/Employee.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/classes/org/db/middleware/DatabaseTarget.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/classes/org/db/middleware/EmployeeImplementations.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/classes/org/db/remote/EmployeeInterface.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/classes/org/db/remote/StorageTarget.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/surefire-reports/TEST-org.db.AppTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/surefire-reports/org.db.AppTest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/test-classes/org/db/AppTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/FileLayer/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/FileLayer/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/FileLayer/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/FileLayer/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/FileLayer/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/FileLayer/src/main/java/org/file/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Review/FileLayer/src/main/java/org/file/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/.idea/DLTE-JavaEE-Class.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ConsoleApplication/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ConsoleApplication/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ConsoleApplication/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ConsoleApplication/src/main/java/org/console/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ConsoleApplication/src/main/java/org/console/app/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ConsoleApplication/src/main/java/org/console/app/web/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ConsoleApplication/src/main/java/org/console/app/web/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ConsoleApplication/src/main/java/org/console/app/web/EmployeeSoap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ConsoleApplication/src/main/java/org/console/app/web/EmployeeSoap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ConsoleApplication/src/main/java/org/console/app/web/EmployeeSoapService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ConsoleApplication/src/main/java/org/console/app/web/EmployeeSoapService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ConsoleApplication/src/main/java/org/console/app/web/GroupOfEmployees.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ConsoleApplication/src/main/java/org/console/app/web/GroupOfEmployees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ConsoleApplication/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../ConsoleApplication/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ConsoleApplication/target/classes/org/console/app/console/ConsoleApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ConsoleApplication/target/classes/soap/service/Address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ConsoleApplication/target/classes/soap/service/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ConsoleApplication/target/classes/soap/service/EmployeeSoap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ConsoleApplication/target/classes/soap/service/EmployeeSoapService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ConsoleApplication/target/classes/soap/service/GroupOfEmployees.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ConsoleApplication/target/classes/soap/service/ObjectFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ConsoleApplication/target/classes/soap/service/package-info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ConsoleApplication/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../ConsoleApplication/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ConsoleApplication/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../ConsoleApplication/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-Frontend/Bootstrap Alignments.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-Frontend/BootstrapButtons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-Frontend/DLTE-FE-003-BootStrap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-Frontend/images/tieto.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Class/DLTE-Java005/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Class/DLTE-Java005/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Class/DLTE-Java005/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Class/DLTE-Java005/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Class/DLTE-Java005/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Class/DLTE-Java005/.idea/vcs.xml" afterDir="false" />
@@ -160,6 +53,17 @@
       <change beforePath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-DAO/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-DAO/src/main/resources/database.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-DAO/src/test/java/org/example/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-DAO/src/test/java/org/example/AppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-DAO/target/DLTE-Java-DAO-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-DAO/target/DLTE-Java-DAO-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-DAOTask/src/main/java/org/database/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-DAOTask/src/main/java/org/database/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-DAOTask/src/main/java/org/database/UserDatabaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-DAOTask/src/main/java/org/database/UserDatabaseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-DAOTask/src/main/java/org/database/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-DAOTask/src/main/java/org/database/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-DAOTask/src/main/java/org/database/UserServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-DAOTask/src/main/java/org/database/UserServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-DAOTask/target/DLTE-Java-DAOTask-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-DAOTask/target/DLTE-Java-DAOTask-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-DAOTask/target/classes/org/database/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-DAOTask/target/classes/org/database/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-DAOTask/target/classes/org/database/UserDatabaseRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-DAOTask/target/classes/org/database/UserDatabaseRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-DAOTask/target/classes/org/database/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-DAOTask/target/classes/org/database/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-DAOTask/target/classes/org/database/UserServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-DAOTask/target/classes/org/database/UserServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-DAOTask/target/surefire-reports/TEST-org.database.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-DAOTask/target/surefire-reports/TEST-org.database.AppTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-DAOTask/target/surefire-reports/org.database.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-DAOTask/target/surefire-reports/org.database.AppTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-Project/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-Project/DLTE-Java-Project/log/user.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-Project/DLTE-Java-Project/log/user.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-Project/DLTE-Java-Project/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-Java/DLTE-Java-Tasks/DLTE-Java-Project/DLTE-Java-Project/pom.xml" afterDir="false" />
@@ -356,10 +260,15 @@
       <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-001/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-001/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-001/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-001/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-001/src/main/java/first/MyFirstServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-001/src/main/java/first/MyFirstServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-001/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-001/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-001/target/DLTE-JavaEE-001.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-001/target/DLTE-JavaEE-001.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-001/target/DLTE-JavaEE-001/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-001/target/DLTE-JavaEE-001/WEB-INF/classes/META-INF/DLTE-JavaEE-001.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-001/target/DLTE-JavaEE-001/WEB-INF/classes/first/IncorporateWithObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-001/target/DLTE-JavaEE-001/WEB-INF/classes/first/IncorporateWithObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-001/target/DLTE-JavaEE-001/WEB-INF/classes/first/MyFirstServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-001/target/DLTE-JavaEE-001/WEB-INF/classes/first/MyFirstServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-001/target/classes/META-INF/DLTE-JavaEE-001.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-001/target/classes/first/IncorporateWithObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-001/target/classes/first/IncorporateWithObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-001/target/classes/first/MyFirstServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-001/target/classes/first/MyFirstServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-003/src/main/java/initial/MyEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-003/src/main/java/initial/MyEndpoint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-003/src/main/java/initial/MySource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-003/src/main/java/initial/MySource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-008-JNDI-access/.idea/.gitignore" beforeDir="false" />
@@ -386,94 +295,213 @@
       <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-RMI/src/main/java/rmi/explore/MyUserFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-RMI/src/main/java/rmi/explore/MyUserFunctions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-RMI/src/main/java/rmi/explore/MyUserOfficial.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-RMI/src/main/java/rmi/explore/MyUserOfficial.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-RMI/src/main/java/rmi/explore/MyUserServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Class/DLTE-JavaEE-RMI/src/main/java/rmi/explore/MyUserServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/867-Rest-GetMapping-Transactions/src/main/java/rest/endpoint/FindAllByUsername.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/867-Rest-GetMapping-Transactions/src/main/java/rest/endpoint/FindAllByUsername.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/867-Rest-GetMapping-Transactions/target/867-Rest-GetMapping-Transactions.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/867-Rest-GetMapping-Transactions/target/867-Rest-GetMapping-Transactions.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/867-Rest-GetMapping-Transactions/target/867-Rest-GetMapping-Transactions/WEB-INF/classes/rest/endpoint/FindAllByDateAndUsername.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/867-Rest-GetMapping-Transactions/target/867-Rest-GetMapping-Transactions/WEB-INF/classes/rest/endpoint/FindAllByDateAndUsername.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/867-Rest-GetMapping-Transactions/target/867-Rest-GetMapping-Transactions/WEB-INF/classes/rest/endpoint/FindAllByUsername.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/867-Rest-GetMapping-Transactions/target/867-Rest-GetMapping-Transactions/WEB-INF/classes/rest/endpoint/FindAllByUsername.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/867-Rest-GetMapping-Transactions/target/classes/rest/endpoint/FindAllByDateAndUsername.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/867-Rest-GetMapping-Transactions/target/classes/rest/endpoint/FindAllByDateAndUsername.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/867-Rest-GetMapping-Transactions/target/classes/rest/endpoint/FindAllByUsername.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/867-Rest-GetMapping-Transactions/target/classes/rest/endpoint/FindAllByUsername.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/886-Soap-ReadClient/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/886-Soap-ReadClient/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/ConsoleApplication/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/886-Soap-ReadClient/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/886-Soap-ReadClient/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/ConsoleApplication/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/886-Soap-ReadClient/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/886-Soap-ReadClient/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/886-Soap-ReadClient/886-Soap-ReadClient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-RestMappings/969-Testing-RestMappings.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/886-Soap-ReadClient/src/main/java/client/soap/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/886-Soap-ReadClient/src/test/java/client/soap/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/test/java/org/db/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/886-Soap-ReadClient/target/classes/client/soap/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/886-Soap-ReadClient/target/classes/client/soap/web/Date.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/886-Soap-ReadClient/target/classes/client/soap/web/GroupOfTransactions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/886-Soap-ReadClient/target/classes/client/soap/web/ObjectFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/886-Soap-ReadClient/target/classes/client/soap/web/Transaction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/886-Soap-ReadClient/target/classes/client/soap/web/UserSoap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/886-Soap-ReadClient/target/classes/client/soap/web/UserSoapService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/886-Soap-ReadClient/target/classes/client/soap/web/package-info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/886-Soap-ReadClient/target/test-classes/client/soap/AppTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/886-Soap-ReadService/src/main/java/service/soap/web/SoapEndpoints.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/886-Soap-ReadService/src/main/java/service/soap/web/UserSoap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/886-Soap-ReadService/target/classes/service/soap/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/886-Soap-ReadService/target/classes/service/soap/web/GroupOfTransactions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/886-Soap-ReadService/target/classes/service/soap/web/SoapEndpoints.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/886-Soap-ReadService/target/classes/service/soap/web/UserSoap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/886-Soap-ReadService/target/test-classes/service/soap/AppTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/886-Soap-ReadService/user-logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../DLTE-Spring-Class/spring-dispatcher.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/886-Soap-ReadService/user-logs.txt.lck" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/ConsoleApplication/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-RestMappings/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/969-Testing-Rest-Mappings/867-Rest-GetMapping-Transactions/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/887-DAOTask-SoapClient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../DLTE-Spring-Class/DLTE-Spring-001-IoC.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/FileLayer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/src/main/java/client/soap/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DLTE-Spring-Class/src/main/java/di/ioc/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/src/main/java/client/soap/web/Date.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/src/main/java/client/soap/web/Date.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/src/main/java/client/soap/web/GroupOfTransactions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/src/main/java/client/soap/web/GroupOfTransactions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/src/main/java/client/soap/web/ObjectFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/src/main/java/client/soap/web/ObjectFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/src/main/java/client/soap/web/Transaction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/src/main/java/client/soap/web/Transaction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/src/main/java/client/soap/web/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/src/main/java/client/soap/web/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/src/main/java/client/soap/web/UserSoap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/src/main/java/client/soap/web/UserSoap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/src/main/java/client/soap/web/UserSoapService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/src/main/java/client/soap/web/UserSoapService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/src/main/java/client/soap/web/package-info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/src/main/java/client/soap/web/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/src/test/java/client/soap/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DLTE-Spring-Class/src/test/java/di/ioc/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/target/classes/client/soap/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/target/classes/client/soap/web/Date.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/target/classes/client/soap/web/GroupOfTransactions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/target/classes/client/soap/web/ObjectFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/target/classes/client/soap/web/Transaction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/target/classes/client/soap/web/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/target/classes/client/soap/web/UserSoap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/target/classes/client/soap/web/UserSoapService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/target/classes/client/soap/web/package-info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapClient/target/test-classes/client/soap/AppTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapService/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/ConsoleApplication/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapService/887-DAOTask-SoapService.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapService/src/main/java/service/soap/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/FileLayer/src/main/java/org/file/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapService/src/main/java/service/soap/web/GroupOfTransactions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapService/src/main/java/service/soap/web/GroupOfUsers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapService/src/main/java/service/soap/web/SoapEndpoints.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapService/src/main/java/service/soap/web/UserSoap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapService/src/test/java/service/soap/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/FileLayer/src/test/java/org/file/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapService/target/classes/service/soap/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapService/target/classes/service/soap/web/GroupOfTransactions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapService/target/classes/service/soap/web/GroupOfUsers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapService/target/classes/service/soap/web/SoapEndpoints.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapService/target/classes/service/soap/web/UserSoap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapService/target/test-classes/service/soap/AppTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapService/user-logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/resources/database.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/887-DAOTask-SoapService/user-logs.txt.lck" beforeDir="false" afterPath="$PROJECT_DIR$/../../log/dbemployee.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/931-JNDI-Update/target/931-JNDI-Update.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/931-JNDI-Update/target/931-JNDI-Update.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapService/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapService/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapService/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapService/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapService/user-logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapService/user-logs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapClient/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapClient/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapClient/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapClient/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapClient/src/main/java/client/soap/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapClient/src/main/java/client/soap/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapClient/target/classes/client/soap/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapClient/target/classes/client/soap/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapClient/target/classes/client/soap/web/Date.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapClient/target/classes/client/soap/web/Date.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapClient/target/classes/client/soap/web/GroupOfTransactions.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapClient/target/classes/client/soap/web/GroupOfTransactions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapClient/target/classes/client/soap/web/ObjectFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapClient/target/classes/client/soap/web/ObjectFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapClient/target/classes/client/soap/web/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapClient/target/classes/client/soap/web/Transaction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapClient/target/classes/client/soap/web/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapClient/target/classes/client/soap/web/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapClient/target/classes/client/soap/web/UserSoap.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapClient/target/classes/client/soap/web/UserSoap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapClient/target/classes/client/soap/web/UserSoapService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapClient/target/classes/client/soap/web/UserSoapService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapClient/target/classes/client/soap/web/package-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapClient/target/classes/client/soap/web/package-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapClient/target/test-classes/client/soap/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapClient/target/test-classes/client/soap/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-Tasks/Task-887/887-DAOTask-SoapService/user-logs.txt.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/RestExample/RestExample.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/Tries/src/main/java/web/service/RestWebService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/Tries/src/main/java/web/service/RestWebService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/Tries/src/main/java/web/service/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/Tries/src/main/java/web/service/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DLTE-Spring-006-jdbc/src/main/java/spring/explore/springjdbc/Loan.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DLTE-Spring-006-jdbc/src/main/java/spring/explore/springjdbc/Loan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DLTE-Spring-006-jdbc/src/main/java/spring/explore/springjdbc/LoanException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DLTE-Spring-006-jdbc/src/main/java/spring/explore/springjdbc/LoanException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DLTE-Spring-006-jdbc/src/main/java/spring/explore/springjdbc/MyBankController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DLTE-Spring-006-jdbc/src/main/java/spring/explore/springjdbc/MyBankController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DLTE-Spring-006-jdbc/src/main/java/spring/explore/springjdbc/MyBankService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DLTE-Spring-006-jdbc/src/main/java/spring/explore/springjdbc/MyBankService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DLTE-Spring-Class/spring-dispatcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DLTE-Spring-Class/spring-dispatcher.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DLTE-Spring-Class/src/main/java/di/ioc/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DLTE-Spring-Class/src/main/java/di/ioc/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DLTE-Spring-Class/src/main/java/di/ioc/Branch.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DLTE-Spring-Class/src/main/java/di/ioc/Branch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DLTE-Spring-Class/src/main/java/di/ioc/MyBankContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DLTE-Spring-Class/src/main/java/di/ioc/MyBankContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DLTE-Spring-Class/src/main/java/ioc/annotation/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DLTE-Spring-Class/src/main/java/ioc/annotation/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DLTE-Spring-Class/src/main/java/ioc/annotation/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DLTE-Spring-Class/src/main/java/ioc/annotation/Bank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DLTE-Spring-Class/src/main/java/ioc/annotation/MyBankConfigs.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DLTE-Spring-Class/src/main/java/ioc/annotation/MyBankConfigs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_13_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_13_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_13_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_jdbc_ojdbc11_21_5_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_activation_jakarta_activation_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_4_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_12_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_12_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_2_4_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_4_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_17_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_17_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_73.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_73.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_73.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_22_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_6_15_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_4_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_3_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_36.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_7_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_7_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_7_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_7_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_7_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_7_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_7_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_7_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_7_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_7_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_7_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_7_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_7_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_7_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_7_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_7_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_3_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_3_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DLTE-Spring-JPA.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DLTE-Spring-Tasks/jpa-ql/src/main/java/spring/jpa/jpaql/controller/TransactionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DLTE-Spring-Tasks/jpa-ql/src/main/java/spring/jpa/jpaql/model/Transaction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DLTE-Spring-Tasks/jpa-ql/src/main/java/spring/jpa/jpaql/remote/TransactionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DLTE-Spring-Tasks/jpa-ql/src/main/java/spring/jpa/jpaql/service/TransactionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DLTE-Spring-Tasks/springboot-autowiring/src/main/java/wire/di/springbootautowiring/Loan.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DLTE-Spring-Tasks/springboot-autowiring/src/main/java/wire/di/springbootautowiring/Loan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DLTE-Spring-Tasks/springboot-autowiring/src/main/java/wire/di/springbootautowiring/LoanInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DLTE-Spring-Tasks/springboot-autowiring/src/main/java/wire/di/springbootautowiring/LoanInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DLTE-Spring-Tasks/springboot-jdbc-soap-test/mybank-card.log" beforeDir="false" afterPath="$PROJECT_DIR$/../DLTE-Spring-Tasks/springboot-jdbc-soap-test/mybank-card.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DLTE-Spring-Tasks/springboot-jdbc/src/test/java/spring/explore/springbootjdbc/EndpointTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DLTE-Spring-Tasks/springboot-jdbc/src/test/java/spring/explore/springbootjdbc/EndpointTesting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DLTE-Spring-Tasks/springboot-jdbc/src/test/java/spring/explore/springbootjdbc/SpringbootJdbcApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DLTE-Spring-Tasks/springboot-jdbc/src/test/java/spring/explore/springbootjdbc/SpringbootJdbcApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../soapservice-soapui-project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../soapservice-soapui-project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyBank Project/MyBank-Database-Layout/mybank_app-tableCreation.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyBank Project/MyBank-Database-Layout/mybank_er.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyBank-Project/mybank-deposits-web/mybank-deposits.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../MyBank-Project/mybank-deposits-web/mybank-deposits.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyBank-Project/mybank-deposits-web/src/test/java/org/web/service/mybankdepositsweb/EndpointTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MyBank-Project/mybank-deposits-web/src/test/java/org/web/service/mybankdepositsweb/EndpointTesting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyBank-Project/mybank-deposits/mybank-deposits.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../MyBank-Project/mybank-deposits/mybank-deposits.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyBank-Project/mybank-deposits/src/test/java/mybank/dao/mybankdeposits/MyBankDepositsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MyBank-Project/mybank-deposits/src/test/java/mybank/dao/mybankdeposits/MyBankDepositsApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/ConsoleApplication/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/ConsoleApplication/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/ConsoleApplication/src/main/java/org/console/app/console/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/ConsoleApplication/src/main/java/org/console/app/console/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/ConsoleApplication/src/main/java/org/console/app/validation/Validation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/ConsoleApplication/src/main/java/org/console/app/validation/Validation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/ConsoleApplication/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/ConsoleApplication/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/ConsoleApplication/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/ConsoleApplication/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/ConsoleApplication/target/test-classes/console/app/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/EmployeeServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/EmployeeServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/entity/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/entity/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/entity/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/exception/ConnectionException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/exception/ConnectionException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/exception/EmployeeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/exception/EmployeeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/exception/EmployeeExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/exception/EmployeeExistsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/exception/ValidationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/exception/ValidationException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/middleware/DatabaseTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/middleware/DatabaseTarget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/middleware/EmployeeImplementations.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/middleware/EmployeeImplementations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/remote/EmployeeInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/remote/EmployeeInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/remote/StorageTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/remote/StorageTarget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/validation/Validation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/java/org/db/validation/Validation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/resources/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/resources/exception.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/resources/exception.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/test/java/org/db/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/src/test/java/org/db/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/DatabaseLayer-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/DatabaseLayer-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/classes/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/classes/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/classes/org/db/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/classes/org/db/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/classes/org/db/EmployeeServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/classes/org/db/EmployeeServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/classes/org/db/entity/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/classes/org/db/entity/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/classes/org/db/entity/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/classes/org/db/entity/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/classes/org/db/middleware/DatabaseTarget.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/classes/org/db/middleware/DatabaseTarget.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/classes/org/db/middleware/EmployeeImplementations.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/classes/org/db/middleware/EmployeeImplementations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/classes/org/db/remote/EmployeeInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/classes/org/db/remote/EmployeeInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/surefire-reports/TEST-org.db.AppTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/surefire-reports/org.db.AppTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/DatabaseLayer/target/test-classes/org/db/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/EmployeeSoapClient/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/EmployeeSoapClient/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/EmployeeSoapClient/src/main/java/org/soap/client/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/EmployeeSoapClient/src/main/java/org/soap/client/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/EmployeeSoapClient/src/main/java/org/soap/client/web/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/EmployeeSoapClient/src/main/java/org/soap/client/web/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/EmployeeSoapClient/src/main/java/org/soap/client/web/EmployeeSoap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/EmployeeSoapClient/src/main/java/org/soap/client/web/EmployeeSoap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/EmployeeSoapClient/src/main/java/org/soap/client/web/EmployeeSoapService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/EmployeeSoapClient/src/main/java/org/soap/client/web/EmployeeSoapService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/EmployeeSoapClient/src/main/java/org/soap/client/web/GroupOfEmployees.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/EmployeeSoapClient/src/main/java/org/soap/client/web/GroupOfEmployees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/EmployeeSoapClient/target/classes/org/soap/client/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/EmployeeSoapClient/target/classes/org/soap/client/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/EmployeeSoapClient/target/classes/web/GroupOfEmployees.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/EmployeeSoapClient/target/classes/web/GroupOfEmployees.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/EmployeeSoapService/src/main/java/web/EmployeeSoap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/EmployeeSoapService/src/main/java/web/EmployeeSoap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/EmployeeSoapService/target/EmployeeSoapService.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/EmployeeSoapService/target/EmployeeSoapService.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/EmployeeSoapService/target/EmployeeSoapService/WEB-INF/classes/soap/service/EmployeeSoap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/EmployeeSoapService/target/EmployeeSoapService/WEB-INF/classes/soap/service/GroupOfEmployees.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/EmployeeSoapService/target/EmployeeSoapService/WEB-INF/classes/soap/service/SoapEndpoints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/EmployeeSoapService/target/EmployeeSoapService/WEB-INF/classes/web/EmployeeSoap.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/EmployeeSoapService/target/EmployeeSoapService/WEB-INF/classes/web/EmployeeSoap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/EmployeeSoapService/target/EmployeeSoapService/WEB-INF/lib/DatabaseLayer-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/EmployeeSoapService/target/EmployeeSoapService/WEB-INF/lib/DatabaseLayer-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/EmployeeSoapService/target/classes/META-INF/EmployeeSoapService.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/EmployeeSoapService/target/classes/soap/service/EmployeeSoap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/EmployeeSoapService/target/classes/soap/service/GroupOfEmployees.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/EmployeeSoapService/target/classes/soap/service/SoapEndpoints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/EmployeeSoapService/target/classes/web/EmployeeSoap.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/EmployeeSoapService/target/classes/web/EmployeeSoap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/EmployeeSoapService/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/EmployeeSoapService/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/EmployeeSoapService/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/EmployeeSoapService/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/EmployeeWebService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/EmployeeWebService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/EmployeeWebService/src/main/java/org/employee/web/SoapEndpoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/EmployeeWebService/src/main/java/org/employee/web/SoapEndpoints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/FileLayer/src/main/java/org/file/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/FileLayer/src/main/java/org/file/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/FileLayer/src/main/java/org/file/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/FileLayer/src/main/java/org/file/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/archive/app-2024-03-27.1.log.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/archive/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/archive/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Review/log/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../Review/log/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../log/dbemployee.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../log/dbemployee.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -512,6 +540,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DLTE-Spring-Class" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -536,6 +565,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710907658286</updated>
       <workItem from="1710907661613" duration="990000" />
+      <workItem from="1712554147077" duration="598000" />
     </task>
     <servers />
   </component>
@@ -546,6 +576,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1712554897200">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1712554897200" />
     <state x="209" y="117" key="new project wizard" timestamp="1710908646302">
       <screen x="0" y="0" width="1536" height="816" />
     </state>

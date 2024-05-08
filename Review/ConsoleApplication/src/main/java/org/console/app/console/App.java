@@ -44,7 +44,9 @@ public class App
             while (true) {
                 Scanner scanner = new Scanner(System.in);
                 System.out.println(resourceBundle.getString("app.menu"));
+                logger.info("Menu displayed");
                 int choice = scanner.nextInt();
+                logger.info("User entered choice");
                 switch (choice) {
                     case 1:
                         String answer;
@@ -53,8 +55,9 @@ public class App
                                 employee = inputDetails();
                                 dbEmployee = translation(employee);
                                 services.callSave(dbEmployee);
+                                logger.info("Employee details saved");
                             } catch (EmployeeExistsException existException) {
-                                logger.info("Employee already Exists");
+                                logger.warn("Employee already Exists");
                                 System.out.println("Employee already exists!!");
                                 break;
                             }
@@ -67,6 +70,8 @@ public class App
                         try {
                             employeeArrayList = services.callDisplay();
                             displayDetails(employeeArrayList);
+                            System.out.println(resourceBundle.getString("display.success"));
+                            logger.info(resourceBundle.getString("display.success"));
                         } catch (EmployeeException employeeException) {
                             System.out.println("No employee details found");
                         }
@@ -74,11 +79,13 @@ public class App
                         break;
                     case 3:
                         System.out.println(resourceBundle.getString("app.enter.pincode"));
+                        logger.info("Pincode entered");
                         try {
                             Long pincode = scanner.nextLong();
                             employeeArrayList = services.callDisplayByPincode(pincode);
                             System.out.println(employeeArrayList);
                             displayDetails(employeeArrayList);
+                            logger.info(resourceBundle.getString("pin.display.success"));
                         } catch (EmployeeException employeeException) {
                             System.out.println(resourceBundle.getString("employee.not.found"));
                             break;
@@ -86,8 +93,10 @@ public class App
 
                         break;
                     case 4:
+                        logger.info("User exit from the application");
                         System.exit(0);
                     default:
+                        logger.info("User entered an invalid choice");
                         System.out.println("Invalid choice");
                 }
             }
@@ -120,6 +129,7 @@ public class App
         dbPermAddress.setPincode(employee.getEmployeePermanentAddress().getPincode());
         dbEmployee.setEmployeeTemporaryAddress(dbTempAddress);
         dbEmployee.setEmployeePermanentAddress(dbPermAddress);
+        logger.info("Translation done");
         return dbEmployee;
     }
 
@@ -166,6 +176,7 @@ public class App
             try {
                 employee.setEmployeeMobile(scanner.nextLong());
                 while (!validation.isValidMobileNumber(employee.getEmployeeMobile().toString())) {
+                    logger.info("Invalid mobile number entered");
                     System.out.println(resourceBundle.getString("mobile.invalid"));
                     employee.setEmployeeMobile(scanner.nextLong());
                 }
@@ -181,6 +192,7 @@ public class App
         System.out.println("Enter the email ID");
         employee.setEmployeeEmail(scanner.next());
         while (!validation.isValidEmail(employee.getEmployeeEmail())) {
+            logger.info("Invalid email entered");
             System.out.println("Invalid Email! Enter again");
             employee.setEmployeeEmail(scanner.next());
         }
@@ -188,6 +200,8 @@ public class App
         employee.setEmployeeTemporaryAddress(readAddress());
         System.out.println("Enter the permanent address");
         employee.setEmployeePermanentAddress(readAddress());
+
+        logger.info("New employee details received");
 
         return employee;
     }
@@ -205,7 +219,6 @@ public class App
         employeeLastName = scanner.nextLine();
         name = employeeFirstName+" "+employeeMiddleName+" "+employeeLastName;
         return name;
-
 
     }
 

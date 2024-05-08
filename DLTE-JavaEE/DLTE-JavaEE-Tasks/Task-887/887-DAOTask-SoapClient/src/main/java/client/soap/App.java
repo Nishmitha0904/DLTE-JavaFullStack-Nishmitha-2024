@@ -15,8 +15,8 @@ public class App
 {
     public static void main( String[] args )
     {
-        UserSoapService userSoapService = new UserSoapService();
-        UserSoap soap = userSoapService.getUserSoapPort();
+//        UserSoapService userSoapService = new UserSoapService();
+//        UserSoap soap = userSoapService.getUserSoapPort();
 
         /*
         //Create Account
@@ -30,12 +30,12 @@ public class App
         soap.createAccount(user);
          */
 
-        /*
-        //Find By Username
-        User user = soap.readByUsername("nishmitha");
-        System.out.println(user.getUsername()+" "+user.getEmail()+" "+user.getAddress()+" "+user.getBalance());
 
-         */
+        //Find By Username
+//        User user = soap.readByUsername("nishmitha");
+//        System.out.println(user.getUsername()+" "+user.getEmail()+" "+user.getAddress()+" "+user.getBalance());
+
+
 
         /*
         //Find all transactions by username
@@ -46,6 +46,14 @@ public class App
         }
 
          */
+        int a=5;
+        try {
+            a=6;
+            int b = a/0;
+        } catch (Exception e) {
+            System.out.println(a);
+        }
+
 
     }
 }

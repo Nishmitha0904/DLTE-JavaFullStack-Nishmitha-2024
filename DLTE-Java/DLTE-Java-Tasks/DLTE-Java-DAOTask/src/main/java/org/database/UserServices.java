@@ -37,12 +37,16 @@ public class UserServices {
            throw new UserException();
         }
     }
-    public List<Transaction> callFindByDateAndUsername(String username, Date transactionDate) {
+    public List<Transaction> callFindByDateAndUsername(String username, String transactionDate) {
         try {
             return userRepository.findAllByDateAndUsername(username, transactionDate);
         } catch (UserException userException) {
             System.out.println("No such username");
             throw new UserException();
         }
+    }
+
+    public List<Transaction> callFindAllTransactions() {
+        return userRepository.findAllTransactions();
     }
 }

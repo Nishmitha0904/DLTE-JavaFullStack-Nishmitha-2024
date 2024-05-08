@@ -1,2 +1,5 @@
+employee\file\Employee.class
 employee\file\Implementations.class
+employee\file\EmployeeDetailInterface.class
 employee\file\App.class
+employee\file\Address.class

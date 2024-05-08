@@ -18,7 +18,6 @@ public class EmployeeDetails implements EmployeeDetailsInterface{
         EmployeeDetails employeeDetails = new EmployeeDetails();
         while (true) {
             System.out.println(resourceBundle.getString("app.menu"));
-            try {
                 int choice = scanner.nextInt();
                 switch (choice) {
                     case 1:
@@ -39,9 +38,8 @@ public class EmployeeDetails implements EmployeeDetailsInterface{
                     default:
                         System.out.println("Invalid choice");
                 }
-            } catch (InputMismatchException inputMismatchException) {
-                System.out.println("Enter a number");
-            }
+
+
         }
 
     }

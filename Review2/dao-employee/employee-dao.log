@@ -1,0 +1,12 @@
+[31m2024-04-17 10:44:14,942[0;39m [32m[INFO][0;39m employee.dao.daoemployee.DaoEmployeeApplicationTests main [32mStarting DaoEmployeeApplicationTests using Java 1.8.0_292 on WPF45CNXG with PID 20160 (started by xxshettn in C:\DLTE-JavaFullStack-Nishmitha-2024\Review2\dao-employee)
+[0;39m[31m2024-04-17 10:44:14,943[0;39m [32m[INFO][0;39m employee.dao.daoemployee.DaoEmployeeApplicationTests main [32mNo active profile set, falling back to 1 default profile: "default"
+[0;39m[31m2024-04-17 10:44:15,633[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate main [32mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[0;39m[31m2024-04-17 10:44:15,650[0;39m [32m[INFO][0;39m org.springframework.data.repository.config.RepositoryConfigurationDelegate main [32mFinished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
+[0;39m[31m2024-04-17 10:44:17,399[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource main [32mHikariPool-1 - Starting...
+[0;39m[31m2024-04-17 10:44:17,414[0;39m [32m[WARN][0;39m com.zaxxer.hikari.util.DriverDataSource main [32mRegistered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[0;39m[31m2024-04-17 10:44:17,996[0;39m [32m[INFO][0;39m com.zaxxer.hikari.pool.PoolBase main [32mHikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+[0;39m[31m2024-04-17 10:44:18,012[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource main [32mHikariPool-1 - Start completed.
+[0;39m[31m2024-04-17 10:44:18,311[0;39m [32m[INFO][0;39m employee.dao.daoemployee.DaoEmployeeApplicationTests main [32mStarted DaoEmployeeApplicationTests in 3.813 seconds (JVM running for 5.177)
+[0;39m[31m2024-04-17 10:44:18,824[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource SpringApplicationShutdownHook [32mHikariPool-1 - Shutdown initiated...
+[0;39m[31m2024-04-17 10:44:18,846[0;39m [32m[INFO][0;39m com.zaxxer.hikari.HikariDataSource SpringApplicationShutdownHook [32mHikariPool-1 - Shutdown completed.
+[0;39m

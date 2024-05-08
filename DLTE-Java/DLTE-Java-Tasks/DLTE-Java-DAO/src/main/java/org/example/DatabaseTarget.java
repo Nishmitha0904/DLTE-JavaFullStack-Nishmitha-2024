@@ -1,4 +1,4 @@
-package org.database;
+package org.example;
 
 import oracle.jdbc.driver.OracleDriver;
 

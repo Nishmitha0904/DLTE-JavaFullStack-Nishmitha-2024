@@ -1,4 +1,4 @@
-package org.employee.dao.employeespringdao.exception;
+package employee.dao.daoemployee.exception;
 
 public class EmployeeException extends RuntimeException {
     public EmployeeException(String message) {

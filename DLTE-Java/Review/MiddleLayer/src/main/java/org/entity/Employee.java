@@ -1,6 +1,9 @@
-package console.app;
+package org.entity;
 
-public class Employee {
+import java.io.Serializable;
+
+public class Employee implements Serializable {
+//    private static final long serialVersionUID = 8764536534353L;
     private Long employeeID;
     private String employeeName;
     private String employeeEmail;

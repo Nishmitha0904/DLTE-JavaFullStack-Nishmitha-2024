@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd" >
+    <bean id="branch1" class="di.ioc.Branch"/>
+    <bean id="branch2" class="di.ioc.Branch">
+        <property name="branchId" value="11610"/>
+    </bean>
+
+    <bean id="branch3" class="di.ioc.Branch" lazy-init="true">
+        <property name="bankName" value="MyBank"/>
+        <property name="branchContact" value="8783645363"/>
+        <property name="branchId" value="23432"/>
+        <property name="branchName" value="HSRLayout"/>
+        <property name="ifscCode" value="ABCD898493"/>
+    </bean>
+
+    <bean name="branch4" class="di.ioc.Branch">
+        <constructor-arg name="bankName" value="MyBank"/>
+        <constructor-arg name="branchName" value="BTM Layout"/>
+        <constructor-arg name="branchContact" value="8756453457"/>
+        <constructor-arg name="ifscCode" value="ABCD564764"/>
+        <constructor-arg name="branchId" value="78464"/>
+    </bean>
+
+    <bean id="branch5" class="di.ioc.Branch">
+        <constructor-arg index="3" value="MyBank"/>
+        <constructor-arg index="0" value="Banashankari"/>
+        <constructor-arg index="4" value="9876546789"/>
+        <constructor-arg index="1" value="ABCD676456"/>
+        <constructor-arg index="2" value="76787"/>
+    </bean>
+</beans>

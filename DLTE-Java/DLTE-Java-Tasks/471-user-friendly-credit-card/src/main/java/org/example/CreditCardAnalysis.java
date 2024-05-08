@@ -57,6 +57,7 @@ public class CreditCardAnalysis {
                     //System.out.println("Exception occurred");
                     //logger.log(Level.WARNING, resourceBundle.getString("holder.not.found"));
                     logger.warn(resourceBundle.getString("holder.not.found"));
+
                 }
                 break;
             case 2:

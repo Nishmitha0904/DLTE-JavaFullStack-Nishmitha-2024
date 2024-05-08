@@ -27,6 +27,11 @@ public class Employee {
         this.employeeMobile = employeeMobile;
     }
 
+    public Employee(Address employeeTemporaryAddress, Address employeePermanentAddress) {
+        this.employeeTemporaryAddress = employeeTemporaryAddress;
+        this.employeePermanentAddress = employeePermanentAddress;
+    }
+
     @Override
     public String toString() {
         return "Employee{" +

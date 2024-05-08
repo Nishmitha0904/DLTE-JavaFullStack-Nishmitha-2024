@@ -68,7 +68,6 @@ public class DepositService implements DepositInterface {
             logger.warn(messageBundle.getString("deposit.exception"));
             throw new DepositException(messageBundle.getString("deposit.exception"));
         }
-
         else
             return deposits;
     }

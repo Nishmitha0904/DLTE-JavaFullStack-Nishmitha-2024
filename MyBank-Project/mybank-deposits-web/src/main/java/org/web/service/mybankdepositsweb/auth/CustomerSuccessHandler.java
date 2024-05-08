@@ -31,8 +31,6 @@ public class CustomerSuccessHandler extends SimpleUrlAuthenticationSuccessHandle
                 customer.setAttempts(1);
                 service.updateAttempts(customer);
             }
-//            super.setDefaultTargetUrl(secureBundle.getString("target.url"));
-//            super.setDefaultTargetUrl("/deposit/view/");
             super.setDefaultTargetUrl("/dashboard");
         }
         else{

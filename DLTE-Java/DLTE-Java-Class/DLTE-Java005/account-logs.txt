@@ -1,0 +1,4 @@
+Mar 07, 2024 10:47:06 AM handle.logs.FindAccount main
+INFO: All required members are initialized
+Mar 07, 2024 10:47:10 AM handle.logs.FindAccount main
+WARNING: handle.logs.AccountNotFoundException: "Account Not found in the record"

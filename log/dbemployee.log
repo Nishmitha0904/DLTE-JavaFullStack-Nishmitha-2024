@@ -1,0 +1,12 @@
+10:31:13.229 [34m[main][0;39m INFO  EmployeeDatabaseRepository.class - [34mEmployee Details saved[0;39m 
+10:31:26.779 [34m[main][0;39m INFO  App.class - [34mEmployee details inserted successfully![0;39m 
+09:32:52.712 [34m[main][0;39m INFO  EmployeeDatabaseRepository.class - [34mEmployee Details saved[0;39m 
+10:05:52.263 [34m[main][0;39m INFO  EmployeeDatabaseRepository.class - [34mEmployee Details saved[0;39m 
+10:13:12.942 [34m[main][0;39m INFO  EmployeeDatabaseRepository.class - [34mEmployee Details saved[0;39m 
+10:13:44.888 [34m[main][0;39m INFO  App.class - [34mEmployee details inserted successfully![0;39m 
+10:38:50.754 [34m[main][0;39m INFO  EmployeeDatabaseRepository.class - [34mEmployee Details saved[0;39m 
+10:39:05.740 [34m[main][0;39m INFO  App.class - [34mEmployee details inserted successfully![0;39m 
+18:47:52.030 [34m[main][0;39m INFO  EmployeeDatabaseRepository.class - [34mEmployee Details saved[0;39m 
+19:36:32.600 [31m[main][0;39m WARN  App.class - [31mInvalid employeeID[0;39m 
+19:36:37.814 [31m[main][0;39m WARN  App.class - [31mInvalid employeeID[0;39m 
+10:41:11.050 [31m[main][0;39m WARN  App.class - [31mInvalid Employee ID. Employee ID must contain numbers only[0;39m 

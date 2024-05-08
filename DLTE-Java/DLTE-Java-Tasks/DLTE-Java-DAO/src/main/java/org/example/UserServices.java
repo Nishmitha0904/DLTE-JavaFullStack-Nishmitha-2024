@@ -1,4 +1,4 @@
-package org.database;
+package org.example;
 
 public class UserServices {
     UserRepository userRepository;

@@ -16,14 +16,14 @@ import spring.explore.springbootjdbc.service.MyBankService;
 import java.util.ResourceBundle;
 
 @Controller
-@RequestMapping("/transact")
+@RequestMapping("/transaction")
 public class MvcController {
     @Autowired
     MyBankService myBankService;
     ResourceBundle resourceBundle = ResourceBundle.getBundle("application");
     Logger logger = LoggerFactory.getLogger(MvcController.class);
 
-    @GetMapping("/newTransaction")
+    @GetMapping("/new")
     public String submit(Model model){
         Transaction transaction=new Transaction();
         model.addAttribute("transaction",new Transaction());

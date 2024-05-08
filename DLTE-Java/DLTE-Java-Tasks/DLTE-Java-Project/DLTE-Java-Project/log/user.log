@@ -11,3 +11,27 @@
 17:12:56.411 [34m[main][0;39m INFO  org.example.UserFileRepository - [34mNISHMITHANew User saved successfully[0;39m 
 17:59:39.280 [34m[main][0;39m INFO  org.example.App - [34mIncorrect password[0;39m 
 17:59:43.460 [34m[main][0;39m INFO  org.example.App - [34mPassword correct[0;39m 
+17:30:37.146 [34m[main][0;39m INFO  org.example.App - [34mLogged In successfully!!![0;39m 
+17:30:48.529 [34m[main][0;39m INFO  org.example.App - [34mPassword correct[0;39m 
+17:31:22.678 [34m[main][0;39m INFO  org.example.App - [34mLogged In successfully!!![0;39m 
+17:31:49.895 [34m[main][0;39m INFO  org.example.App - [34mPassword correct[0;39m 
+17:34:47.558 [34m[main][0;39m INFO  org.example.App - [34mLogged In successfully!!![0;39m 
+17:36:53.126 [34m[main][0;39m INFO  org.example.App - [34mPassword correct[0;39m 
+17:33:37.393 [31m[main][0;39m WARN  org.example.App - [31mInvalid Balance. Balance cannot be negative.[0;39m 
+17:33:45.323 [31m[main][0;39m WARN  org.example.App - [31mInvalid Balance. Balance cannot be negative.[0;39m 
+17:33:49.780 [31m[main][0;39m WARN  org.example.App - [31mInvalid Balance. Balance cannot be negative.[0;39m 
+17:35:20.928 [31m[main][0;39m WARN  org.example.App - [31mInvalid Balance. Balance cannot be negative.[0;39m 
+17:35:26.555 [31m[main][0;39m WARN  org.example.App - [31mInvalid Balance. Balance cannot be negative.[0;39m 
+17:41:29.194 [31m[main][0;39m WARN  org.example.App - [31mInvalid Balance. Balance cannot be negative.[0;39m 
+17:41:32.718 [31m[main][0;39m WARN  org.example.App - [31mInvalid Balance. Balance cannot be negative.[0;39m 
+17:45:47.538 [31m[main][0;39m WARN  org.example.App - [31mInvalid Balance. Balance cannot be negative.[0;39m 
+17:47:42.544 [34m[main][0;39m INFO  org.example.App - [34mLogged In successfully!!![0;39m 
+17:47:45.389 [34m[main][0;39m INFO  org.example.App - [34mLogged In successfully!!![0;39m 
+17:47:47.587 [34m[main][0;39m INFO  org.example.App - [34mLogged In successfully!!![0;39m 
+17:47:49.567 [34m[main][0;39m INFO  org.example.App - [34mLogged In successfully!!![0;39m 
+17:47:51.140 [34m[main][0;39m INFO  org.example.App - [34mLogged In successfully!!![0;39m 
+17:47:51.140 [31m[main][0;39m WARN  org.example.App - [31mNumber of attempts exceeded. Account blocked by Mybank![0;39m 
+17:48:04.337 [34m[main][0;39m INFO  org.example.App - [34mPassword correct[0;39m 
+17:48:26.512 [34m[main][0;39m INFO  org.example.App - [34mLogged In successfully!!![0;39m 
+17:49:10.671 [34m[main][0;39m INFO  org.example.App - [34mIncorrect password[0;39m 
+17:49:15.392 [34m[main][0;39m INFO  org.example.App - [34mPassword correct[0;39m 

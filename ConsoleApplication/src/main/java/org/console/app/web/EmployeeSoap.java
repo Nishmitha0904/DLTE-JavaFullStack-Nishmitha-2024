@@ -19,7 +19,7 @@ import javax.xml.ws.Action;
 @WebService(name = "EmployeeSoap", targetNamespace = "http://web/")
 @SOAPBinding(style = SOAPBinding.Style.RPC)
 @XmlSeeAlso({
-    ObjectFactory.class
+    web.ObjectFactory.class
 })
 public interface EmployeeSoap {
 
@@ -32,7 +32,7 @@ public interface EmployeeSoap {
     @WebMethod
     @WebResult(partName = "return")
     @Action(input = "http://web/EmployeeSoap/readAllRequest", output = "http://web/EmployeeSoap/readAllResponse")
-    public GroupOfEmployees readAll();
+    public web.GroupOfEmployees readAll();
 
     /**
      * 
@@ -42,7 +42,7 @@ public interface EmployeeSoap {
     @Action(input = "http://web/EmployeeSoap/insertEmployeeRequest", output = "http://web/EmployeeSoap/insertEmployeeResponse")
     public void insertEmployee(
         @WebParam(name = "Employee", partName = "Employee")
-        Employee employee);
+                web.Employee employee);
 
     /**
      * 
@@ -53,7 +53,7 @@ public interface EmployeeSoap {
     @WebMethod
     @WebResult(partName = "return")
     @Action(input = "http://web/EmployeeSoap/readAllByPincodeRequest", output = "http://web/EmployeeSoap/readAllByPincodeResponse")
-    public GroupOfEmployees readAllByPincode(
+    public web.GroupOfEmployees readAllByPincode(
         @WebParam(name = "arg0", partName = "arg0")
         long arg0);
 
@@ -66,7 +66,7 @@ public interface EmployeeSoap {
     @WebMethod
     @WebResult(name = "Employee", partName = "Employee")
     @Action(input = "http://web/EmployeeSoap/readByIdRequest", output = "http://web/EmployeeSoap/readByIdResponse")
-    public Employee readById(
+    public web.Employee readById(
         @WebParam(name = "arg0", partName = "arg0")
         long arg0);
 

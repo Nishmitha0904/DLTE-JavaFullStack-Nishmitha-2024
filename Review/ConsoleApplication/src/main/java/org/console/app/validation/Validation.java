@@ -17,4 +17,12 @@ public class Validation {
         return matcher.matches();
     }
 
+    public Boolean isValidPincode(Long pincode) {
+        String pincodeString = Long.toString(pincode);
+        String pincodeExpression = "\\d{6}";
+        Pattern pattern = Pattern.compile(pincodeExpression);
+        Matcher matcher = pattern.matcher(pincodeString);
+        return matcher.matches();
+    }
+
 }

@@ -1,4 +1,4 @@
-package org.entity;
+package console.app;
 
 public class Employee {
     private Long employeeID;

@@ -1,5 +1,8 @@
 package org.employee;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -8,13 +11,20 @@ public class Implementations implements EmployeeDetailInterface {
 
     List<Employee> employeeList = new ArrayList<>();
     File filePath = new File("Employee.txt");
+    Logger logger = LoggerFactory.getLogger("Implementations.class");
 
-    public void writeIntoFile() throws IOException {
-        FileOutputStream fileOutputStream = new FileOutputStream(filePath);
-        ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
-        objectOutputStream.writeObject(employeeList);
-        objectOutputStream.close();
-        fileOutputStream.close();
+
+    public void writeIntoFile() {
+        try {
+            FileOutputStream fileOutputStream = new FileOutputStream(filePath);
+            ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
+            objectOutputStream.writeObject(employeeList);
+            objectOutputStream.close();
+            fileOutputStream.close();
+        } catch (IOException ioException) {
+            logger.warn("Error while writing to file");
+        }
+
     }
     public void readFromFile() throws IOException, ClassNotFoundException {
         FileInputStream fileInputStream = new FileInputStream(filePath);
@@ -34,7 +44,8 @@ public class Implementations implements EmployeeDetailInterface {
             for (Employee employee: employees) {
                 boolean alreadyExists = employeeList.stream().anyMatch(exist -> exist.getEmployeeID() == employee.getEmployeeID());
                 if (alreadyExists) {
-                    System.out.println("Employee already exists");
+//                    System.out.println("Employee already exists");
+                    throw new EmployeeException();
                 } else {
                     employeeList.addAll(employees);
                 }

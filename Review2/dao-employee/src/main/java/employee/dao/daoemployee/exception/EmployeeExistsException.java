@@ -1,6 +1,4 @@
-package org.employee.dao.employeespringdao.exception;
-
-import java.util.ResourceBundle;
+package employee.dao.daoemployee.exception;
 
 public class EmployeeExistsException extends RuntimeException {
     public EmployeeExistsException(String message) {

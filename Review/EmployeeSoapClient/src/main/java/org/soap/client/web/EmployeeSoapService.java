@@ -68,7 +68,7 @@ public class EmployeeSoapService
      *     returns EmployeeSoap
      */
     @WebEndpoint(name = "EmployeeSoapPort")
-    public EmployeeSoap getEmployeeSoapPort() {
+    public web.EmployeeSoap getEmployeeSoapPort() {
         return super.getPort(new QName("http://web/", "EmployeeSoapPort"), EmployeeSoap.class);
     }
 

@@ -45,8 +45,8 @@ public class Employee {
     protected Long employeeID;
     protected Long employeeMobile;
     protected String employeeName;
-    protected Address employeePermanentAddress;
-    protected Address employeeTemporaryAddress;
+    protected web.Address employeePermanentAddress;
+    protected web.Address employeeTemporaryAddress;
 
     /**
      * Gets the value of the employeeEmail property.
@@ -152,7 +152,7 @@ public class Employee {
      *     {@link Address }
      *     
      */
-    public Address getEmployeePermanentAddress() {
+    public web.Address getEmployeePermanentAddress() {
         return employeePermanentAddress;
     }
 
@@ -164,7 +164,7 @@ public class Employee {
      *     {@link Address }
      *     
      */
-    public void setEmployeePermanentAddress(Address value) {
+    public void setEmployeePermanentAddress(web.Address value) {
         this.employeePermanentAddress = value;
     }
 
@@ -176,7 +176,7 @@ public class Employee {
      *     {@link Address }
      *     
      */
-    public Address getEmployeeTemporaryAddress() {
+    public web.Address getEmployeeTemporaryAddress() {
         return employeeTemporaryAddress;
     }
 
@@ -188,7 +188,7 @@ public class Employee {
      *     {@link Address }
      *     
      */
-    public void setEmployeeTemporaryAddress(Address value) {
+    public void setEmployeeTemporaryAddress(web.Address value) {
         this.employeeTemporaryAddress = value;
     }
 

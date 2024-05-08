@@ -1,4 +1,4 @@
-package org.database;
+package org.example;
 
 public interface UserRepository {
     void save(User user);

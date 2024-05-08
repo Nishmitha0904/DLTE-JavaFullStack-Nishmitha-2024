@@ -1,4 +1,4 @@
-package org.console.app.soapconsole.config;
+package deposit.client.soapdepositsclient.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -10,7 +10,7 @@ public class WebServiceConfig {
     @Bean
     public Jaxb2Marshaller marshaller() {
         Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
-        marshaller.setContextPath("services.employee");
+        marshaller.setContextPath("soap.webservice");
         return marshaller;
     }
 
@@ -19,7 +19,7 @@ public class WebServiceConfig {
         WebServiceTemplate template = new WebServiceTemplate();
         template.setMarshaller(marshaller);
         template.setUnmarshaller(marshaller);
-        template.setDefaultUri("http://localhost:8082/employeerepo/employee.wsdl");
+        template.setDefaultUri("http://localhost:8082/depositsrepo/deposits.wsdl");
         return template;
     }
 }

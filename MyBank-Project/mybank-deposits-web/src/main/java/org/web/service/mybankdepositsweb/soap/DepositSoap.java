@@ -32,7 +32,6 @@ public class DepositSoap {
     Logger logger = LoggerFactory.getLogger(DepositSoap.class);
 
     @Autowired
-//    public DepositService service;
     private DepositInterface depositInterface;
 
     @PayloadRoot(namespace = url, localPart = "listAllDepositsRequest")

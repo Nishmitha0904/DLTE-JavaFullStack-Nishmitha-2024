@@ -68,7 +68,7 @@ const performValidate=()=> {
 
     //contact
     try{
-        if(!(/[0-9]{10}/).test(number)){
+        if(!(/[0-9]{10}/).test(contact)){
             throw "Requires only numbers and contact is 10 digits"
         }
     }
@@ -76,6 +76,18 @@ const performValidate=()=> {
         isValid=false
         contactErr.innerHTML=message
     }
+
+    //email
+    try{
+        if(!(/[A-Za-z0-9+_.-]+@[a-zA-Z]{3,}+\\.[a-z]{2,}/).test(email)){
+            throw "Email must follow format: example@abc.def"
+        }
+    }
+    catch(message){
+        isValid=false
+        emailErr.innerHTML=message
+    }
+
     return isValid
 
 

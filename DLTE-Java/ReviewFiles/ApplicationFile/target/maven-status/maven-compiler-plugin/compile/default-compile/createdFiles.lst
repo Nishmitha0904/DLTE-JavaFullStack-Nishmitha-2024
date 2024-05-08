@@ -1,2 +1,6 @@
 org\employee\App.class
+org\employee\Address.class
+org\employee\EmployeeException.class
+org\employee\Employee.class
+org\employee\EmployeeDetailInterface.class
 org\employee\Implementations.class

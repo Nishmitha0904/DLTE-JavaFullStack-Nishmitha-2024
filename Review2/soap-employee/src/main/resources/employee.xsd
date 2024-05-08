@@ -47,7 +47,7 @@
     <xsd:element name="saveResponse">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="result" type="xsd:string"/>
+                <xsd:element name="employee" type="tns:employee"/>
                 <xsd:element name="serviceStatus" type="tns:serviceStatus"/>
             </xsd:sequence>
         </xsd:complexType>
@@ -94,7 +94,7 @@
     <xsd:element name="findByPincodeResponse">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="employee" type="tns:employee"/>
+                <xsd:element name="employee" type="tns:employee" maxOccurs="unbounded"/>
                 <xsd:element name="serviceStatus" type="tns:serviceStatus"/>
             </xsd:sequence>
         </xsd:complexType>

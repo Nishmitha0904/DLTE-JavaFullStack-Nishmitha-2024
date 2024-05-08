@@ -39,6 +39,14 @@ public class App
                     User user =new User();
                     System.out.println("Enter the username");
                     user.setUserName(scanner.next());
+//                    try {
+//                        user.setUserName(scanner.next());
+//                    } catch (UserException userException) {
+//                        System.out.println(resourceBundle.getString("username.exists"));
+//                        System.out.println("Re-enter username");
+//                        user.setUserName(scanner.next());
+//                    }
+
 
                     System.out.println("Enter the password");
                     user.setUserPassword(scanner.next());
@@ -72,8 +80,6 @@ public class App
                     }
                     catch(UserException userException){
                         System.out.println(userException);
-                        System.out.println("Re-enter username");
-                        user.setUserName(scanner.next());
                     }
                     break;
                 default:return;

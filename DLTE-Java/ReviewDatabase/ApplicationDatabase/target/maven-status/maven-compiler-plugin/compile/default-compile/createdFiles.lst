@@ -1,3 +1,7 @@
 org\employee\App.class
+org\employee\Address.class
 org\employee\EmployeeDatabaseRepository.class
+org\employee\Employee.class
+org\employee\EmployeeInterface.class
 org\employee\DatabaseTarget.class
+org\employee\EmployeeServices.class

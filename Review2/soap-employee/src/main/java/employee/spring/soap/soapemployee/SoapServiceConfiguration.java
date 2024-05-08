@@ -1,4 +1,4 @@
-package org.soap.service.soapservice.configs;
+package employee.spring.soap.soapemployee;
 
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.ApplicationContext;
